@@ -6,7 +6,7 @@
  * @subpackage Templates
  * @version 4.1
  */
-//NEURONA TEST
+//NEURONA TEST 2
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
