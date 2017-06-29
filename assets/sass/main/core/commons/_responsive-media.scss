@@ -1,0 +1,45 @@
+/* Responsive */
+
+// Set embed max width
+.entry iframe, .entry embed {
+	max-width: 100%;
+}
+
+// Media 16:9 ratio responsive embeds
+.responsive-video-wrap,
+.responsive-audio-wrap {
+	position: relative;
+	padding-top: 56%;
+}
+
+.responsive-video-wrap iframe,
+.responsive-audio-wrap iframe,
+.responsive-video-wrap object,
+.responsive-audio-wrap object,
+.responsive-video-wrap embed,
+.responsive-audio-wrap embed {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wp-video-shortcode {
+	width: auto !important;
+	max-width: 100% !important;
+	transition: opacity 0.4s;
+	visibility: hidden;
+	@include opacity( 0 );
+
+	.wpex-window-loaded & {
+		visibility: visible;
+		@include opacity( 1 );
+	}
+
+}
+
+.responsive-video-wrap p {
+	margin: 0; // Vimeo fix
+}

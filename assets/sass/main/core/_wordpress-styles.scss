@@ -1,0 +1,161 @@
+/*------------------------------------------------------------------
+[# WordPress Styles]
+-------------------------------------------------------------------*/
+.bypostauthor, .sticky { } // Prevent debug notice
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.floatleftcenter {
+    float: none;
+    margin: 0 auto;
+}
+
+.floatleft {
+    float: left
+}
+
+.floatright {
+    float: right
+}
+
+.wp-caption {
+    text-align: center;
+    max-width: 100%;
+    border: 1px solid #eee;
+    text-align: center;
+    background-color: #fff;
+    padding: 8px;
+}
+
+div.wp-caption.aligncenter {
+    margin-bottom: $elements__bottom-margin; // Blogger import fix
+}
+
+.wp-caption img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 0.875em;
+    padding: 10px 0 0;
+    margin: 0;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin-bottom: $elements__bottom-margin;
+}
+
+.wp-smiley {
+    margin: 0;
+    max-height: 1em;
+}
+
+#img-attch-page {
+    text-align: center;
+    overflow: hidden;
+}
+
+#img-attch-page img {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: $elements__bottom-margin;
+}
+
+.post-password-form label,
+.post-password-form input {
+    display: block;
+    float: none;
+}
+
+.post-password-form input {
+    margin-top: 10px;
+}
+
+.post-password-form input[type="password"] {
+    width: 200px;
+    max-width: 100%;
+}
+
+.post-password-form label {
+    font-weight: 600;
+    color: #000;
+}
+
+form.login {
+    padding: 20px;
+    border: 1px solid $borders__color-light;
+}
+
+form.login .lost_password {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.wpstats {
+    display: none // Hide Jetpack smiley face
+}
+
+
+/* WordPress Gallery */
+.content-full-width .gallery-item {
+    margin-bottom: 15px;
+}
+
+.content-left-sidebar .gallery-item,
+.content-right-sidebar .gallery-item {
+    margin-bottom: 10px;
+}
+
+.wpex-gallery {
+    margin-bottom: 15px;
+}
+
+#wrap .wpex-gallery p {
+    margin: 0;
+}
+
+#wrap .gallery {
+    margin: 0 -10px;
+}
+
+.gallery-item {
+    padding: 0 10px;
+}
+
+#wrap .gallery-item img {
+    display: block;
+    border: none;
+    width: 100%;
+    @include box-shadow-fix;
+}
+
+.gallery-item img:hover {
+    @include opacity( $images__hover-opacity );
+}
+
+.gallery-caption {
+    font-size: 0.923em;
+    background: #f7f7f7;
+    border: 1px solid $borders__color;
+    border-top: none;
+    text-align: center;
+    padding: 5px 10px;
+}

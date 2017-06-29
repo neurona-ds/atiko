@@ -1,0 +1,12 @@
+/*------------------------------------------------------------------
+[Clear Floats]
+-------------------------------------------------------------------*/
+.col2-set:after,
+.woocommerce-MyAccount-navigation ul:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	zoom: 1;
+}

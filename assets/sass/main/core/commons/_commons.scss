@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+[# Common Classes]
+-------------------------------------------------------------------*/
+.non-clickable {
+	cursor: default;
+}
+
+.readmore-link-wrap {
+	display: block;
+}
+
+.search-entry .readmore-link-wrap {
+	margin-top: 10px;
+}
+
+.readmore-link {
+	display: block;
+	float: left;
+	font-size: 0.846em;
+}
+
+.hvr {
+	position: relative;
+	vertical-align: top;
+	display: block;
+	display: inline-block;
+}
+
+.hvr img {
+	display: block; // IE Fix
+	display: inline-block; // IE Fix
+}
+
+/* Deprecated */
+.rounded {
+	border-radius: 50%;
+}

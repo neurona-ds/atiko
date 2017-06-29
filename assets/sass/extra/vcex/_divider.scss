@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+[Divider]
+-------------------------------------------------------------------*/
+.vcex-divider { display: block; width: 100%; height: 0; background: none; margin: 0 auto; }
+.vcex-divider-center { margin: 0 auto; float: none; }
+.vcex-divider-right { margin: 0; float: right; }
+.vcex-divider-left { margin: 0; float: left; }
+.vcex-divider-solid { border-top: 1px solid $borders__color }
+.vcex-divider-dashed { border-top: 2px dashed $borders__color }
+.vcex-divider-dotted-line { border-top: 2px dotted $borders__color }
+.vcex-divider-dotted { height: 3px; background: url(../images/dotted.png) center center repeat-x; border: none; }
+.vcex-divider-dotted.repeat-bg { background-repeat: repeat }
+.vcex-divider-double { height: 1px; padding-top: 2px; padding-bottom: 2px; border-top: 1px solid $borders__color; border-bottom: 1px solid $borders__color; }
+
+/* divider with icons */
+.vcex-divider-w-icon { display: block; height: auto; margin: 0 auto; text-align: center; border: none; overflow: hidden; }
+.vcex-divider-icon { display: inline-block; position: relative; }
+.vcex-divider-w-icon .vcex-icon-wrap { display: inline-block; padding: 10px 20px; font-size: 1.231em; color: #999; }
+.vcex-divider-icon-before { display: block; position: absolute; top: 50%; border-bottom: solid 1px $borders__color; right: 100%; width: 9999px; margin-top: -0.5px; }
+.vcex-divider-icon-after { display: block; position: absolute; top: 50%; border-bottom: solid 1px $borders__color; left: 100%; width: 9999px; margin-top: -0.5px; }
+.vcex-divider-icon-has-bg .vcex-icon-wrap { margin: 0 20px }
+.vcex-divider-double .vcex-divider-icon-before { border-top: solid 1px $borders__color; padding-top: 2px; padding-bottom: 2px; margin-top: -3px; }
+.vcex-divider-double .vcex-divider-icon-after { border-top: solid 1px $borders__color; padding-top: 2px; padding-bottom: 2px; margin-top: -3px; }
+.vcex-divider-dashed .vcex-divider-icon-before,
+.vcex-divider-dashed .vcex-divider-icon-after { border-style: dashed; border-bottom-width: 2px; }
+.vcex-divider-dotted-line .vcex-divider-icon-before,
+.vcex-divider-dotted-line .vcex-divider-icon-after { border-style: dotted; border-bottom-width: 2px; }
+.vcex-divider-custom-icon-height .vcex-icon-wrap { padding-top: 0; padding-bottom: 0; }
+.vcex-divider-custom-icon-width .vcex-icon-wrap { padding-left: 0; padding-right: 0; }

@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------
+[Comments with Avatars Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-recent-comments-widget {
+
+    #main & strong {
+        color: #000;
+    }
+
+    li {
+        position: relative;
+        padding-left: 70px;
+        display: block;
+        border-bottom: 1px solid $borders__color-light;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        min-height: 62px;
+
+        a {
+            display: block;
+
+            &.avatar {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                padding: 3px;
+                border: 1px solid $borders__color;
+                @include transition( $transition__speed );
+
+                &:hover {
+                    @include opacity( $images__hover-opacity );
+                }
+
+            }
+
+        }
+
+        &:first-child {
+            border-top: 1px solid $borders__color-light;
+            padding-top: 20px;
+
+            a.avatar {
+                top: 20px;
+            }
+
+        }
+
+    }
+
+}
+
+// Footer edits
+.site-footer .wpex-recent-comments-widget li a.avatar {
+    border-color: $borders__color-footer;
+    border-color: $borders__color-footer-rgba;
+}
+
+.site-footer .wpex-recent-comments-widget strong {
+    color: #fff;
+}

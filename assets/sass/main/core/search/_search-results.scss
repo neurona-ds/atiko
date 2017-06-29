@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+[Search Results]
+-------------------------------------------------------------------*/
+#search-no-results { 
+    font-size: 1.231em;
+    margin-bottom: 20px;
+}
+
+.search-entry {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $borders__color-light;
+    padding-left: 130px;
+    min-height: 120px;
+}
+
+.search-entry-header-title {
+    font-size: 1.313em;
+    margin: 0 0 10px;
+}
+
+.search-entry-no-thumb {
+    padding-left: 0;
+    min-height: 0;
+}
+
+.search-entry-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+
+    img {
+        display: block;
+        width: 100%;
+
+        &:hover {
+            @include opacity( $images__hover-opacity );
+        }
+
+    }
+
+}
+
+.search-entry-text p:last-child {
+    margin: 0
+}

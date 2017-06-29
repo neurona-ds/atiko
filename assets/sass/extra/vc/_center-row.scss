@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# VC > Center Rows (somewhat deprecated in 4.0)
+--------------------------------------------------------------*/
+.center-row-inner {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.boxed-main-layout .wpex-vc-row-centered.vc_row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/*
+
+	@deprecated in 4.0 becasue it's not possible to have centered row unless it's a full-screen page
+
+	.content-right-sidebar .container.center-row,
+	.content-left-sidebar .container.center-row,
+	.content-full-width .container.center-row,
+	.content-no-sidebar  .container.center-row {
+		width: 100% !important;// Only needed for full-screen layouts
+	}
+
+
+*/
+

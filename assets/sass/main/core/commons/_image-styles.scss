@@ -1,0 +1,67 @@
+/* Image Styles */
+.wpex-rounded-images figure img,
+.wpex-rounded-images figure .theme-overlay,
+.wpex-rounded-images figure .wpex-image-hover {
+    @include border-radius( 50% );
+}
+
+.stretch-image img,
+img.stretch-image {
+    display: block;
+    width: 100% !important;
+}
+
+body #wrap .image-filter-grayscale img {
+    @include opacity( 1 );
+}
+
+.image-filter-grayscale {
+    -webkit-transform: translateZ();
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(100%);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    -webkit-backface-visibility: hidden;
+    @include transition( all .25s ease );
+}
+
+.image-filter-grayscale:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.image-shadow {
+    background: #fff;
+    @include box-shadow( 0px 1px 3px rgba( 0, 0, 0, 0.1 ) );
+}
+
+.image-border {
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+
+.image-rounded {
+    background: #fff;
+    @include border-radius( 3px );
+}
+
+.image-circle {
+    background: #fff;
+    @include border-radius( 50% );
+}
+
+.image-fancy {
+    background: #fff;
+    padding: 4px;
+    border: 1px solid #ddd;
+	@include border-radius( 50% );
+}
+
+.image-hover:hover, .image-fancy:hover {
+    @include opacity( 0.8 );
+    @include box-shadow( 0px 1px 5px rgba(0,0,0,0.2) );
+}

@@ -1,0 +1,21 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : bbPress styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// SASS partials
+@import "bbpress/forum";
+@import "bbpress/search";
+@import "bbpress/notices";
+@import "bbpress/forms";
+@import "bbpress/widgets";
+@import "bbpress/profile";
+@import "bbpress/font-awesome";
+@import "bbpress/responsive";
+@import "bbpress/hide";

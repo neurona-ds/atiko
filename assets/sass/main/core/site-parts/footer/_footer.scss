@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------
+[Site Footer]
+-------------------------------------------------------------------*/
+#footer a,
+#footer-bottom a {
+    @include transition( $transition__speed );
+}
+
+.site-footer {
+    background: $background__footer;
+    color: $text__color-footer;
+}
+
+.footer-builder-content.entry {
+    margin-bottom: 0;
+}
+
+.site-footer-inner {
+    padding-top: 45px;
+}
+
+.single-col-footer .col {
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
+}
+
+.site-footer ul {
+    margin: 0;
+}
+
+.site-footer .col {
+    margin-bottom: 0;
+}
+
+.full-screen-post .site-footer {
+    margin-top: 0;
+}
+
+.site-footer .widget_recent_entries li,
+.site-footer .widget_categories li {
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+/* Footer > Typography */
+.site-footer p {
+    color: $text__color-footer;
+}
+
+.site-footer-widgets {
+    position: relative;
+}
+
+.site-footer a,
+.site-footer strong {
+    color: $link__color-footer;
+}
+
+.site-footer a:hover {
+    color: $link__color-footer-hover;
+    text-decoration: none;
+}
+
+.site-footer button,
+.site-footer .color-button,
+.site-footer .theme-button {
+    color: $link__color-footer-hover;
+}

@@ -1,0 +1,10 @@
+/*------------------------------------------------------------------
+[# bbPress > Font Awesome Icons]
+-------------------------------------------------------------------*/
+.bbp-body a.bbp-forum-title:before,
+.bbp-body a.bbp-topic-permalink:before,
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a:after,
+#bbpress-forums .subscription-toggle:before,
+#bbpress-forums #favorite-toggle a:before {
+	@include font_awesome__css;
+}

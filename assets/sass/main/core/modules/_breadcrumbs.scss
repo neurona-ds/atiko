@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------
+[Breadcrumbs]
+-------------------------------------------------------------------*/
+.site-breadcrumbs {
+	font-size: 0.9em;
+	color: #bcbcbc;
+	
+	a {
+		color: #333;
+	}
+
+	.breadcrumb-trail {
+		display: inline-block;
+	}
+
+	.breadcrumb-title {
+		margin-right: 5px;
+	}
+
+	.fa {
+		margin: 0 3px;
+	}
+
+	.trail-begin .fa {
+		margin: 0 5px 0 0;
+	}
+
+	// Absolute position
+	&.position-absolute {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -16px;
+		height: 32px;
+		line-height: 32px;
+	}
+
+	// Under Title Position
+	&.position-under-title {
+		padding-top: 5px;
+	}
+
+	// Hide breadcrumbs in these places
+	.background-image-page-header & {
+		display: none;
+		position: relative;
+		z-index: 2;
+		margin: 0;
+		padding-top: 10px;
+		text-align: center;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+
+
+}

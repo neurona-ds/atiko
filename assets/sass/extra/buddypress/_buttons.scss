@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------
+[# BuddyPress > Buttons]
+-------------------------------------------------------------------*/
+
+// Gray buttons
+#buddypress .comment-reply-link,
+#buddypress .standard-form button,
+#buddypress a.button,
+#buddypress div.generic-button a,
+#buddypress input[type=button],
+#buddypress input[type=reset],
+#buddypress input[type=submit],
+#buddypress ul.button-nav li a {
+	border-color: $borders__color-light;
+}
+
+#buddypress .comment-reply-link:hover,
+#buddypress .standard-form button:hover,
+#buddypress a.button:focus,
+#buddypress a.button:hover,
+#buddypress div.generic-button a:hover,
+#buddypress input[type=button]:hover,
+#buddypress input[type=reset]:hover,
+#buddypress input[type=submit]:hover,
+#buddypress ul.button-nav li a:hover,
+#buddypress ul.button-nav li.current a {
+	background-color: $background__light-gray;
+	border-color: $borders__color;
+}
+
+#buddypress #reply-title small a span,
+#buddypress a.bp-primary-action span {
+	background-color: #999;
+	&:hover {
+		background-color: #888;
+	}
+}
+
+#buddypress #reply-title small a:hover span,
+#buddypress a.bp-primary-action:hover span {
+	background-color: #888;
+}
+
+// Blue Buttons
+#buddypress {
+
+	#aw-whats-new-submit,
+	.comment-reply-link {
+		@include button_styles;
+
+		&:hover {
+			@include button_styles-hover;
+		}
+
+	}
+
+}

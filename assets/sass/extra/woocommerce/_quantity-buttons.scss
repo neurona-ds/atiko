@@ -1,0 +1,65 @@
+/*------------------------------------------------------------------
+[Quantity Buttons]
+-------------------------------------------------------------------*/
+.woocommerce {
+
+	.quantity.buttons_added {
+	    position: relative;
+	    overflow: hidden;
+	    zoom: 1;
+	    border: 1px solid #e4e4e4;
+	    float: left;
+	}
+
+	.quantity.buttons_added input::-webkit-outer-spin-button,
+	.quantity.buttons_added input::-webkit-inner-spin-button {
+	    display: none;
+	}
+
+	.quantity.buttons_added input[type=number] {
+	    -moz-appearance: textfield;
+	    background: #fff;
+	    padding: 0;
+	}
+
+	.quantity input[type=number],
+	.quantity.buttons_added .minus,
+	.quantity.buttons_added .plus,
+	.quantity.buttons_added .qty {
+	    display: block;
+	    float: left;
+	    height: 24px;
+	    width: 24px;
+	    line-height: 24px;
+	    border: 0;
+	    border-radius: 0;
+	    margin: 0;
+	    padding: 0;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-size: 0.923em;
+	    color: #777;
+	    background: #f9f9f9;
+	    cursor: pointer;
+	    outline: none;
+	    -webkit-appearance: none;
+	    @include transition( $transition__speed );
+	}
+
+	.quantity.buttons_added .minus:hover,
+	.quantity.buttons_added .plus:hover {
+	    background: $background__light-gray;
+	    color: #000;
+	}
+
+	.quantity.buttons_added .minus,
+	.quantity.buttons_added .qty {
+	    border-right: 1px solid $borders__color;
+	}
+
+	.quantity input[type=number] {
+	    background: #fff;
+	    border: 1px solid #e4e4e4;
+	}
+
+}

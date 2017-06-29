@@ -1,0 +1,134 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Gravity Forms tweaks
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+.gform_wrapper {
+	
+	// Required field
+	.gfield_required {
+		color: red;
+	}
+	
+	// Paddings
+	input[type=email],
+	input[type=number],
+	input[type=password],
+	input[type=tel],
+	input[type=text],
+	input[type=url],
+	textarea {
+		padding: .6em;
+	}
+
+	// Labels
+	.top_label .gfield_label {
+		font-weight: normal;
+		margin: 0 0 5px;
+	}
+	.gfield_date_day label,
+	.gfield_date_month label,
+	.gfield_date_year label,
+	.gfield_time_ampm label,
+	.gfield_time_hour label,
+	.gfield_time_minute label,
+	.ginput_complex label,
+	.instruction {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	
+	// Add margin to li elements
+	ul li.gfield {
+		margin-bottom: 15px;
+	}
+
+	// Textarea form sizes
+	textarea {
+	
+		&.small {
+			width: 47.5%;
+		}
+
+		&.medium {
+			width: 60%;
+		}
+
+		&.large {
+			width: 100%;
+		}
+
+	}
+	
+	// Validation errors
+	div.validation_error {
+		border: 0;
+		padding: 20px;
+		font-size: 1em;
+		font-weight: normal;
+		background: #f7f7f7;
+		color: #515151;
+		border: 1px solid #eee;
+		border-top: 4px solid #b81c23;
+	}
+	
+	li.gfield.gfield_error,
+	li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+		background: none;
+		border: 0;
+		padding: 0;
+	}
+
+	li.gfield.gfield_error.gfield_contains_required  {
+
+		div.gfield_description, div.ginput_container, fieldset legend.gfield_label, label.gfield_label {
+			margin-left: 0;
+		}
+
+	}
+
+	li.gfield_error {
+
+		input[type=email],
+		input[type=number],
+		input[type=password],
+		input[type=tel],
+		input[type=text],
+		input[type=url],
+		textarea {
+			border-color: #b81c23; // Add red border color to error fields
+		}
+
+	}
+
+	// Validation method
+	.validation_message{
+		color: #b81c23;
+		font-weight: 600;
+	}
+
+}
+
+// Confirmation Message
+.gform_confirmation_message {
+	border: 0;
+	padding: 20px;
+	font-size: 1em;
+	font-weight: normal;
+	background: #f7f7f7;
+	color: #515151;
+	border: 1px solid #eee;
+	border-top: 4px solid #8fae1b;
+}
+
+// Form styles
+body .light-form .gform_wrapper .gfield_required,
+body .light-form .gform_wrapper .gfield_error .gfield_label {
+	color: #fff;
+}

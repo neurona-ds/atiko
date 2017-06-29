@@ -1,0 +1,226 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Tribe Events Community Add-on Styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+/*------------------------------------------------------------------
+[# Fixes]
+-------------------------------------------------------------------*/
+#tribe-community-events {
+	font-family: inherit;
+}
+
+.single-tribe_events .vc_inline-link,
+.single-tribe_events .hide-post-edit {
+	display: none;
+}
+
+/*------------------------------------------------------------------
+[# Notices]
+-------------------------------------------------------------------*/
+#tribe-community-events div.updated,
+#tribe-community-events div.error {
+	text-align: center;
+	font-size: 1.077em;
+	text-shadow: none;
+	padding: 0.6em;
+}
+
+#tribe-events #message.update {
+	padding: 20px;
+	background-color: $background__light-gray;
+	border: 1px solid $borders__color-light;
+}
+
+#tribe-events #message.update p:last-child {
+	margin: 0;
+}
+
+/*------------------------------------------------------------------
+[# Buttons]
+-------------------------------------------------------------------*/
+#my-events .button,
+#add-new .button,
+.table-menu-btn {
+	display: inline-block;
+	color: $buttons__color;
+	padding: $buttons__padding;
+	margin: 0;
+	font-size: $buttons__font-size;
+	font-weight: normal;
+	outline: none;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-family: inherit;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: inherit;
+	@include transition( $buttons__transition-speed );
+	@include border-radius( $buttons__border-radius );
+	text-decoration: none !important;
+}
+
+#add-new,
+#my-events {
+	margin-right: 10px;
+}
+
+/*------------------------------------------------------------------
+[# Edit Events]
+-------------------------------------------------------------------*/
+.tribe-events-community-details {
+	background-color: $background__light-gray;
+	font-size: 1em;
+	border: 1px solid $borders__color-light;
+	padding: 15px;
+}
+
+#tribe-community-events h4 {
+	margin: 0 0 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+	font-weight: 600;
+	font-size: 1.15em;
+	text-transform: none;
+}
+
+#tribe-community-events form {
+	margin-top: 15px;
+}
+
+#tribe-community-events label {
+	font-size: 1em;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.tribe-events-community-details input[type="date"],
+.tribe-events-community-details input[type="time"],
+.tribe-events-community-details input[type="datetime-local"],
+.tribe-events-community-details input[type="week"],
+.tribe-events-community-details input[type="month"],
+.tribe-events-community-details input[type="text"],
+.tribe-events-community-details input[type="email"],
+.tribe-events-community-details input[type="url"],
+.tribe-events-community-details input[type="password"],
+.tribe-events-community-details input[type="search"],
+.tribe-events-community-details input[type="tel"],
+.tribe-events-community-details input[type="number"],
+.tribe-events-community-details textarea {
+	border-color: #ddd;
+}
+
+#tribe-community-events .events-community-post-content {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+#tribe-community-events .events-community-post-content textarea,
+#tribe-community-events .events-community-post-title input {
+	width: 100%;
+}
+
+.tribe-events-community-details .timeofdayoptions select {
+	margin: 0 3px;
+}
+
+.tribe-events-community-details #EventCurrencyPosition {
+	margin-left: 10px;
+}
+
+.tribe-events-community-details .ui-sortable-handle,
+.tribe-events-community-details .move-linked-post-group {
+	margin-right: 6px;
+	@include opacity( 0.7 );
+}
+
+.tribe-events-community-details .ui-sortable-handle:hover,
+.tribe-events-community-details .move-linked-post-group:hover {
+	@include opacity( 1 );
+}
+
+.tribe-events-community-details .new-tribe_organizer tr.saved-linked-post > td {
+	padding-top: 30px;
+}
+
+.tribe-events-community-details .delete-linked-post-group:hover {
+	text-decoration: none;
+}
+
+#EventBriteDetailDiv small,
+.tribe-community-event-info small,
+#tribe-community-events .eventForm small.note {
+	font-size: 0.923em;
+}
+
+#tribe-community-events .eventForm small.note,
+.tribe-events-community-details .edit-venue-link {
+	padding-top: 6px;
+}
+
+#tribe-community-events .tribe-events-community-footer,
+#tribe-community-events p.login-submit {
+	text-align: right;
+}
+
+/*------------------------------------------------------------------
+[# My events]
+-------------------------------------------------------------------*/
+#tribe-community-events .table-menu-wrapper {
+	float: left;
+}
+
+.my-events-table-wrapper {
+	background: none;
+}
+
+#tribe-community-events .my-events-display-options {
+	margin-bottom: 5px;
+}
+
+#tribe-community-events table.events-community {
+	width: 100%;
+}
+
+#tribe-community-events table.events-community td,
+#tribe-community-events table.events-community th {
+	border: 1px solid #e7e7e7;
+	text-align: left;
+	padding: 0.857em;
+}
+
+#tribe-community-events table.events-community thead {
+	background: #f9f9f9;
+	color: #222;
+}
+
+#tribe-community-events table.events-community td span.title {
+	font-weight: 600;
+	display: block;
+}
+
+#tribe-community-events table.events-community th {
+	color: #444;
+	font-weight: 600;
+}
+
+/*------------------------------------------------------------------
+[# Accents]
+-------------------------------------------------------------------*/
+#my-events .button,
+#add-new .button,
+.table-menu-btn {
+	background: $accent__main;
+}
+
+#my-events .button:hover,
+#add-new .button:hover,
+.table-menu-btn:hover {
+	background: $accent__main-hover;
+}

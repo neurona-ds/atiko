@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------
+[Bullets]
+-------------------------------------------------------------------*/
+.vcex-bullets {
+
+    ul {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        list-style: none !important;
+        list-style-image: none !important;
+
+        li {
+            padding-left: 25px !important;
+            margin-bottom: 6px;
+        }
+
+    }
+
+    .vcex-icon {
+        margin-right: 0.5em;
+    }
+    
+    &.custom-icon ul li {
+        padding-left: 0 !important;
+    }
+
+}
+
+// Styles
+.vcex-bullets-check ul li {
+    background: url(#{$images__path}/check.png) left center no-repeat;
+}
+
+.vcex-bullets-gray ul li {
+    background: url(#{$images__path}/bullets-gray.png) left center no-repeat;
+}
+
+.vcex-bullets-black ul li {
+    background: url(#{$images__path}/bullets-black.png) left center no-repeat;
+}
+
+.vcex-bullets-blue ul li {
+    background: url(#{$images__path}/bullets-blue.png) left center no-repeat;
+}
+
+.vcex-bullets-red ul li {
+    background: url(#{$images__path}/bullets-red.png) left center no-repeat;
+}
+
+.vcex-bullets-purple ul li {
+    background: url(#{$images__path}/bullets-purple.png) left center no-repeat;
+}

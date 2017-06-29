@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------
+[Modern Custom Menu Widget]
+-------------------------------------------------------------------*/
+.modern-menu-widget {
+    margin: 0;
+    border: 1px solid $borders__color-light;
+    border-radius: 3px;
+
+    a {
+        display: block;
+        position: relative;
+        padding: pem( 7 ) 30px pem( 7 ) pem( 10 );
+        color: #777;
+        @include transition( all 0.25s ease );
+
+        > .fa {
+            margin-right: 8px;
+        }
+
+        &:after {
+            display: block;
+            font-family: "FontAwesome";
+            content: "\f054";
+            position: absolute;
+            right: 0;
+            width: 30px;
+            text-align: center;
+            top: 50%;
+            margin-top: -6px;
+            height: 12px;
+            line-height: 12px;
+            font-size: pem( 12 );
+            color: #bbb;
+            overflow: visible;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $accent__main-text;
+            background: $background__xtralight-gray;
+        }
+
+    }
+
+    li {
+        border-bottom: 1px solid $borders__color-light;
+
+        &.current-menu-item a {
+            color: #fff;
+            margin: 0 -1px;
+
+            &:after {
+                color: #fff;
+            }
+
+        }
+
+        // Sub-drops
+        ul {
+            border-top: 1px solid $borders__color-light;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+    }
+
+    // Border radius
+    > li:first-child > a {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    > li:last-child > a {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    // Sidebar styles
+    body.content-right-sidebar & li a {
+        padding-left: 30px;
+        padding-right: 0.769em;
+    }
+
+    body.content-right-sidebar & a:after {
+        left: 0;
+        right: auto;
+        content: "\f053";
+    }
+
+}

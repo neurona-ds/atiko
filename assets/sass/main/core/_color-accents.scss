@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------
+[Accent Colors]
+-------------------------------------------------------------------*/
+
+// Background
+.wpex-accent-bg,
+.background-highlight,
+input[type="submit"],
+.theme-button,
+button,
+#main .tagcloud a:hover,
+.post-tags a:hover,
+.wpex-carousel .owl-dot.active,
+#site-navigation .menu-button > a > span.link-inner,
+.wpex-carousel .owl-prev,
+.wpex-carousel .owl-next {
+	background: $accent__main;
+	color: #fff;
+}
+
+// Background Hover
+.modern-menu-widget li.current-menu-item a,
+#wp-calendar caption,
+#site-scroll-top:hover,
+input[type="submit"]:hover,
+.theme-button:hover,
+button:hover,
+.wpex-carousel .owl-prev:hover,
+.wpex-carousel .owl-next:hover,
+#site-navigation .menu-button > a > span.link-inner:hover {
+	background: $accent__main-hover;
+}
+
+// Text Color
+.wpex-accent-color,
+a.wpex-accent-color,
+#site-navigation .dropdown-menu a:hover,
+#site-navigation .dropdown-menu > .current-menu-item > a,
+#site-navigation .dropdown-menu > .current-menu-parent > a,
+h1 a:hover,
+h2 a:hover,
+a:hover h2,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.entry-title a:hover {
+	color: $accent__main-text;
+}
+
+// Borders
+.theme-heading.border-w-color span.text {
+	border-bottom-color: $accent__main-border;
+}
+
+#searchform-dropdown {
+	border-color: $accent__main-border;
+}
+
+.toggle-bar-btn:hover {
+	border-top-color: $accent__main-border;
+	border-right-color: $accent__main-border;
+}
+
+.wpex-dropdown-top-border #site-navigation .dropdown-menu li ul {
+	border-top-color: $accent__main-border;
+}

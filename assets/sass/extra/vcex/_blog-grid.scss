@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------
+[Blog Grid]
+-------------------------------------------------------------------*/
+.vcex-blog-entry-details {
+	padding: 20px;
+	border: 1px solid $borders__color-light;
+}
+
+.vcex-blog-entry-date {
+	font-size: pem( 12 );
+	color: #777;
+	list-style: none;
+	margin: 0 0 5px;
+}

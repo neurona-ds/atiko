@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+[Header Cart Dropdown]
+-------------------------------------------------------------------*/
+#current-shop-items-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    z-index: 10000;
+    max-height: 400px;
+    width: 260px;
+    overflow-y: auto;
+    visibility: hidden;
+    border-top: 3px solid transparent;
+    @include opacity( 0 );
+    @include box-shadow( 0 2px 7px rgba(0,0,0,0.1) )
+    @include transition( all 0.25s ease-in-out )
+
+    &.show {
+        visibility: visible;
+        @include opacity( 1 );
+    }
+
+    #current-shop-items-inner {
+        padding: 10px 20px 20px; 
+    }
+
+}
+
+#current-shop-items-dropdown
+
+.boxed-main-layout #current-shop-items-dropdown {
+    right: $boxed__layout-inner-padding; // Offset boxed layout inner padding
+}
+
+#current-shop-items-dropdown .widgettitle {
+    display: none !important;
+}
+
+#current-shop-items-dropdown li:first-child {
+    border-top: none;
+}
+
+#current-shop-items-dropdown ul.product_list_widget li.empty {
+    text-align: center;
+}
+
+#current-shop-items-dropdown .widget_shopping_cart_content .buttons {
+    padding-bottom: 0;
+}

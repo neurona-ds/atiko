@@ -1,0 +1,378 @@
+/*------------------------------------------------------------------
+[Image Overlays] @todo Finish Sass
+-------------------------------------------------------------------*/
+.overlay-parent {
+	position: relative;
+	display: block;
+	overflow: hidden;
+
+	> a,
+	> a img,
+	> img {
+		display: block;
+		width: 100% !important;
+	}
+
+}
+
+.overlay-table {
+	display: table;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.overlay-table-cell {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.overlay-hide {
+	visibility: hidden;
+	@include opacity( 0 );
+}
+
+.overlay-parent:hover .overlay-hide,
+.overlay-parent.wpex-touched .overlay-hide {
+	visibility: visible;
+	@include opacity( 1 );
+}
+
+/* Overlays > Title Centered */
+.overlay-title-center {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	letter-spacing: 0.2rem;
+	padding: 10px;
+	@include transition( background 0.25s );
+
+	&:hover .overlay-title-center {
+		background: rgba(0,0,0,0.3);
+	}
+
+}
+
+/* Overlays > Magnifying Hover */
+.magnifying-hover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,0.7);
+	@include transition( all .25s ease-in-out );
+
+	.fa {
+		position: absolute;
+		height: 30px;
+		line-height: 30px;
+		width: 30px;
+		text-align: center;
+		top: 50%;
+		margin-top: -15px;
+		left: 50%;
+		margin-left: -15px;
+		color: #fff;
+		font-size: 21px;
+	}
+
+}
+
+/* Overlays > Plus Hover */
+.overlay-plus-hover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000 url("assets/images/overlay-plus.png") center center no-repeat;
+	@include transition( all .25s ease-in-out );
+}
+
+.overlay-parent:hover .overlay-plus-hover {
+	@include opacity( 0.65 );
+}
+
+/* Overlays > Plus #2 Hover */
+.overlay-plus-two-hover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	@include transition( all .25s ease-in-out );
+
+	.fa {
+		position: absolute;
+		height: 30px;
+		line-height: 30px;
+		width: 30px;
+		text-align: center;
+		top: 50%;
+		margin-top: -15px;
+		left: 50%;
+		margin-left: -15px;
+		color: #fff;
+		font-size: 14px;
+	}
+
+}
+
+/* Overlays > Plus #3 Hover */
+.overlay-plus-three-hover {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	background: rgba(0,0,0,0.6);
+	@include transition( all .3s );
+
+	.fa {
+		position: absolute;
+		height: 30px;
+		line-height: 30px;
+		width: 30px;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		margin-left: -15px;
+		font-size: 36px;
+		visibility: none;
+		@include opacity( 0 );
+		@include transition( all .3s );
+	}
+
+}
+
+.overlay-plus-three-hover:hover .fa,
+.overlay-parent.wpex-touched .overlay-plus-three-hover .fa {
+	visibility: visible;
+	margin-top: -15px;
+	@include opacity( 1 );
+}
+
+/* Overlays > Slide Up Title */
+.overlay-slideup-title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
+	height: 100%;
+	width: 100%;
+	font-size: 1em;
+	@include transition( all .25s ease-in-out );
+
+	&.white {
+		background: #fff;
+	}
+
+	&.black {
+		background: #000;
+	}
+
+	span.title {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		padding: 0 30px;
+		color: #000;
+		font-size: 1.077em;
+		font-weight: 600;
+		line-height: 1.6em;
+		@include transition( all .15s ease-in-out );
+	}
+
+	&.black span.title {
+		color: #fff;
+	}
+
+}
+
+.overlay-parent:hover .overlay-slideup-title,
+.overlay-parent.wpex-touched .overlay-slideup-title {
+	@include opacity( 0.8 );
+}
+
+.overlay-parent:hover .overlay-slideup-title span.title,
+.overlay-parent.wpex-touched .overlay-slideup-title span.title {
+	bottom: 60px;
+}
+
+/* Overlays > View/Lightbox > Buttons */
+.overlay-view-lightbox-buttons {
+	background: #000;
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	@include transition( opacity .25s ease-in-out );
+
+	a {
+		display: inline-block;
+		color: #fff;
+		border: 2px solid #fff;
+		padding: 0 10px;
+		height: 32px;
+		line-height: 32px;
+		@include border-radius( 3px );
+		@include transition( all .2s ease-in-out );
+
+		&:first-child {
+			margin-right: 5px
+		}
+
+		&:hover {
+			background: #fff;
+			color: #000;
+			text-decoration: none;
+		}
+
+		.fa {
+			position: relative;
+			top: -2px;
+		}
+
+	}
+
+}
+
+.blog-entry-inner .overlay-view-lightbox-buttons a {
+	@include box-sizing( content-box );
+}
+
+/* Overlays > View/Lightbox > Text */
+.overlay-view-lightbox-text {
+	background: #000;
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	@include transition( all .25s ease-in-out );
+
+	a {
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		border: 2px solid #fff;
+		padding: 0 14px;
+		height: 30px;
+		line-height: 30px;
+		text-transform: uppercase;
+		font-size: 0.846em;
+		font-weight: 600;
+		letter-spacing: 1px;
+		@include border-radius( 3px );
+		@include transition( all .15s ease-in-out );
+	}
+
+}
+
+.overlay-view-lightbox-text a:first-child { margin-right: 5px }
+
+.overlay-view-lightbox-text a:hover { background: #fff; color: #000; text-decoration: none; padding-right: 32px; }
+
+.overlay-view-lightbox-text a .fa { visibility: hidden; position: absolute; top: 0; height: 30px; line-height: 30px; right: 14px; }
+.overlay-view-lightbox-text a:hover .fa { visibility: visible }
+
+/* Overlays > Title + Excerpt Hover */
+.overlay-title-excerpt-hover { background: #000; background: rgba(0,0,0,0.75); position: absolute; top: 0; right: 0; height: 100%; width: 100%; transition: all .25s ease-in-out; overflow: hidden; color: #fff; font-weight: 600; }
+.overlay-title-excerpt-hover .overlay-table-cell { padding: 20px; transition: all 0.15s linear; transform: scale(1.3); }
+.overlay-title-excerpt-hover:hover .overlay-table-cell,
+.overlay-parent.wpex-touched .overlay-title-excerpt-hover .overlay-table-cell { transform: none }
+.overlay-title-excerpt-hover .overlay-title { font-size: 1.231em; margin: 0 0 10px; }
+.overlay-title-excerpt-hover .overlay-excerpt { font-style: italic; font-weight: normal; color: #bbb; overflow: hidden; }
+
+/* Overlays > Title + Category Hover */
+.overlay-title-category-hover { background: #000; background: rgba(0,0,0,0.75); position: absolute; top: 0; right: 0; height: 100%; width: 100%; transition: all .25s ease-in-out; color: #fff; font-weight: 600; }
+.overlay-title-category-hover .overlay-table-cell { padding: 20px; transition: all 0.15s linear; transform: scale(1.3); }
+.overlay-title-category-hover:hover .overlay-table-cell,
+.overlay-parent.wpex-touched .overlay-title-category-hover .overlay-table-cell { transform: none }
+.overlay-title-category-hover .overlay-title { font-size: 1.231em }
+.overlay-title-category-hover .overlay-terms { font-style: italic; font-weight: normal; color: #bbb; }
+
+/* Overlays > Title + Category Visible */
+.overlay-title-category-visible { background: #000; background: rgba(0,0,0,0.5); position: absolute; top: 0; right: 0; height: 100%; width: 100%; color: #fff; font-weight: 600;  }
+.overlay-title-category-visible .overlay-table-cell { padding: 20px; }
+.overlay-title-category-visible .overlay-title { font-size: 1.231em }
+.overlay-title-category-visible .overlay-terms { color: #fff; font-weight: normal; -webkit-font-smoothing: antialiased; }
+
+/* Overlays > Title + Date Hover */
+.overlay-title-date-hover { background: #000; background: rgba(0,0,0,0.75); position: absolute; top: 0; right: 0; height: 100%; width: 100%; transition: all .25s ease-in-out; color: #fff; }
+.overlay-title-date-hover .overlay-table-cell { padding: 20px; transition: all 0.15s linear; transform: scale(1.3); }
+.overlay-title-date-hover:hover .overlay-table-cell,
+.overlay-parent.wpex-touched .overlay-title-date-hover .overlay-table-cell { transform: none }
+.overlay-title-date-hover .overlay-title { font-size: 1.231em; font-weight: 600; }
+.overlay-title-date-hover .overlay-date { font-style: italic; font-weight: 400; color: #bbb; }
+
+/* Overlays > Title + Date Visible */
+.overlay-title-date-visible { background: #000; background: rgba(0,0,0,0.5); position: absolute; top: 0; right: 0; height: 100%; width: 100%; color: #fff; }
+.overlay-title-date-visible .overlay-table-cell { padding: 20px; }
+.overlay-title-date-visible .overlay-title { font-size: 1.231em; font-weight: 600; }
+.overlay-title-date-visible .overlay-date { -webkit-font-smoothing: antialiased; font-weight: 400; }
+
+/* Overlays > Title Push Up */
+.overlay-parent-title-push-up,
+.overlay-parent-title-push-up > a { overflow: hidden; position: relative; -webkit-backface-visibility: hidden; }
+.overlay-parent-title-push-up img { transition: all 0.35s }
+.overlay-title-push-up { display: block; background: #000; color: #fff; padding: 15px 20px; position: absolute; bottom: -100px; left: 0; width: 100%; transition: 0.35s all; font-size: 1.077em; -webkit-backface-visibility: hidden; word-wrap: break-word; }
+
+/* Overlays > Title Bottom */
+.overlay-title-bottom,
+.overlay-title-bottom-see-through { display: block; background: #000; color: #fff; padding: 10px 20px; position: absolute; bottom: 0; left: 0; width: 100%; font-size: 1.077em; }
+.overlay-title-bottom-see-through { background: rgba(0,0,0,0.6) }
+
+/* Overlays > Button */
+.overlay-hover-button { background: #000; background: rgba(0,0,0,0.75); position: absolute; top: 0; right: 0; height: 100%; width: 100%; transition: all .25s ease-in-out; }
+.overlay-hover-button-text { color: #fff; font-weight: 600; padding: 20px; transition: all 0.15s linear; transform: scale(1.3); }
+.overlay-parent:hover .overlay-hover-button-text,
+.overlay-parent.wpex-touched .overlay-parent .overlay-hover-button-text{ transform: none }
+.theme-button.overlay-hover-button-link { font-size: 1.077em }
+
+/* Overlays > Category Tag */
+.overlay-category-tag { position: absolute; left: 0; top: 0; margin: 0; z-index: 10; }
+.overlay-category-tag a { display: block; float: left; font-size: 0.846em; font-weight: 600; padding: 0.308em 0.615em; margin-right: 5px; margin-bottom: 5px; text-transform: uppercase; transition: 0.15s all; -moz-transition: 0.15s all; -webkit-transition: 0.15s all; color: #fff; background: #000; background: rgba( 0, 0, 0, 0.65 ); }
+.overlay-category-tag a:hover { background: #000; text-decoration: none; }
+
+/* Overlays > Category Tag v2 */
+.overlay-category-tag-two { position: absolute; left: 20px; top: 20px; margin: 0; z-index: 10; }
+.overlay-category-tag-two a { display: block; float: left; font-size: 0.846em; font-weight: 600; padding: 0.308em 0.923em; margin-right: 5px; margin-bottom: 5px; text-transform: uppercase; transition: 0.15s all; -webkit-transition: 0.15s all; color: #fff; border: 2px solid #fff; border-color: rgba(255,255,255,0.5); border-radius: 40px; -moz-border-radius: 40px; letter-spacing: 1px; }
+.overlay-category-tag-two a:hover { background: #fff; color: #000; text-decoration: none; }
+
+/* Overlays > Categories + Title Bottom Visible */
+.overlay-cats-title-btm-v { position: absolute; bottom: 0; width: 100%; background: #000; background: rgba(0,0,0,0.5); padding: 16px; color: #fff; }
+.overlay-cats-title-btm-v-cats { font-style: italic; font-size: 0.923em; opacity: 0.7; -moz-opacity: 0.7; -webkit-opacity: 0.7; }
+.overlay-cats-title-btm-v-cats a { color: #fff; }
+.overlay-cats-title-btm-v .entry-title { font-size: 1.154em; color: #fff !important; }
+.overlay-cats-title-btm-v .entry-title:hover { text-decoration: none; }
+
+/* Overlays > Thumb Swap */
+.overlay-parent-thumb-swap { position: relative; overflow: hidden; }
+.overlay-thumb-swap-secondary { visibility: none; opacity: 0; position: absolute; top: 0; left: 0; height: 100%; z-index: 1; -webkit-transition: opacity 0.25s ease-in-out; -moz-transition: opacity 0.25s ease-in-out; -o-transition: opacity 0.25s ease-in-out; transition: opacity 0.25s ease-in-out; width: 100%; overflow: hidden; }
+.overlay-thumb-swap-secondary img { display: block; }
+.overlay-parent-thumb-swap:hover .overlay-thumb-swap-secondary,
+.overlay-parent.wpex-touched .overlay-parent-thumb-swap .overlay-thumb-swap-secondary{ visibility: visible; opacity: 1; z-index: 2; }
+
+/* Overlays > Icon Overlay */
+.overlay-icon { display: none; position: absolute; top: 50%; left: 50%; margin-top: -20px; margin-left: -20px; height: 40px; line-height: 40px; width: 40px; text-align: center; font-size: 13px; background: #000; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; box-sizing: content-box; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; color: #fff; opacity: 0.7; -moz-opacity: 0.7; -webkit-opacity: 0.7; transition: 0.25s all; }
+.overlay-icon span { display: inline-block; padding-left: 3px; }
+body.wpex-window-loaded .overlay-icon { display: block; }
+.overlay-icon:hover { opacity: 0.9; -moz-opacity: 0.9; -webkit-opacity: 0.9; }

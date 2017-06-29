@@ -1,0 +1,156 @@
+/*------------------------------------------------------------------
+[# Main Layout]
+-------------------------------------------------------------------*/
+
+.container,
+.vc_row-fluid.container {
+	width: $container__width;
+}
+
+body.wpex-responsive {
+
+	.container,
+	.vc_row-fluid.container {
+		max-width: 90%; // Max width when responsive is enabled for fluid layout
+	}
+
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.center-row-inner {
+	margin: 0 -15px;
+}
+
+.content-area {
+	width: 69%;
+	float: left;
+	position: relative;
+}
+
+.content-full-width .content-area,
+.content-area.full-width {
+	width: 100%;
+	max-width: none !important;
+}
+
+#sidebar {
+	width: 26%;
+	float: right;
+}
+
+#outer-wrap {
+	overflow: hidden;
+}
+
+#wrap {
+	position: relative; // VERY IMPORTANT - do not reset
+}
+
+/* Layout & Widths > Full-Width & Full-Screen */
+body.content-full-screen #content-wrap,
+.content-full-screen {
+	width: 100% !important;
+	max-width: none !important;
+}
+
+body.content-full-width #content-wrap .content-area,
+.content-full-width .content-area,
+body.content-full-screen #content-wrap {
+	width: 100% !important;
+	max-width: none !important;
+}
+
+body.content-full-screen #content-wrap .content-area,
+.content-full-screen .content-area {
+	float: none;
+	padding: 0;
+	width: 100% !important;
+	max-width: none !important;
+}
+
+/* Layout & Widths > Left Sidebar */
+body.content-left-sidebar #content-wrap .content-area,
+.content-left-sidebar .content-area {
+	float: right;
+}
+
+body.content-left-sidebar #content-wrap #sidebar,
+.content-left-sidebar #sidebar {
+	float: left;
+}
+
+/* Layout & Widths > Fix Bugs With Containers */
+.content-right-sidebar .vc_row-fluid.container,
+.content-left-sidebar .vc_row-fluid.container,
+.content-right-sidebar .vcex-testimonials-fullslider-entry,
+.content-left-sidebar .vcex-testimonials-fullslider-entry {
+	width: 100% !important;
+}
+
+/* Layout & Widths > Adds Bottom Margin To Non-VC Pages */
+#primary,
+body.has-composer.page-template-blog #primary,
+body.has-composer.post-type-archive-product #primary {
+	padding-bottom: 40px;
+}
+
+body.has-composer #primary,
+body.compose-mode #primary,
+body.single-product #primary,
+body.single-post #primary {
+	padding-bottom: 0;
+}
+
+
+/*------------------------------------------------------------------
+[Boxed layout]
+-------------------------------------------------------------------*/
+.boxed-main-layout {
+	background-color: #ddd;
+
+	#outer-wrap {
+		padding: 40px 30px
+	}
+
+	#wrap {
+		width: $container__width + 60px; // 980 + padding
+		margin: 0 auto;
+		background: #fff;
+
+		.container {
+			width: auto !important;
+			max-width: none !important;
+			padding-left: $boxed__layout-inner-padding;
+			padding-right: $boxed__layout-inner-padding;
+		}
+
+	}
+
+	&.wpex-responsive #wrap {
+		max-width: 100%;
+	}
+
+	&.wrap-boxshadow #wrap {
+		@include box-shadow( 0px 1px 4px rgba( 0, 0, 0, 0.25 ) );
+	}
+
+	&.content-full-screen #content-wrap {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	// Move absolute Items
+	.navbar-style-one {
+		right: $boxed__layout-inner-padding - 4px - 11px; // right padding, minus a padding, minus link-inner padding
+	}
+
+	&.has-mobile-menu #mobile-menu,
+	#footer-bottom-menu,
+	.site-breadcrumbs.position-absolute {
+		right: $boxed__layout-inner-padding;
+	}
+
+}

@@ -1,0 +1,349 @@
+/*------------------------------------------------------------------
+[Icon Box]
+-------------------------------------------------------------------*/
+
+$iconbox__heading__offset: 50px;
+$iconbox__iconwbg__padding: 15px; // Padding for icon with background
+
+/* Icon Boxes > General */
+.vcex-icon-box-css-wrap {
+	display: block !important;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+.vcex-icon-box {
+	position: relative;
+	display: block !important;
+	
+	p {
+		margin: 0 0 10px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+}
+
+.vcex-icon-box-heading {
+	display: block;
+	font-size: $headings__entry__font-size;
+	font-weight: $headings__font-weight;
+	margin: 0 0 10px;
+}
+
+.vcex-icon-box-link {
+	text-decoration: none !important;
+}
+
+.vcex-icon-box-icon.vcex-icon-box-w-bg {
+	text-align: center;
+	vertical-align: middle;
+	padding: $iconbox__iconwbg__padding;
+}
+
+.vcex-icon-box-link-wrap {
+	display: block;
+	text-decoration: none !important;
+	@include transition( all 0.3s );
+}
+
+.vcex-icon-box-link-wrap,
+.vcex-icon-box-link-wrap .vcex-icon-box-content {
+	color: #555;
+}
+
+.vcex-icon-box-icon {
+	font-size: 28px;
+	color: #000;
+	display: inline;
+	display: inline-block;
+	zoom: 1;
+	line-height: 1;
+	text-align: center;
+
+	* {
+		color: inherit; // allows to alter icon color based on VC settings
+	}
+
+}
+
+.vcex-icon-box-image {
+	display: block;
+}
+
+
+/* Icon Boxes > Style 1 : Left Icon */
+.vcex-icon-box-one {
+	padding-left: $iconbox__heading__offset;
+
+	&.vcex-icon-box-wo-icon {
+		padding-left: 0
+	}
+
+	&.vcex-icon-box-w-bg {
+		padding-left: 80px;
+	}
+	
+	&.vcex-icon-box-wo-icon.vcex-icon-box-w-bg {
+		padding-left: $iconbox__iconwbg__padding;
+	}
+
+	.vcex-icon-box-icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.vcex-icon-box-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+}
+
+
+/* Icon Boxes > Style 2 : Top Icon */
+.vcex-icon-box-two {
+	text-align: center;
+
+	.vcex-icon-box-icon {
+		margin: 0 0 20px;
+	}
+
+	.vcex-icon-box-image {
+		margin: 0 auto 20px;
+	}
+
+	&.align-left .vcex-icon-box-image,
+	&.align-right .vcex-icon-box-image {
+		display: inline-block;
+	}
+
+}
+
+
+/* Icon Boxes > Style 3 : Legacy */
+.vcex-icon-box-three {
+	text-align: center;
+
+	.vcex-icon-box-icon {
+		height: 80px;
+		line-height: 80px;
+		width: 80px;
+		font-size: 24px;
+		margin: 0 auto 30px;
+		padding: 0;
+		border-radius: 50%;
+	}
+
+	.vcex-icon-box-link:hover .vcex-icon-box-icon {
+		opacity: 0.85;
+	}
+
+	.vcex-icon-box-image {
+		margin: 0 auto 20px;
+	}
+
+}
+
+
+/* Icon Boxes > Style 4 : Legacy */
+.vcex-icon-box-four {
+	position: relative;
+	text-align: center;
+	padding: 30px;
+	border: 1px solid $borders__color-light;
+
+	.vcex-icon-box-icon {
+		font-size: 28px;
+		margin: 0 0 20px;
+		color: #4d4d4d;
+	}
+
+	.vcex-icon-box-image {
+		margin: 0 auto 20px;
+	}
+
+	.vcex-icon-box-content {
+		margin-top: 15px;
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+		border-color: transparent;
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+
+		.vcex-icon-box-link,
+		.vcex-icon-box-heading,
+		.vcex-icon-box-icon,
+		.vcex-icon-box-content {
+			color: #fff !important;
+		}
+		
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+		background-color: $accent__main;
+		color: #fff;
+	}
+
+}
+
+
+/* Icon Boxes > Style 5 : Legacy */
+.vcex-icon-box-five {
+	text-align: center;
+	padding: 30px;
+	background-color: $background__light-gray;
+
+	.vcex-icon-box-icon {
+		font-size: 32px;
+		margin: 0 0 20px;
+		color: #4d4d4d;
+	}
+
+	.vcex-icon-box-image {
+		margin: 0 auto 20px;
+	}
+
+	.vcex-icon-box-content {
+		margin-top: 15px;
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+
+		.vcex-icon-box-link,
+		.vcex-icon-box-heading,
+		.vcex-icon-box-icon,
+		.vcex-icon-box-content {
+			color: #fff !important;
+		}
+
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+		background-color: $accent__main;
+		color: #fff;
+	}
+
+}
+
+
+
+/* Icon Boxes > Style 6 : Legacy */
+.vcex-icon-box-six {
+	text-align: center;
+	padding: 30px;
+	background-color: #000;
+	transition: all .2s ease-in-out;
+	position: relative;
+	color: #fff;
+
+	p {
+		color: #fff;
+	}
+
+	.vcex-icon-box-icon {
+		font-size: 32px;
+		margin: 0 0 20px;
+		color: #fff;
+	}
+
+	.vcex-icon-box-image {
+		margin: 0 auto 20px;
+	}
+
+	.vcex-icon-box-heading {
+		font-size: 0.923em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #fff;
+	}
+
+	&.vcex-icon-box-link-wrap:hover {
+		position: relative;
+		top: -10px;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+	}
+
+}
+
+.vcex-icon-box-six-link {
+	text-decoration: none !important;
+	color: #555;
+	padding: 30px;
+	display: block;
+}
+
+
+/* Icon Boxes > Style 7 : Right Icon */
+.vcex-icon-box-seven {
+	padding-right: $iconbox__heading__offset;
+	text-align: right;
+
+	&.vcex-icon-box-wo-icon {
+		padding-right: 0;
+	}
+
+	&.vcex-icon-box-w-bg {
+		padding-right: 80px;
+	}
+
+	&.vcex-icon-box-wo-icon.vcex-icon-box-w-bg {
+		padding-left: $iconbox__iconwbg__padding;
+	}
+
+	.vcex-icon-box-icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.vcex-icon-box-icon.vcex-icon-box-w-bg {
+		padding: $iconbox__iconwbg__padding;
+	}
+
+	.vcex-icon-box-image {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+}
+
+/* Icon Boxes > Typography Styles */
+.vcex-skin-light {
+
+	.vcex-icon-box-three .vcex-icon-box-three-icon {
+		background: #fff;
+		color: #4d4d4d;
+	}
+
+	.vcex-icon-box-four {
+		border-color: #fff;
+	}
+
+	.vcex-icon-box-four .vcex-icon-box-four-icon {
+		color: #fff;
+	}
+
+	.vcex-icon-box-four.vcex-icon-hover-enabled:hover {
+		background: #000;
+		background: rgba(0,0,0,0.5) !important;
+		border-color: rgba(0,0,0,0.5);
+	}
+
+	.vcex-icon-box-five {
+		background: #000;
+		background: rgba(0,0,0,0.5) !important;
+	}
+
+	.vcex-icon-box-five .vcex-icon-box-five-icon {
+		color: #fff;
+	}
+
+}

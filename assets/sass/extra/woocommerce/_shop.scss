@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+[Store]
+-------------------------------------------------------------------*/
+.woocommerce .products ul,
+.woocommerce ul.products {
+    margin: 0 -10px;
+}
+
+/* Shop > ordering & sorting */
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+    margin: 0 10px 30px 0;
+}
+
+.woocommerce .woocommerce-ordering {
+    float: right;
+    margin-right: 0;
+
+    select {
+        vertical-align: top;
+    }
+
+    .orderby,
+    .orderby span {
+        width: auto !important
+    }
+
+}
+
+.woocommerce .woocommerce-result-count {
+    display: block;
+    float: left;
+    color: $text__color-main-light;
+    font-size: 1em;
+    height: $custom_selects-height;
+    line-height: $custom_selects-height;
+    padding: 0 1em;
+    border: 1px solid $borders__color;
+    margin-right: 6px;
+
+    span.strong {
+        color: #000;
+        font-weight: 600;
+    }
+
+}

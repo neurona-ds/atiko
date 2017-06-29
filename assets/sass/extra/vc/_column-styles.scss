@@ -1,0 +1,15 @@
+/*--------------------------------------------------------------
+# VC > Column Styles
+--------------------------------------------------------------*/
+.bordered-column > .vc_column-inner {
+	padding: 20px;
+	border: 1px solid $borders__color;
+	@include border-radius( 3px );
+}
+
+.boxed-column > .vc_column-inner {
+	padding: 20px;
+	border: 1px solid $borders__color;
+	background: $background__light-gray;
+	@include border-radius( 3px );
+}

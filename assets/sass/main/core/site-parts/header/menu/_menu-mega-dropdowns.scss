@@ -1,0 +1,154 @@
+/*------------------------------------------------------------------
+[Mega Menu Dropdowns]
+-------------------------------------------------------------------*/
+$padding__size: 12px;
+#site-navigation li.megamenu {
+    position: inherit;
+
+    > ul.sub-menu {
+        width: 100%;
+        left: 0;
+        right: auto;
+        border-radius: 0;
+        padding: $padding__size 0 0;
+
+        // Remove dropdown triangle
+        &:after,
+        &:before {
+            display: none;
+        }
+
+        .nav-arrow {
+            display: none;
+        }
+
+        > li {
+            display: block;
+            float: left;
+            padding: 0px $padding__size;
+            width: 100%;
+            border-left: 1px solid $borders__color-light;
+
+            &:first-child {
+                border-left: none;
+            }
+            
+            // Remove link borders
+            a {
+                border: 0;
+            }
+
+            &.menu-item-has-children {
+                margin-bottom: $padding__size;
+                
+                // Headings
+                > a {
+                    font-weight: $headings__font-weight;
+                    color: $headings__color;
+                    font-size: 1.03em;
+                    padding: 8px $padding__size;
+                    word-wrap: break-word;
+                    white-space: normal;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                }
+
+            }
+            
+            // Reset dropdowns - needs !important to override all styles and child theme mods
+            ul {
+                display: block !important;
+                top: auto !important;
+                width: 100% !important;
+                min-width: 0 !important;
+                left: auto !important;
+                position: relative !important;
+                opacity: 1 !important;
+                border: none !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+            }
+            
+            // Add arrow for sub-subs
+            ul.sub-menu > li > ul.sub-menu a:before {
+                display: inline-block;
+                content: "\f105";
+                margin-right: 7px;
+                font-family: 'FontAwesome';
+            }
+
+
+        }
+
+    }
+
+    // 1 Column
+    &.col-1 > ul.sub-menu > li {
+        width: 100%;
+    }
+    
+    // 2 Columns
+    &.col-2 > ul.sub-menu > li {
+        width: 50%;
+
+        &:nth-child(2n+1) {
+            clear: both;
+        }
+
+    }
+    
+    // 3 Columns
+    &.col-3 > ul.sub-menu > li {
+        width: 33.33%;
+
+        &:nth-child(3n+1) {
+            clear: both;
+        }
+
+    }
+
+    // 4 Columns
+    &.col-4 > ul.sub-menu > li {
+        width: 25%;
+
+        &:nth-child(4n+1) {
+            clear: both;
+        }
+
+    }
+    
+    // 5 Columns
+    &.col-5 > ul.sub-menu > li {
+        width: 20%;
+
+        &:nth-child(5n+1) {
+            clear: both;
+        }
+
+    }
+
+    // 6 Columns
+    &.col-6 > ul.sub-menu > li {
+        width: 16.66%;
+
+        &:nth-child(6n+1) {
+            clear: both;
+        }
+
+    }
+
+}
+
+// Hide headings
+#site-navigation li.megamenu.hide-headings > ul.sub-menu > .menu-item-has-children > a {
+    display: none;
+}
+
+// USED FOR TESTING PURPOSES ONLY
+#site-navigation li.megamenu.display-always > ul.sub-menu {
+    display: block !important;
+    opacity: 1 !important;
+}

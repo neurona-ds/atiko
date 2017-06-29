@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+[Image Swap]
+-------------------------------------------------------------------*/
+.vcex-image-swap {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.vcex-image-swap-link {
+    display: block;
+}
+
+.vcex-image-swap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    @include transition( opacity 0.25s ease-in-out );
+    @include backface-hidden;
+}
+
+.vcex-image-swap-secondary {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.vcex-image-swap-primary {
+    z-index: 2;
+    position: relative;
+}
+
+.vcex-image-swap:hover .vcex-image-swap-primary {
+    @include opacity( 0 );
+}

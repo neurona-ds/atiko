@@ -1,0 +1,82 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Visual Composer iFrame styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ */
+
+@import "../load-helpers";
+
+// Remove visit knowledgebase link
+body .vc_ui-help-block.vc_welcome-visible-e {
+	display: none !important;
+}
+
+// RTL Fixes
+body.rtl.compose-mode {
+
+	// Blank template buttons
+	.vc_ui-icon-pixel {
+		padding-right: 0;
+		padding-left: 0.5em;
+	}
+	
+    // Button border radius fixes
+    .vc_controls-column > div > .vc_element .vc_control-btn-switcher .vc_btn-content,
+    .vc_controls-column > div > .vc_element :last-child .vc_btn-content,
+    .vc_controls-container > div > .vc_element .vc_control-btn-switcher .vc_btn-content,
+    .vc_controls-container > div > .vc_element :last-child .vc_btn-content,
+    .vc_controls-row > div > .vc_element .vc_control-btn-switcher .vc_btn-content,
+    .vc_controls-row > div > .vc_element :last-child .vc_btn-content,
+   	.vc_controls > .vc_controls-cc > :last-child .vc_btn-content {
+        border-radius: 0;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+
+	.vc_controls-column > div > .vc_parent > :first-child .vc_btn-content,
+   	.vc_controls-container > div > .vc_parent > :first-child .vc_btn-content,
+   	.vc_controls-row > div > .vc_parent > :first-child .vc_btn-content,
+    .vc_controls > .vc_controls-cc > :first-child .vc_btn-content,
+    .vc_controls > .vc_controls-out-tl > .vc_element > :first-child .vc_btn-content {
+		border-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    // Edit button position
+    .vc_child-element-move .vc_btn-content,
+    .vc_element-move .vc_btn-content {
+        padding-left: 12px !important;
+        padding-right: 30px !important;
+    }
+
+    .vc_child-element-move .vc-c-icon-dragndrop,
+    .vc_element-move .vc-c-icon-dragndrop {
+        right: 0;
+        left: auto;
+    }
+
+    .vc_control-btn-append:before {
+        left: auto;
+        right: 7px;
+    }
+
+}
+
+/*
+ // Remove top padding in front-end editor as it's confusing
+ // Causes issues with parallax and other overflowing items :(
+.compose-mode .vc_vc_row > .vc_parallax,
+.compose-mode .vc_vc_row>[data-vc-full-width=true],
+.compose-mode .vc_vc_row_inner, .compose-mode .vc_vc_section > .vc_parallax,
+.compose-mode .vc_vc_section>[data-vc-full-width=true],
+.compose-mode .vc_vc_video {
+	//padding-top: 0;
+	//overflow: visible; // so you can see the editor buttons.
+}*/
+
+/*.compose-mode .vc_element .vc_element-container,
+.view-mode .vc_element .vc_element-container {
+	min-height: 10px; // Causes issues with using inner rows
+}*/

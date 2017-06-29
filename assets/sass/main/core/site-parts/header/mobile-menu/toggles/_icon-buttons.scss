@@ -1,0 +1,60 @@
+/* Mobile Menu Toggles > Icon Button(s) */
+#mobile-menu {
+	height: 40px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -20px;
+
+	a {
+		display: block;
+		float: left;
+		color: #666; 
+		font-size: 18px; // must use fixed pixels
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		border: 1px solid $borders__color-light;
+		text-align: center;
+		margin-left: 10px;
+		background: $background__light-gray;
+		@include border-radius( 3px );
+		@include transition( $transition__speed );
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:hover {
+			text-decoration: none;
+			background: #f1f1f1;
+			color: #333;
+		}
+
+	}
+
+}
+
+/* Mobile Menu Toggles > Icon Button(s) Under Logo */
+.wpex-mobile-toggle-menu-icon_buttons_under_logo {
+	clear: both;
+	
+	#mobile-menu {
+		height: auto;
+		position: relative;
+		float: none;
+		top: auto;
+		right: auto !important;
+		left: auto !important;
+		margin: 0;
+		padding-top: 20px;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			float: none;
+		}
+
+	}
+
+}

@@ -1,0 +1,154 @@
+/*------------------------------------------------------------------
+[Forms => Main Styling]
+-------------------------------------------------------------------*/
+$forms__input-background: $background__light-gray;
+
+// fixes
+button, input, select, textarea {
+	font-size: 100%;
+	line-height: inherit;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+// turn off number spinners
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+// reset search styling
+input[type="search"] { outline: 0 }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+
+// text inputs
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	display: inline-block;
+	color: #777;
+	padding: 6px 12px;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 1em;
+	line-height: 1.65;
+	max-width: 100%;
+	border: 1px solid $borders__color-light;
+	background: $forms__input-background;
+	@include border-radius( 0 );
+	@include appearance( none );
+
+	&:focus {
+		outline: 0;
+	}
+
+}
+
+// textarea
+textarea {
+	width: 100%;
+	max-width: 100%;
+	@include appearance( none );
+}
+
+// Select
+select {
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid $borders__color;
+}
+
+// checkbox button margin
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 0.4375em;
+}
+
+// remove chrome yellow autofill
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px $forms__input-background inset;
+}
+
+.password-protection-box input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset
+}
+
+// placeholder color => must be seperate
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.7;
+}
+:-moz-placeholder {
+	color: inherit;
+	opacity: 0.7;
+}
+
+::-moz-placeholder {
+	color: inherit;
+	opacity: 0.7;
+}
+
+:-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.7;
+}
+
+// password protection
+.password-protection-box {
+	padding: 20px;
+	margin-bottom: 40px;
+	@include boxed-light;
+
+	h2 {
+		font-size: 1.077em;
+		margin: 0 0 10px;
+	}
+
+	p:last-child {
+		margin: 0;
+	}
+
+	input {
+		height: 40px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	input[type="password"] {
+		background: #fff;
+		width: 68%;
+		float: left;
+	}
+
+	input[type="submit"] {
+		float: right;
+		width: 30%;
+		font-size: 1em;
+		height: 40px;
+		line-height: 40px;
+		margin-left: 4px;
+		padding: 0 25px;
+	}
+
+}
+
+@import "contact-form-7";
+@import "custom-styles";
+@import "full-width";
+@import "login-form";

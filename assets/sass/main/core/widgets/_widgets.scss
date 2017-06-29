@@ -1,0 +1,12 @@
+/*------------------------------------------------------------------
+[Widgets]
+-------------------------------------------------------------------*/
+.widget ul {
+	list-style: none;
+	margin: 0;
+}
+
+.widget ul li a {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}

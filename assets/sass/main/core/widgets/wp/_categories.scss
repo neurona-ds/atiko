@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+[Categories Widget]
+-------------------------------------------------------------------*/
+.widget_categories {
+
+	li {
+		position: relative;
+
+		ul {
+			margin: 0 0 0 20px;
+
+			li:first-child {
+				border-top: 1px solid $borders__color-light;
+				margin-top: 4px;
+			}
+
+			li:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+
+		}
+
+	}
+
+	.cat-count-span {
+		font-size: 0.846em;
+		@include opacity( 0.7 );
+	}
+
+}

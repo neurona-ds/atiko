@@ -1,0 +1,13 @@
+/* Fade In */
+.wpex-show-on-load,
+.fade-in-image {
+	@include opacity( 0 );
+	@include transition( all 0.35s );
+}
+
+.fade-in-image.no-opacity,
+body.compose-mode .fade-in-image,
+.wpex-show-on-load.no-opacity,
+body.compose-mode .wpex-show-on-load {
+	@include opacity( 1 );
+}

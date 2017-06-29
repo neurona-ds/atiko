@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------
+[Blog Entry: Left/Right]
+-------------------------------------------------------------------*/
+.entries.left-thumbs .blog-entry.thumbnail-entry-style {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $borders__color-light;
+}
+
+.blog-entry.thumbnail-entry-style .blog-entry-title {
+    margin: 0 0 5px
+}
+
+.blog-entry.thumbnail-entry-style .sp-fade-arrows {
+    @include opacity( 1 );
+}
+
+.blog-entry.thumbnail-entry-style .sp-horizontal .sp-arrows {
+    margin-top: -20px
+}
+
+.blog-entry.thumbnail-entry-style .wpex-slider .sp-arrow {
+    height: 40px;
+    width: 25px;
+    line-height: 40px;
+    font-size: 1.077em;
+    background: rgba( 0, 0, 0, 0.3 );
+}
+
+.blog-entry.thumbnail-entry-style .wpex-slider .sp-arrow:hover {
+    background: rgba( 0, 0, 0, 1 );
+}

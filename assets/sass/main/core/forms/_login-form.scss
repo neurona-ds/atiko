@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------
+[Login Form] @todo Remove these styles? They don't appear to be used.
+-------------------------------------------------------------------*/
+#wpex-loginform-wrap label { font-size: 1.125em }
+
+#wpex-loginform-wrap input[type="text"],
+#wpex-loginform-wrap input[type="password"] { width: 100%; font-size: 1em; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid transparent; margin-top: 10px; border-radius: 3px; }
+
+#wpex-loginform-wrap input[type="text"]:focus,
+#wpex-loginform-wrap input[type="password"]:focus { border-color: #ccc; box-shadow: 0 1px 2px rgba(0,0,0,0.1); color: #333; }
+
+#wpex-loginform-wrap p:last-child { margin: 0 }
+
+#wpex-loginform-wrap a:hover { color: #4d4d4d; text-decoration: none; }

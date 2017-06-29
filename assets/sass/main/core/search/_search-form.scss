@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+[Search Forms]
+-------------------------------------------------------------------*/
+.searchform {
+    position: relative;
+
+    label {
+        margin: 0;
+        padding: 0;
+    }
+
+    input {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding: .7em 30px .7em .8em;
+    }
+
+    #footer & input {
+        background-color: #fff;
+        border: 0;
+    }
+
+    .searchform-submit {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        height: 20px;
+        line-height: 20px;
+        margin: -10px 0 0;
+        background: none;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        color: #000;
+        font-size: 11px;
+        @include opacity( 0.5 );
+    }
+
+}
+
+.wpex-menu-search-text {
+    display: none;
+}
+
+#footer input[type="search"] {
+    outline: none;
+}
