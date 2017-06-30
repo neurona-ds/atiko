@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------
+[Login Page]
+-------------------------------------------------------------------*/
+#login-page-wrap {
+	padding: 80px 0;
+	text-align: center;
+}
+
+// Logo
+#login-page-logo {
+	margin-bottom: 10px;
+
+	a {
+		font-weight: 600;
+		font-size: 26px;
+		color: #000;
+	}
+
+}
+
+// Form
+#login-template-form {
+	display: inline-block;
+	border: 1px solid $borders__color-light;
+	background: $background__light-gray;
+	padding: 20px;
+	width: 300px;
+	max-width: 100%;
+
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		background: #fff;
+	}
+
+
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	}
+
+	label {
+		display: block;
+		float: none;
+		margin-bottom: 5px;
+		color: #999;
+		font-size: 0.846em;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: left;
+		letter-spacing: 1px;
+	}
+
+	.button-primary {
+		width: 100%;
+		padding: $buttons__padding-medium;
+	}
+
+	.login-submit {
+		margin: 0;
+	}
+
+}

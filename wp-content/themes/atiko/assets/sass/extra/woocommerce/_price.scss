@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------
+[Price]
+-------------------------------------------------------------------*/
+.price,
+.amount {
+	color: $woo__price-color;
+}
+
+.price del,
+del .amount {
+	color: #555 !important;
+}
+
+.woocommerce del {
+	@include opacity( 0.5 );
+}
+.woocommerce ins {
+	text-decoration: none;
+}

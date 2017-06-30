@@ -1,0 +1,272 @@
+/*------------------------------------------------------------------
+[Topbar]
+-------------------------------------------------------------------*/
+#top-bar-wrap {
+	border-bottom: 1px solid $borders__color-light;
+	font-size: 0.923em;
+}
+
+#top-bar {
+	position: relative;
+	padding: $topbar__padding 0;
+
+	a {
+		color: #555;
+		@include transition( $transition__speed );
+	}
+
+	.searchform {
+		display: inline-block;
+
+		input {
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+
+	}
+
+}
+
+.top-bar-left {
+	float: left;
+}
+
+.top-bar-right {
+	float: right;
+}
+
+.top-bar-centered {
+	float: none;
+	text-align: center;
+}
+
+/* Top Bar > Sticky */
+.wpex-top-bar-sticky {
+	background: #fff;
+	z-index: 99;
+	@include transform( translateZ(0) );
+}
+
+#top-bar-wrap-sticky-wrapper.is-sticky .wpex-top-bar-sticky {
+	position: fixed;
+	z-index: 999;
+}
+
+/* Top Bar > Full-Width */
+@media only screen and (min-width: 960px) {
+
+    #top-bar-wrap.wpex-full-width {
+    	padding-left: 30px;
+    	padding-right: 30px;
+
+		.container {
+			width: 100% !important;
+			max-width: none !important;
+		}
+
+    }
+
+}
+
+/* Top Bar > Content */
+#top-bar-content {
+
+	strong {
+		color: #000;
+	}
+
+}
+
+// Language pickers
+#top-bar {
+
+	#lang_sel {
+		z-index: 99;
+		position: relative;
+		margin-right: 10px;
+		display: inline-block;
+
+		ul ul {
+			z-index: 99999;
+		}
+
+	}
+
+	.lang_sel_list_horizontal {
+		font-family: inherit;
+		height: auto;
+
+		a, a:visited {
+			background: none;
+			color: inherit;
+			padding: 0;
+			font-size: inherit;
+		}
+
+		li {
+			float: none;
+			display: inline-block;
+			margin: 0 10px 0 0 !important;
+		}
+
+	}
+
+}
+
+/* Top Bar > Menu */
+.top-bar-menu {
+	display: block;
+	float: left;
+	
+	.has-content & {
+		margin-right: 20px;
+	}
+
+	li {
+		display: block;
+		float: left;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.fa {
+			margin-right: 6px;
+		}
+
+		li {
+			display: none !important; // Dropdowns not supported for topbar menu
+		}
+
+	}
+
+	// Menu should display inline for centered topbar style
+	#top-bar-content.top-bar-centered &,
+	#top-bar-content.top-bar-centered & li {
+		display: inline-block;
+		float: none;
+	}
+
+}
+
+/* Top Bar > Social */
+#top-bar-social {
+	
+	// Social Links
+	a {
+		display: block;
+		float: left;
+		margin-right: 5px;
+		font-size: 14px; // Must be a pixel value
+
+		&.wpex-social-btn {
+			height: 26px;
+			line-height: 26px;
+			width: 26px;
+			padding: 0;
+		}
+
+		&.wpex-social-btn.wpex-social-btn-bordered {
+			height: 22px;
+			line-height: 22px;
+			width: 22px;
+			font-size: 13px;
+		}
+
+		&.wpex-social-btn-no-style {
+			margin-right: 10px;
+			color: #bbb;
+			font-size: 18px;
+			width: auto;
+		}
+
+		&.wpex-social-btn-no-style:hover {
+			color: #000;
+		}
+
+		&:last-child {
+			margin-right: 0; // remove margin on last item
+		}
+
+	}
+
+	// Social Centered position
+	&.top-bar-centered {
+		padding-top: $topbar__padding;
+
+		a {
+			display: inline-block;
+			float: none;
+		}
+
+	}
+
+	// Social Right position
+	&.top-bar-right {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		height: 26px;
+		line-height: 26px;
+		margin-top: -13px;
+
+		body.boxed-main-layout & {
+			right: $boxed__layout-inner-padding;
+		}
+
+	}
+
+	// Social Left Position
+	&.top-bar-left {
+		position: absolute; 
+		left: 0;
+		top: 50%;
+		height: 26px;
+		line-height: 26px;
+		margin-top: -13px;
+
+		body.boxed-main-layout & {
+			left: $boxed__layout-inner-padding;
+		}
+
+	}
+
+	// Social image icon resets
+	&.social-style-colored-icons {
+
+		
+		&.top-bar-right,
+		&.top-bar-left {
+			height: 21px;
+			line-height: 21px;
+			margin-top: -10px;
+		}
+
+		a {
+			margin-right: 0;
+
+			&:hover {
+				opacity: 0.85;
+			}
+
+		}
+
+		img {
+			height: 21px;
+		}
+
+	}
+
+}
+
+/* Top Bar > Polylang Language switcher */
+.top-bar-right .polylang-switcher-shortcode {
+	float: right;
+	margin-left: 20px;
+}
+
+.top-bar-left .polylang-switcher-shortcode {
+	float: left;
+	margin-right: 20px;
+}

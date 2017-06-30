@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+[Video Backgrounds]
+-------------------------------------------------------------------*/
+.wpex-has-video-bg {
+    position: relative;
+
+    .container,
+    .wpb_column {
+        position: relative;
+        z-index: 2;
+    }
+    
+}
+
+.wpex-video-bg-wrap {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.wpex-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+// Disable video backgrounds on mobile
+.wpex-is-mobile-device .vc_video-bg,
+.wpex-is-mobile-device .wpex-video-bg-wrap {
+    display: none;
+}

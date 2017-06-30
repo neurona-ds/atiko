@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[# Sensei > Quiz]
+-------------------------------------------------------------------*/
+.quiz  {
+	
+	form {
+
+		form ol#sensei-quiz-list {
+
+			padding: 20px 0 0;
+			margin: 0;
+			list-style-position: inside;
+
+			li, li > span {
+				font-weight: 600;
+				color: #222;
+			}
+
+			li.answer_message {
+				margin-top: 10px;
+			}
+
+		}
+
+	}
+
+}

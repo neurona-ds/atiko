@@ -1,0 +1,271 @@
+/*------------------------------------------------------------------
+[Comments]
+-------------------------------------------------------------------*/
+#comments {
+	margin-bottom: 40px;
+
+
+	// Hide closed and empty comments
+	.empty-closed-comments {
+		display: none;
+	}
+
+
+	// Main Entry Styles
+	.children {
+		margin-left: 30px; // Offset for children
+	}
+	
+	.comment {
+		position: relative;
+
+		.comment-body {
+			margin-left: $comments-avatar__offset;
+		}
+
+	}
+
+	body.comment-avatars-disabled & .comment .comment-body {
+		margin-left: 0; // Reset avatar offset if comment avatars are disabled
+		margin-right: 0; // Resets for RTL styles
+	}
+
+	.comment-body {
+		position: relative;
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid $borders__color-light;
+
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+
+	// Avatar
+	.comment-author .avatar {
+		position: absolute;
+		top: 0;
+		left: -$comments-avatar__offset;
+		padding: 3px;
+		border: 1px solid $borders__color;
+
+		img {
+			display: block;
+		}
+
+	}
+
+
+	// Meta
+	.comment-meta {
+		margin-bottom: 15px;
+
+		.fn {
+			display: block;
+			font-size: 1.077em;
+			font-weight: $headings__font-weight;
+			color: $headings__color;
+
+			.url {
+				color: $headings__color; // for authors with links
+			}
+
+		}
+
+		.says {
+			display: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		time {
+			color: #a7a7a7;
+		}
+
+		.comment-edit-link {
+			display: inline-block;
+			margin-left: 6px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+		}
+
+	}
+
+
+	// Comment reply link
+	.comment-body {
+
+		.reply {
+			padding-top: 15px;
+			font-size: pem( 12 );
+
+			a {
+				color: #a7a7a7;
+				text-decoration: underline;
+
+				&:hover {
+					color: #000;
+				}
+
+			}
+
+		}
+
+	}
+
+	.comment-reply-title {
+		font-size: 1.231em;
+		margin-bottom: 0;
+	}
+
+	.logged-in-as {
+		font-size: 0.923em; 
+		margin: 0 0 10px;
+	}
+
+
+	// Cancel comment reply
+	#cancel-comment-reply-link {
+		font-size: 0.923em;
+		color: #989898;
+		float: right;
+		font-weight: normal;
+		border: 2px solid #ededed;
+		padding: 3px 10px;
+		text-decoration: none;
+		@include border-radius( 3px );
+		@include transition( $transition__speed );
+
+		&:hover {
+			color: #000;
+		}
+
+		.fa {
+			margin-right: 7px;
+		}
+
+	}
+
+
+	// Form
+	p.comment-notes {
+		color: #666;
+		margin: 10px 0 20px;
+	}
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-website,
+	.comment-form-comment,
+	.comment-form-url {
+		margin: 0 0 15px;
+	}
+
+	.comment-form-author input,
+	.comment-form-email input,
+	.comment-form-website input,
+	.comment-form-comment input,
+	.comment-form-url input {
+		width: 100%;
+	}
+
+	.comment-form-author {
+		width: 49%;
+		float: left;
+	}
+
+	.comment-form-email {
+		width: 49%;
+		float: right;
+	}
+
+	.comment-form-url,
+	.comment-form-website {
+		clear: both;
+	}
+
+	#commentform label {
+		display: block;
+		margin-bottom: 3px;
+		color: $headings__color-light;
+	}
+
+	.form-allowed-tags {
+		display: none;
+	}
+
+	span.required {
+		color: #F00;
+		font-size: pem( 9 );
+		position: relative;
+		top: -4px;
+	}
+	
+
+	// Comment moderation warning
+	.comment-awaiting-moderation {
+		background: #F56151;
+		color: #fff;
+		display: inline-block;
+		font-size: pem( 11 );
+		margin: 10px 0 0;
+		padding: 2px 6px;
+	}
+
+
+	// Closed comments
+	.no-comments {
+		margin-top: 40px;
+		padding: 10px;
+		background: $background__light-gray;
+		border: 1px solid $borders__color-light;
+		text-align: center;
+
+		.fa {
+			margin-right: 8px;
+		}
+
+	}
+
+
+	// Comment pagination
+	.comment-navigation {
+
+		a.page-numbers,
+		span.page-numbers {
+			display: block;
+			float: left;
+			margin: 0 4px 4px 0;
+		}
+
+	}
+
+}
+
+
+/* Comments > JetPack */
+.comment-subscription-form {
+	margin: 0;
+}
+
+.comment-subscription-form:after {
+	@include clear-after;
+}
+
+.comment-subscription-form input,
+.comment-subscription-form label {
+	float: left;
+	font-size: pem( 11 );
+	margin: 0px !important;
+	margin-right: 5px !important;
+}

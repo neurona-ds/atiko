@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+[Heading]
+-------------------------------------------------------------------*/
+.vcex-heading-link-wrap {
+    font-size: 1em;
+    display: block;
+    margin: 0;
+}
+
+.vcex-heading {
+    display: block;
+    color: $headings__color;
+    font-size: pem( 21 );
+    margin: 0 auto;
+    max-width: 100%;
+
+    &.wpex-inline {
+        display: inline;
+        display: inline-block;
+    }
+
+}
+
+a.vcex-heading:hover {
+    text-decoration: none;
+}
+
+// Bottom border style
+.vcex-heading-bottom-border-w-color {
+    padding-bottom: 0;
+    border-bottom: 1px solid $borders__color;
+}
+
+.vcex-heading-inner {
+    display: inline-block;
+
+    .vcex-heading-bottom-border-w-color & {
+        padding-bottom: 6px;
+        border-bottom: 2px solid $accent__main;
+        position: relative;
+        bottom: -1px;
+    }
+
+}
+
+// Graphical style
+.vcex-heading-graphical {
+    padding: 10px 15px;
+    border: 1px solid $borders__color;
+    background: $background__light-gray;
+    background: -webkit-linear-gradient(#f7f7f7,#eee);
+    background: -moz-linear-gradient(#f7f7f7,#eee);
+    background: -o-linear-gradient(#f7f7f7,#eee);
+    background: linear-gradient(#f7f7f7,#eee);
+    background-repeat: no-repeat;
+    @include border-radius ( 3px );
+    @include box-shadow ( inset 0 1px 1px #fff );
+}
+

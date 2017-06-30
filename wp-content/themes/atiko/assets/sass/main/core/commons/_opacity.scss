@@ -1,0 +1,5 @@
+/* Opacity Styles */
+.opacity-hover:hover,
+.opacity-hover:hover img {
+	@include opacity( 0.8 );
+}

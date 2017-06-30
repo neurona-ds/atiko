@@ -1,0 +1,19 @@
+/* Display classes */
+.display-none, .hidden, .wpex-hidden {
+	display: none;
+}
+
+.display-block,
+.wpex-block {
+	display: block;
+}
+
+.wpex-inline-block {
+	display: block; // Fall-back for old browsers
+	display: inline-block;
+}
+
+.display-inline,
+.wpex-inline {
+	display: inline;
+}

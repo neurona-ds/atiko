@@ -1,0 +1,66 @@
+/*------------------------------------------------------------------
+[Header Style Four]
+-------------------------------------------------------------------*/
+
+// Logo
+.header-four-logo {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+        display: inline-block;
+        float: none;
+    }
+
+}
+
+// Aside
+.header-four-aside {
+    float: none;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+// Menu
+.navbar-style-four {
+    background: #fff;
+    border-bottom: 1px solid $borders__color-light;
+    position: relative;
+    
+    .dropdown-menu {
+        text-align: center;
+        float: none;
+
+        ul {
+            text-align: left; // Left align dropdowns
+        }
+
+        > li {
+            display: inline-block;
+            float: none;
+
+            > a {
+                display: block;
+                height: $main-menu__height;
+                line-height: $main-menu__height;
+                color: $main-menu__link-color;
+                font-weight: normal;
+                padding: 0 5px;
+
+                > span.link-inner {
+                    display: inline-block;
+                    line-height: 1;
+                    padding: 0.5em 0.8em;
+                    @include border-radius( 3px );
+                }
+
+            }
+
+        }
+
+    }
+
+}

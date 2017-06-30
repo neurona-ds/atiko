@@ -1,0 +1,162 @@
+/*------------------------------------------------------------------
+[Social Buttons]
+-------------------------------------------------------------------*/
+$social:	( twitter, #00aced ),
+			( facebook, #3b5998 ),
+			( googleplus, #dd4b39 ),
+			( google-plus, #dd4b39 ),
+			( tripadvisor, #589442 ),
+			( pinterest, #cb2027 ),
+			( linkedin, #4875b4 ),
+			( dribbble, #ef5b93 ),
+			( skype, #04b1f5 ),
+			( envelope, #666 ),
+			( mail, #666 ),
+			( instagram, #305777 ),
+			( flickr, #FF0084 ),
+			( vk, #55779b ),
+			( trello, #0CBADF ),
+			( tumblr, #2C4762 ),
+			( foursquare, #2970ad ),
+			( xing, #026466 ),
+			( renren, #2970ad ),
+			( vimeo, #1ab7ea ),
+			( youtube, #C4302B ),
+			( rss, #FF7900 ),
+			( vine, #00b386 ),
+			( email, #ffc548 ),
+			( website, #333 ),
+			( phone-number, #3395FF ),
+			( phone, #000 ),
+			( yelp, #AF0605 ),
+			( twitch, #6441A5 );
+
+
+.wpex-social-btn {
+	display: block;
+	display: inline-block;
+	font-size: inherit;
+	color: inherit;
+	padding: 0;
+	height: 1.846em;
+	line-height: 1.846em;
+	width: 1.846em;
+	cursor: pointer;
+	text-align: center;
+	@include border-radius( inherit );
+	@include transition( $transition__speed );
+	@include box-sizing( content-box );
+
+	&:hover {
+		text-decoration: none;
+	}
+
+}
+
+// Minimal style
+.wpex-social-btn-minimal {
+	color: #bbb;
+	border: 1px solid $borders__color-light;
+
+	&:hover {
+		background: $background__light-gray;
+	}
+
+}
+
+// Flat style
+.wpex-social-btn-flat {
+	color: #888;
+	background: $background__light-gray;
+}
+
+// 3d style
+.wpex-social-btn-3d {
+	background: #aaa;
+	color: #fff !important;
+	border-bottom: 3px solid rgba( 0, 0, 0, 0.25 );
+	@include border-radius( 2px );
+
+	&:hover {
+		background: #555;
+	}
+
+	&:active {
+		border: 0;
+	}
+
+}
+
+// Black color
+.wpex-social-btn-black,
+.wpex-social-btn-black-ch {
+	background: #000;
+	color: #fff !important;
+
+	&:hover {
+		background: #444;
+	}
+
+}
+
+// Graphical
+.wpex-social-btn-graphical {
+	background: #444;
+	border: 1px solid rgba( 0, 0, 0, 0.1 );
+	@include box-shadow( inset 0 1px 1px rgba( 255, 255, 255, 0.4 ) );
+}
+
+
+// Bordered
+.wpex-social-btn-bordered {
+	border: 2px solid #bbb;
+
+	&:hover {
+		transform: rotate( 10deg );
+		@include opacity( 0.8 );
+	}
+
+}
+
+// Text Colors
+@each $network, $color in $social {
+
+	#wrap .wpex-social-color.wpex-#{$network},
+	#wrap .wpex-social-color-hover.wpex-#{$network}:hover {
+		color: $color;
+	}
+
+}
+
+
+// Background Colors
+.wpex-social-bg {
+	background:#aaa;
+
+	&:hover{
+		@include opacity( 0.6 );
+	}
+
+	&, &:hover{
+		color:#fff !important;
+	}
+
+}
+
+@each $network, $color in $social {
+
+	.wpex-social-bg.wpex-#{$network},
+	.wpex-social-bg-hover.wpex-#{$network}:hover {
+		background: $color;
+	}
+
+}
+
+// Border Colors
+@each $network, $color in $social {
+
+	.wpex-social-border.wpex-#{$network} {
+		border-color: $color;
+	}
+
+}

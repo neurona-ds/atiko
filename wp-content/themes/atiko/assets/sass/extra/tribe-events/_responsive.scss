@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+[# Tribe Evevents > Responsive]
+-------------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+
+	.single-tribe_events {
+
+		.page-subheading-extra > div {
+			display: block;
+			margin: 0;
+		}
+
+		.tribe-events-schedule {
+			background: none;
+			border: 0;
+			margin: 1em 0 1.5em;
+			padding: 0;
+		}
+
+	}
+
+	.tribe-event-schedule-details {
+		padding: 0 10px;
+	}
+
+}

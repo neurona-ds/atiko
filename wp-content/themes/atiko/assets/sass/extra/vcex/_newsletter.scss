@@ -1,0 +1,11 @@
+/*------------------------------------------------------------------
+[Newsletter]
+-------------------------------------------------------------------*/
+.vcex-newsletter-form input[type="text"],
+.vcex-newsletter-form input[type="email"] { width: 100%; margin: 0; border-radius: 4px; -webkit-appearance: none;padding: 0 15px; height: 50px; }
+.vcex-newsletter-form-wrap { position: relative; margin: 0 auto; max-width: 100%; }
+.vcex-newsletter-form-button { display: block; position: absolute; top: 50%; margin-top: -15px; right: 20px; padding: 0 15px; height: 30px; line-height: 30px; border-radius: 3px; }
+
+@media only screen and (max-width: 767px) {
+	.vcex-newsletter-form.vcex-fullwidth-mobile .vcex-newsletter-form-button { position: static; top: auto; margin: 0; right: auto; width: 100%; margin-top: 10px !important; height: 50px; line-height: 50px; }
+}

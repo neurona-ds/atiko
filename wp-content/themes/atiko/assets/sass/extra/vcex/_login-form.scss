@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------
+[LoginForm]
+-------------------------------------------------------------------*/
+.vcex-login-form {
+    padding: 20px;
+    border: 1px solid $borders__color-light;
+    border-radius: 4px;
+
+    label {
+        font-weight: 600;
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #rememberme {
+        margin-right: 6px;
+    }
+
+    .pipe {
+        display: inline-block;
+        margin: 0 5px;
+        @include opacity( 0.35 );
+    }
+
+    p.login-submit {
+        margin-bottom: 0;
+    }
+
+    .vcex-login-form-nav {
+        padding-top: 20px;
+    }
+
+    &.logged-in p:last-child {
+        margin: 0;
+    }
+
+}

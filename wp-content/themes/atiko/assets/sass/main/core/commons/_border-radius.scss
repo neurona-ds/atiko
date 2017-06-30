@@ -1,0 +1,12 @@
+/* Border Radius */
+body .wpex-semi-rounded {
+	@include border-radius( 4px );
+}
+
+body .wpex-rounded {
+	@include border-radius( 10px );
+}
+
+body .wpex-round {
+	@include border-radius( 50% );
+}

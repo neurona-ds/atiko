@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------
+[Posts with Icons Custom Widget]
+-------------------------------------------------------------------*/
+.widget-recent-posts-icons {
+
+    li .fa {
+        margin-right: 10px;
+        color: #999;
+    }
+
+    .site-footer & {
+        li .fa {
+            color: #777;
+        }
+    }
+
+}

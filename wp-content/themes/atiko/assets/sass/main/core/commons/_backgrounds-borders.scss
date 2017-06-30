@@ -1,0 +1,59 @@
+/* Backgrounds & Borders */
+.wpex-bg-gray {
+	background: $background__light-gray;
+}
+
+.wpex-bordered {
+	border: 1px solid $borders__color-light;
+}
+
+.bg-cover,
+.bg-stretched {
+	background-repeat: no-repeat;
+	background-position: center center;
+	@include background-size( cover );
+}
+
+.bg-repeat {
+	background-repeat: repeat;
+}
+
+.bg-repeat-x {
+	background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+	background-repeat: repeat-y;
+}
+
+
+// Note: #wrap target and !important attributes are neded to override Visual Composer inline background CSS
+
+#wrap .bg-fixed-top,
+#wrap .bg-fixed-bottom,
+#wrap .bg-fixed {
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-position: center center !important;
+	@include background-size( cover );
+}
+
+#wrap .bg-fixed-top {
+	background-position: center top !important;
+}
+
+#wrap .bg-fixed-bottom {
+	background-position: center bottom !important;
+}
+
+// Prevent fixed background on mobile
+.wpex-is-mobile-device {
+
+	body,
+	#wrap .bg-fixed,
+	#wrap .bg-fixed-top,
+	#wrap .bg-fixed-top {
+		background-attachment: scroll !important; // Fixed phone lag
+	}
+
+}

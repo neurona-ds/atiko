@@ -1,0 +1,24 @@
+/* Header > Full-Width */
+@media only screen and ( min-width: 960px ) {
+	
+	// Make header full-width
+	// Important attribute required incase customer altered things via custom CSS
+	#site-header.wpex-full-width .container {
+		width: 100% !important;
+		max-width: none !important;
+	}
+
+	// Headers 1 & 5 remove left/right padding
+	#site-header.header-one.wpex-full-width,
+	#site-header.header-five.wpex-full-width {
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+	}
+	
+	// Header 2
+	#site-header.header-two.wpex-full-width #site-header-inner {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}

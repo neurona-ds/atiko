@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# VC > Stretched Sections
+--------------------------------------------------------------*/
+
+// Hide full-strech rows and fade in on load
+.wpex-vc-row-stretched,
+.vc_row-o-full-height {
+    visibility: hidden;
+	
+	body.content-full-screen &,
+    .wpex-window-loaded & {
+    	visibility: visible;
+    }
+
+}
+
+// Stretched rows on boxed layout
+.wpex-vc-section-boxed-layout-stretched,
+.wpex-vc-row-boxed-layout-stretched {
+	margin-left: -$boxed__layout-inner-padding;
+	margin-right: -$boxed__layout-inner-padding;
+	padding-left: $boxed__layout-inner-padding/2;
+	padding-right: $boxed__layout-inner-padding/2;
+
+	&.wpex-vc-column-spacing-0px {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&.vc_row-no-padding {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+body.content-full-screen .wpex-vc-section-boxed-layout-stretched,
+body.content-full-screen .wpex-vc-row-boxed-layout-stretched {
+	margin-left: 0;
+	margin-right: 0;
+}

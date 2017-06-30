@@ -1,0 +1,6 @@
+// Hide menu cart icons from mobile menus
+.sidr-class-woo-menu-icon,
+.sidr-class-woocommerce,
+.mobile-toggle-nav-ul li.woo-menu-icon {
+	display: none;
+}

@@ -1,0 +1,127 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Tiny MCE Editor styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+ @import "../load-helpers";
+
+ body#tinymce.wp-editor {
+
+	// Main
+	.thin-font { font-weight: 300 !important; }
+
+	// Pre
+	pre { position: relative; background: #f7f7f7; padding: 20px; padding-right: 50px; margin: 30px 0; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: 'Verdana'; letter-spacing: 1px; z-index: 1; }
+	pre:before { position: absolute; width: 30px; padding-top: 10px; text-align: center; right: 0; top: 0; height: 100%; font-family: "FontAwesome"; content: "\f121"; background: #e7e7e7; color: #333; font-size: 14px; }
+
+	// Highlight
+	.text-highlight { background-image: url("../images/highlight-left.png"),url("../images/highlight-center.png"), url("../images/highlight-right.png"); background-repeat: repeat-x;background-repeat: no-repeat, repeat-x, no-repeat;background-position: center;background-position: left,center,right;background-clip: padding-box, content-box, padding-box;color: #A5651A;padding: 0 20px; margin: 0 -6px; }
+
+	// Dropcaps
+	.dropcap { display: block; float: left; margin-right: 10px; margin-bottom: 10px; font-size: 42px; line-height: 100%; }
+	.dropcap.boxed { color: #fff; background: #000; padding: 5px 10px; }
+
+	// Hr
+	hr { border: solid #e4e4e4; border-width: 1px 0 0; clear: both; margin: 40px 0; height: 0; }
+
+	// Fancy Heading
+	.theme-heading { color: #000; font-weight: 600; font-size: 14px; padding-bottom: 3px; border-bottom: 1px solid #e4e4e4; margin: 20px 0; }
+
+	// Checklist
+	ul.check-list { margin: 0 0 20px; list-style: none; }
+	ul.check-list li { margin: 0 0 5px; }
+	ul.check-list li:before { font-family: "FontAwesome"; content:"\f00c"; margin-right: 10px; opacity: 0.8; }
+
+	// Buttons
+	.theme-button,
+	.color-button,
+	input[type="submit"],
+	button {
+		@include button_styles;
+	}
+
+	.theme-button:hover,
+	.color-button:hover,
+	input[type="submit"]:hover,
+	button:hover { 
+		color: #fff;
+	}
+
+	.theme-button:active,
+	.color-button:active,
+	input[type="submit"]:active,
+	button:active { color: #fff; box-shadow: 0 2px 2px rgba(0,0,0,.1) inset; }
+
+	.theme-button.blue,
+	.color-button.blue { background: #4a97c2 }
+	.theme-button:hover,
+	.theme-button.blue:hover,
+	.active .theme-button,
+	.theme-button.active
+	.active .theme-button.blue,
+	.theme-button.blue.active { background: #327397 }
+	.theme-button.grey,
+	.color-button.grey { background: #bbb }
+	.theme-button.grey:hover,
+	.active .theme-button.grey,
+	.theme-button.active.grey { background: #999 }
+	.theme-button.black,
+	.color-button.black { background: #333 }
+	.theme-button.black:hover,
+	.active .theme-button.black,
+	.theme-button.active.black { background: #555 }
+	.theme-button.orange,
+	.color-button.orange { background: #ee7836 }
+	.theme-button.orange:hover,
+	.active .theme-button.orange,
+	.theme-button.active.orange { background: #cf5511 }
+	.theme-button.gold,
+	.color-button.gold { background: #ddba00 }
+	.theme-button.gold:hover,
+	.active .theme-button.gold,
+	.theme-button.active.gold { background: #aa8f00 }
+	.theme-button.green,
+	.color-button.green { background: #87bf17 }
+	.theme-button.green:hover,
+	.active .theme-button.green,
+	.theme-button.active.green { background: #679212 }
+	.theme-button.purple,
+	.color-button.purple { background: #9a5e9a }
+	.theme-button.purple:hover,
+	.active .theme-button.purple,
+	.theme-button.active.purple { background: #653e65 }
+	.theme-button.teal,
+	.color-button.teal { background: #00b3b3 }
+	.theme-button.teal:hover,
+	.active .theme-button.teal,
+	.theme-button.active.teal { background: #006f6f }
+	.theme-button.pink,
+	.color-button.pink { background: #f261c2 }
+	.theme-button.pink:hover,
+	.active .theme-button.pink,
+	.theme-button.active.pink { background: #bc0f83 }
+	.theme-button.brown,
+	.color-button.brown { background: #804b35 }
+	.theme-button.brown:hover,
+	.active .theme-button.brown,
+	.theme-button.active.brown { background: #5c3626 }
+	.theme-button.red,
+	.color-button.red { background: #f73936 }
+	.theme-button.red:hover,
+	.active .theme-button.red,
+	.theme-button.active.red { background: #bf0a08 }
+	.theme-button.rosy,
+	.color-button.rosy { background: #ea2487 }
+	.theme-button.rosy:hover,
+	.active .theme-button.rosy,
+	.theme-button.active.rosy { background: #b81265 }
+	.theme-button.white,
+	.color-button.white { background: #fff; color: #000; }
+	.theme-button.white:hover,
+	.active .theme-button.white,
+	.theme-button.active.white { background: #fff }
+
+}

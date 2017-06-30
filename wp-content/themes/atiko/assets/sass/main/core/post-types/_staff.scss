@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+[Staff]
+-------------------------------------------------------------------*/
+.staff-entry {
+    margin-bottom: 30px;
+}
+
+/* Staff > Entries */
+.staff-entry-categories {
+    margin: -5px 0 10px;
+    
+    a {
+        font-size: 0.923em;
+        color: #777;
+        list-style: none;
+    }
+
+}
+
+.staff-entry-details {
+    padding-top: 15px
+}
+
+.staff-entry-position {
+    font-size: 0.923em;
+    color: #777;
+    margin: -5px 0 10px;
+}
+
+/* Staff > 1 Column Grid */
+#staff-entries .staff-entry.span_1_of_1 {
+    margin: 0 0 30px;
+    float: none;
+    border: none;
+
+    .staff-entry-media {
+        width: 45%;
+        float: left;
+        padding: 0 30px 0 0;
+    }
+
+    .staff-entry-details {
+        width: 55%;
+        float: right;
+        padding-top: 0;
+    }
+
+}
+
+/* Staff > Singular */
+#staff-post-thumbnail {
+    margin-bottom: 20px;
+
+    img {
+        display: block;
+        margin: 0;
+    }
+
+}
+
+#staff-single-media {
+    margin-bottom: 30px;
+}
+
+/* Staff > Related */
+#staff-single-related {
+    margin-bottom: 30px;
+}
+
+/* Staff > No Margin Grid */
+.staff-no-margins .col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Staff > Single Post */
+#staff-single-header {
+    margin-bottom: 20px;
+}
+
+#staff-single-title {
+    margin: 0;
+}
+
+#staff-single-position {
+    color: #bbb;
+}
+
+/* Staff > Social */
+.staff-social {
+    margin-top: 5px;
+    font-size: 13px;
+
+    a {
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+
+}

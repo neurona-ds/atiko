@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+[# Chosen Select]
+-------------------------------------------------------------------*/
+.wpex-customizer-chosen-select {
+    width: 100%;
+}
+
+.wpex-customizer-chosen-select .chosen-container-single .chosen-single {
+    @include border-radius( 0 );
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    border-color: #ddd;
+    @include box-shadow( inset 0px 1px 1px rgba(0,0,0,0.06) );
+}
+
+.wpex-customizer-chosen-select .chosen-container-single .chosen-single div {
+    top: 2px;
+    right: -2px;
+}
+
+.wpex-customizer-chosen-select .chosen-container .chosen-drop {
+    border-color: #d2d2d2;
+}
+
+.wpex-customizer-chosen-select .chosen-container ul.chosen-results li.highlighted {
+    background: #0085ba;
+}

@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------
+[Header Global Styles]
+-------------------------------------------------------------------*/
+#site-header {
+	padding: 0 !important; // no padding should be added here, add to header-inner please!
+	position: relative;
+}
+
+#site-header-inner {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 100%;
+}
+
+#site-navigation.container {
+	position: relative; // IMPORTANT
+}
+
+#site-header.header-builder #site-header-inner {
+	padding: 0; // Reset padding so it can be added with the Visual Composer
+}

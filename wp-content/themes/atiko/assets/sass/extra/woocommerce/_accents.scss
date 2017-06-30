@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------
+[Accents]
+-------------------------------------------------------------------*/
+
+/* Accent > Background */
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce ul.products li.product .added_to_cart,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	background-color: $accent__main;
+}
+
+/* Accent > Color */
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+	color: $accent__main;
+}
+
+/* Accent > Background Hover */
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce ul.products li.product .added_to_cart:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+	background-color: $accent__main-hover;
+}
+
+/* Accent > Border */
+#current-shop-items-dropdown {
+	border-top-color: $accent__main-border;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+	border-bottom-color: $accent__main-border;
+}

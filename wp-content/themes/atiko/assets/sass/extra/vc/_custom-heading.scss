@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# VC > Custom Heading
+--------------------------------------------------------------*/
+
+// Reset default margin on custom heading when using heading tags
+.vc_custom_heading h1,
+h1.vc_custom_heading,
+.vc_custom_heading h2,
+h2.vc_custom_heading,
+.vc_custom_heading h3,
+h3.vc_custom_heading,
+.vc_custom_heading h4,
+h4.vc_custom_heading,
+.vc_custom_heading h5,
+h5.vc_custom_heading,
+.vc_custom_heading h6,
+h6.vc_custom_heading { margin: 0; }

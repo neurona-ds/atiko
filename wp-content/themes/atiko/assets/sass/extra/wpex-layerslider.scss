@@ -1,0 +1,241 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : LayerSlider custom styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// Main
+.ls-thumbnail-hover-img img {
+	width: 100%;
+}
+
+// Default skin
+body .ls-defaultskin {
+
+	padding: 0;
+	background: none;
+	@include box-shadow( none );
+	@include border-radius( 0 );
+
+	.ls-nav-prev,
+	.ls-nav-next {
+		top: 50%;
+		margin: -40px 0 0;
+		background: #000;
+		@include opacity( 0.2 );
+		height: 80px;
+		width: 50px;
+		z-index: 99 !important;
+	}
+
+	.ls-nav-prev,
+	.ls-nav-prev:hover {
+		background: #000 url('../images/ls-arrow-left.png') no-repeat center center;
+		left: 0;
+	}
+
+	.ls-nav-next,
+	.ls-nav-next:hover {
+		background: #000 url('../images/ls-arrow-right.png') no-repeat center center;
+		right: 0;
+	}
+
+	.ls-nav-prev:hover,
+	.ls-nav-next:hover {
+		@include opacity( 0.5 );
+	}
+
+}
+
+
+body .ls-borderlesslight .ls-nav-prev,
+body .ls-borderlesslight .ls-nav-next {
+	z-index: 99 !important;
+}
+
+// Minimal skin
+body .ls-minimal {
+
+	padding: 0;
+	background: none;
+	@include box-shadow( none );
+	@include border-radius( 0 );
+
+	.ls-nav-prev,
+	.ls-nav-next {
+		top: 50%;
+		margin: -40px 0 0;
+		background: #000;
+		@include opacity( 0.2 );
+		height: 80px;
+		width: 50px;
+		z-index: 99;
+	}
+
+	.ls-nav-prev,
+	.ls-nav-prev:hover {
+		background: #000 url('../images/ls-arrow-left.png') no-repeat center center;
+		left: 0;
+	}
+
+	.ls-nav-next,
+	.ls-nav-next:hover {
+		background: #000 url('../images/ls-arrow-right.png') no-repeat center center;
+		right: 0;
+	}
+
+	.ls-nav-prev:hover,
+	.ls-nav-next:hover {
+		@include opacity( 0.5 );
+	}
+
+}
+
+
+// Full width skin
+body .ls-fullwidth {
+	padding: 0;
+	background: none;
+	@include box-shadow( none );
+	@include border-radius( 0 );
+
+	.ls-nav-prev,
+	.ls-nav-next {
+		top: 50%;
+		margin: -40px 0 0;
+		background: #000;
+		@include opacity( 0.2 );
+		height: 80px;
+		width: 50px;
+		z-index: 99;
+	}
+	
+	.ls-nav-prev,
+	.ls-nav-prev:hover {
+		background: #000 url('../images/ls-arrow-left.png') no-repeat center center;
+		left: 0;
+	}
+	
+	.ls-nav-next,
+	.ls-nav-next:hover {
+		background: #000 url('../images/ls-arrow-right.png') no-repeat center center;
+		right: 0;
+	}
+	
+	.ls-nav-prev:hover,
+	.ls-nav-next:hover {
+		@include opacity( 0.5 );
+	}
+}
+
+// Full width dark skin
+body .ls-fullwidthdark {
+	padding: 0;
+	background: none;
+	@include box-shadow( none );
+	@include border-radius( 0 );
+
+	.ls-nav-prev,
+	.ls-nav-next {
+		top: 50%;
+		margin: -40px 0 0;
+		background: #000;
+		@include opacity( 0.2 );
+		height: 80px;
+		width: 50px;
+		z-index: 99;
+	}
+	
+	.ls-nav-prev,
+	.ls-nav-prev:hover {
+		background: #000 url('../images/ls-arrow-left.png') no-repeat center center;
+		left: 0;
+	}
+	
+	.ls-nav-next,
+	.ls-nav-next:hover {
+		background: #000 url('../images/ls-arrow-right.png') no-repeat center center;
+		right: 0;
+	}
+	
+	.ls-nav-prev:hover,
+	.ls-nav-next:hover {
+		@include opacity( 0.5 );
+	}
+
+	// pagination buttons
+	.ls-bottom-slidebuttons,
+	.ls-nav-start,
+	.ls-nav-stop,
+	.ls-nav-sides {
+		top: -40px;
+	}
+
+}
+
+// Drop shadow opacity
+body .ls-shadow {
+	@include opacity( 0.4 );
+}
+
+// remove text decoration on links
+.ls-container {
+	a,
+	a:hover,
+	a:active {
+		text-decoration: none;
+	}
+}
+
+// Links
+.ls-container .layerslider-button {
+	
+	&:hover {
+		text-decoration: none;
+		text-decoration: none;
+		@include opacity( 0.85 );
+	}
+
+	&:active {
+		opacity: 1;
+		@include box-shadow( 0 2px 2px rgba(0,0,0,.4) inset );
+	}
+
+}
+
+// Color button fixes
+.ls-container {
+
+	.color-button {
+		padding: 0.8em 1em !important;
+		margin: 0 5px 5px 0;
+		display: inline-block;
+		font-size: 1em;
+		font-weight: 600;
+		color: #fff;
+		border: 0;
+		text-shadow: 0 -1px rgba(0,0,0,0.4) !important;
+		outline: 0;
+		-webkit-appearance: none;
+		border: 1px solid rgba(0,0,0,0.15);
+		box-shadow: 0 0 0 1px rgba(0,0,0,.2), 2px 2px 2px rgba(0,0,0,.2);
+		@include border-radius( 3px );
+		
+		&:hover {
+			text-decoration: none;
+			text-decoration: none;
+			@include opacity( 0.8 );
+		}
+
+		&:active {
+			box-shadow: 0 2px 2px rgba(0,0,0,.4) inset;
+		}
+
+	}
+
+}

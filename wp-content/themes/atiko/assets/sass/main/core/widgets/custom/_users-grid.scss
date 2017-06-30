@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+[Users Grid Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-users-widget a {
+    color: inherit
+}
+
+.wpex-users-widget a:hover {
+    text-decoration: none
+}
+
+.wpex-users-widget-avatar img {
+    display: block
+}
+
+.wpex-users-widget-name {
+    padding-top: 0.6em;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}

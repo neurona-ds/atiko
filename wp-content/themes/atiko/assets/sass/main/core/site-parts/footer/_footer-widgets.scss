@@ -1,0 +1,22 @@
+/* Footer > Widgets */
+.footer-widget {
+    padding-bottom: 45px;
+
+    .widget-title {
+        display: block;
+        margin: 0 0 20px;
+        font-size: 1.077em;
+        color: #fff;
+        font-weight: $headings__font-weight;
+        line-height: $headings__line-height;
+    }
+
+}
+
+#footer-widgets.wpex-row .col {
+    margin-bottom: 0 !important;
+}
+
+.footer-widget .wpex-widget-recent-posts-title {
+    color: #fff;
+}

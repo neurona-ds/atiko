@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+# VC > Old Tabs
+--------------------------------------------------------------*/
+.wpb_tabs .wpb_tabs_nav li a {
+	@include transition( all .15s ease-in-out );
+}
+
+// Default style
+.wpb_tabs.tab-style-default {
+
+	.wpb_tabs_nav {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border-bottom: solid 1px $borders__color;
+		border-left: solid 1px $borders__color;
+		width: 100%;
+		float: none;
+		height: 32px;
+	}
+
+	&.wpb_content_element .wpb_tour_tabs_wrapper .wpb_tab {
+		background-color: #fff;
+		padding: 20px;
+		border-left: solid 1px $borders__color;
+		border-right: solid 1px $borders__color;
+		border-bottom: solid 1px $borders__color;
+	}
+
+
+	.wpb_tabs_nav {
+
+		li {
+			display: block;
+			width: auto;
+			float: left;
+			padding: 0;
+			margin: 0;
+			outline: 0;
+
+			a {
+				display: block;
+				width: auto;
+				outline: 0;
+				margin: 0;
+				height: 31px;
+				padding: 0px 20px;
+				line-height: 31px;
+				border: solid 1px $borders__color;
+				border-left: 0;
+				border-bottom: none;
+				color: #777;
+				background: $background__light-gray;
+				text-decoration: none;
+				&:hover {
+					color: #000
+				}
+			}
+
+			&.ui-tabs-active {
+
+				a {
+					background: #fff;
+					height: 32px;
+					margin-bottom: -1px;
+					color: #000;
+					border-bottom: none;
+				}
+
+			}
+
+		}
+	
+
+	}
+
+}
+
+// Alternative Style 1
+.wpb_tabs.tab-style-alternative-one {
+
+	.wpb_tabs_nav {
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: solid 1px $borders__color;
+		border-radius: 3px;
+
+		&:after {
+			@include clear-after;
+		}
+
+	}
+
+	&.wpb_content_element .wpb_tab {
+		clear: both;
+		background: transparent;
+		padding: 20px 0;
+		border: 0;
+	}
+
+	.wpb_tabs_nav {
+
+		li {
+			display: block;
+			width: auto;
+			padding: 0 !important;
+			float: left !important;
+			margin: 0 !important;
+			outline: 0;
+			border: 0;
+			background: $background__light-gray;
+
+			a {
+				display: block;
+				text-decoration: none;
+				width: auto;
+				padding: 5px 10px;
+				border-left: 1px solid $borders__color;
+				margin: 0;
+				background: none;
+				color: #898989;
+				outline: 0;
+				font-size: 1em;
+				&:hover {
+					color: #000;
+				}
+			}
+
+			&:first-child a {
+				border-left: none;
+				border-radius: 4px 0 0 4px;
+			}
+
+			&:last-child a {
+				border-radius: 0 4px 4px 0;
+			}
+
+			&.ui-tabs-active a {
+				background: #fff;
+				color: #000;
+			}
+
+		}
+
+	}	
+
+}
+
+// Alternative Style 2
+.wpb_tabs.tab-style-alternative-two {
+
+	&.wpb_content_element .wpb_tab {
+		clear: both;
+		background: transparent;
+		padding: 20px 0;
+		border: none;
+	}
+
+	.wpb_tabs_nav {
+		display: block;
+		margin: 0;
+		padding: 0;
+		border-bottom: solid 1px $borders__color;
+
+		li {
+			display: block;
+			width: auto;
+			padding: 0;
+			float: left;
+			margin: 0 25px 0 0;
+			outline: 0;
+			border: 0;
+			background: none;
+
+			a {
+				display: block;
+				text-decoration: none;
+				width: auto;
+				padding: 5px 0;
+				margin: 0;
+				background: none;
+				color: #ababab;
+				outline: 0;
+				&:hover {
+					color: #000;
+				}
+			}
+			
+			&.ui-tabs-active {
+
+				a {
+					font-weight: 600;
+					position: relative;
+					margin-bottom: -1px;
+					border-bottom: 2px solid $accent__main;
+					color: #000;
+				}
+
+			}
+
+		}
+
+	}
+
+}

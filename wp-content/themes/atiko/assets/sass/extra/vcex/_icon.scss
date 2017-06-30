@@ -1,0 +1,88 @@
+/*------------------------------------------------------------------
+[Icon]
+-------------------------------------------------------------------*/
+a:hover .vcex-icon {
+    text-decoration: none;
+    @include opacity( 0.8 );
+}
+
+.vcex-icon-float-center {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vcex-icon-float-left {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.vcex-icon-float-right {
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+.vcex-icon .vcex-icon-wrap {
+	@include transition( all 0.3s );
+}
+
+.vcex-icon.vcex-icon-xlarge {
+    font-size: 100px;
+    height: 180px;
+    line-height: 180px;
+    width: 180px;
+}
+
+.vcex-icon.vcex-icon-large {
+    font-size: 80px;
+    height: 140px;
+    line-height: 140px;
+    width: 140px;
+}
+
+.vcex-icon.vcex-icon-normal {
+    font-size: 40px;
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+}
+
+.vcex-icon.vcex-icon-small {
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+}
+
+.vcex-icon.vcex-icon-tiny {
+    font-size: 0.923em;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+}
+
+.vcex-icon.remove-dimensions {
+    height: auto;
+    width: auto;
+    margin: auto;
+    line-height: normal;
+}
+
+.vcex-icon.has-bg span {
+    text-align: center;
+}
+
+.vcex-icon.has-bg .vcex-icon-wrap {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    line-height: 1;
+    padding: 20px;
+}
+
+.vcex-icon.remove-padding .vcex-icon-wrap {
+    padding: 0 !important;
+}

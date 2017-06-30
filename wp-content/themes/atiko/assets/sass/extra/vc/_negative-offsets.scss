@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# VC > Negative Offsets
+--------------------------------------------------------------*/
+.wpex-vc_section-has-fill,
+.wpex-vc_row-has-fill {
+
+	// Remove the -15px margin on the rows to prevent the background from spilling.
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+
+/*
+
+// Old styles deprecated in 4.0
+
+.wpex-offset-vc-10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.wpex-offset-vc-15 {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.wpex-offset-vc-20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.wpex-offset-vc-25 {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.wpex-offset-vc-30 {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+*/

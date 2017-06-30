@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------
+[Tagcloud Widget]
+-------------------------------------------------------------------*/
+#main .tagcloud a,
+.post-tags a {
+    display: block;
+    float: left;
+    padding: .3em 0.8em;
+    margin: 0 5px 5px 0;
+    color: #555;
+    cursor: pointer;
+    border: 1px solid $borders__color-light;
+    background: $background__light-gray;
+    @include transition( $transition__speed );
+}
+
+#main .tagcloud a:hover,
+.post-tags a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-color: transparent;
+}

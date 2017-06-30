@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+[Custom Post Types]
+-------------------------------------------------------------------*/
+.cpt-entry {
+    position: relative;
+}
+
+.cpt-entry.span_1_of_1 .cpt-entry-inner {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $borders__color-light;
+}
+
+.cpt-entry-media {
+    margin-bottom: 20px;
+}
+
+.cpt-entry-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.cpt-entry-excerpt p:last-child {
+    margin: 0;
+}
+
+.cpt-entry.span_1_of_1 .entry-readmore-wrap {
+    padding-top: 20px;
+}

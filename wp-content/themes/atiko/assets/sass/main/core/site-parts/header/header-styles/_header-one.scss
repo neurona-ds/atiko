@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+[Header One]
+-------------------------------------------------------------------*/
+.header-one #site-logo {
+    float: left;
+    height: 100%;
+}
+
+$outter-link__padding: 4px;
+$inner-link__padding: 11px;
+
+.navbar-style-one {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    margin-top: -$main-menu__height / 2;
+    height: $main-menu__height;
+
+    body.navbar-has-inner-span-bg & {
+        right: -$outter-link__padding;
+    }
+
+    body:not(.navbar-has-inner-span-bg) & .dropdown-menu > li:last-child.menu-button {
+        margin-right: $inner-link__padding;
+    }
+
+    .dropdown-menu > li > a {
+        display: block;
+        height: $main-menu__height;
+        line-height: $main-menu__height;
+        padding: 0 $outter-link__padding;
+        color: $main-menu__link-color;
+    }
+
+    .dropdown-menu > li > a > span.link-inner {
+        display: inline-block;
+        line-height: 1;
+        padding: 0.5em $inner-link__padding;
+        @include border-radius( 3px );
+    }
+
+}

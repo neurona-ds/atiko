@@ -1,0 +1,209 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Visual Composer RTL admin-side styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// Backend + Front-end RTL Fixes
+body.rtl {
+
+	// Switch buttons
+	.composer-switch .wpb_switch-to-composer {
+		@include border-radius( 0 4px 4px 0 );
+	}
+	.composer-switch a:last-of-type {
+		@include border-radius( 4px 0 0 4px );
+	}
+
+	// Sticky topbar
+	.vc_subnav-fixed {
+		padding-left: 0;
+		padding-right: 160px;
+	}
+
+	.vc_navbar .vc_save-backend .vc_control-save {
+		margin-right: 5px;
+		margin-left: 21px;
+	}
+	
+	// Top bar icons
+	.vc_navbar-header,
+	.vc_navbar .vc_navbar-nav > li {
+		float: right;
+	}
+
+	.vc_pull-right {
+		float: left !important;
+	}
+
+	.vc_navbar .vc_navbar-nav > li {
+		border-right: 0;
+		border-left: 1px solid #F5F5F5;
+	}
+
+	.vc_navbar-border-right {
+		border-right: 0;
+		border-left: 1px solid #F5F5F5;
+	}
+
+	.vc_control .vc-controls-move,
+	.vc_control.column_move {
+		float: right;
+	}
+
+	.vc_controls-row .vc_control-row-layout,
+	.vc_controls-row .vc_row_layouts,
+	.vc_controls-row .column_add,
+	.vc_controls-row .vc_control-add-column {
+		float: right;
+		margin-left: 0;
+		margin-right: 1px;
+	}
+
+	.vc_controls-row .vc_row_edit_clone_delete .vc_control {
+		float: left;
+		margin-left: 0;
+		margin-right: 1px;
+	}
+
+	.vc_controls-row .vc_control-row-layout:hover,
+	.vc_controls-row .vc_row_layouts:hover {
+		left: auto;
+		right: 36px;
+	}
+
+	.vc_control-set-column.set_columns.custom_columns {
+		float: right;
+	}
+
+	// Module icons on page
+	.wpb_content_element > .wpb_element_wrapper > .wpb_element_title .vc_element-icon {
+		float: right;
+		margin-right: 0;
+		margin-left: 10px;
+	}
+
+	// Element inserter icons
+	.vc_add-element-container .wpb-content-layouts a {
+		padding-right: 47px;
+		padding-left: 4px;
+	}
+
+	.vc_add-element-container .vc_element-icon {
+		left: auto;
+		right: 8px;
+	}
+
+	// Element inserter controls
+	.vc_ui-panel-header .vc_ui-panel-header-controls {
+		margin: 2px 12px 0 0;
+	}
+
+	// Single popup tabs
+	.vc_general.vc_ui-tabs-line > li {
+		float: right;
+	}
+
+	.vc_general.vc_ui-tabs-line > .vc_ui-tabs-line-dropdown-toggle {
+		float: left;
+	}
+
+	.vc_ui-tabs-line .vc_ui-tabs-line-dropdown {
+		left: 0;
+		right: auto;
+	}
+
+	// Input floats
+	.vc_input-group .vc_form-control {
+		float: right;
+	}
+
+	// Column floats
+	.vc_media-lg .vc_col-lg-1, .vc_media-lg .vc_col-lg-10, .vc_media-lg .vc_col-lg-11, .vc_media-lg .vc_col-lg-12, .vc_media-lg .vc_col-lg-2, .vc_media-lg .vc_col-lg-3, .vc_media-lg .vc_col-lg-4, .vc_media-lg .vc_col-lg-5, .vc_media-lg .vc_col-lg-6, .vc_media-lg .vc_col-lg-7, .vc_media-lg .vc_col-lg-8, .vc_media-lg .vc_col-lg-9, .vc_media-md .vc_col-md-1, .vc_media-md .vc_col-md-10, .vc_media-md .vc_col-md-11, .vc_media-md .vc_col-md-12, .vc_media-md .vc_col-md-2, .vc_media-md .vc_col-md-3, .vc_media-md .vc_col-md-4, .vc_media-md .vc_col-md-5, .vc_media-md .vc_col-md-6, .vc_media-md .vc_col-md-7, .vc_media-md .vc_col-md-8, .vc_media-md .vc_col-md-9, .vc_media-sm .vc_col-sm-1, .vc_media-sm .vc_col-sm-10, .vc_media-sm .vc_col-sm-11, .vc_media-sm .vc_col-sm-12, .vc_media-sm .vc_col-sm-2, .vc_media-sm .vc_col-sm-3, .vc_media-sm .vc_col-sm-4, .vc_media-sm .vc_col-sm-5, .vc_media-sm .vc_col-sm-6, .vc_media-sm .vc_col-sm-7, .vc_media-sm .vc_col-sm-8, .vc_media-sm .vc_col-sm-9, .vc_media-xs .vc_col-xs-1, .vc_media-xs .vc_col-xs-10, .vc_media-xs .vc_col-xs-11, .vc_media-xs .vc_col-xs-12, .vc_media-xs .vc_col-xs-2, .vc_media-xs .vc_col-xs-3, .vc_media-xs .vc_col-xs-4, .vc_media-xs .vc_col-xs-5, .vc_media-xs .vc_col-xs-6, .vc_media-xs .vc_col-xs-7, .vc_media-xs .vc_col-xs-8, .vc_media-xs .vc_col-xs-9, .vc_navbar .vc_navbar-brand {
+			float: right;
+		}
+	
+		// Image attachment floats
+		.vc_css-editor .vc_settings .vc_background-image .vc_add-image,
+		.vc_css-editor .vc_settings .vc_background-image .vc_image .added,
+		.wpb_el_type_attach_image .gallery_widget_add_images,
+		.wpb_el_type_attach_images .gallery_widget_add_images,
+		.gallery_widget_attached_images_list li,
+		.gallery_widget_img_select li {
+			float: right;
+			margin: 0 0 5px 5px;
+		}
+
+		// Popup controls
+		.vc_ui-panel-header .vc_ui-panel-header-controls {
+			float: left;
+		}
+
+	// Repetable field
+	.vc_control .vc-controls-move,
+	.vc_control.column_move {
+		float: right;
+	}
+
+	.vc_controls-row .vc_row_edit_clone_delete .vc_control {
+		float: left;
+	}
+
+	.vc_param-group-admin-labels {
+		float: right;
+		margin-left: 0;
+		margin-right: 1em;
+	}
+
+	// Link labels
+	.vc_link .vc_link_label {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+
+	// Auto complete
+	.vc_autocomplete-inline>li.vc_data.vc_autocomplete-label {
+		float: right;
+	}
+
+}
+
+// Front-end Editor RTL Fixes
+body.rtl.compose-mode {
+
+	.vc_navbar .vc_navbar-nav > li {
+		border-left: 0;
+		border-right: 1px solid #34588f;
+	}
+
+	.vc_navbar-border-right {
+		border-right: 0;
+		border-left: 1px solid #34588f;
+	}
+
+	.vc_navbar .vc_btn-backend-editor,
+	.vc_navbar .vc_btn-save-draft {
+		margin-right: 21px;
+		margin-left: 2px;
+	}
+
+	.vc_navbar .vc_btn-save {
+		margin-left: 21px;
+		margin-right: 2px
+	}
+
+    // Fix extra space on right
+    #wpcontent,
+    #wpfooter {
+        margin-right: 0;
+        margin-left: 160px;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+}
