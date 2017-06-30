@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------
+[Social Profiles Images Widget]
+-------------------------------------------------------------------*/
+.wpex-social-widget-output {
+    list-style: none;
+    
+    li {
+        margin: 0;
+        padding: 0;
+        border: none;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+        img {
+            display: block;
+            @include transition( $transition__speed );
+
+            &:hover {
+                @include opacity( $images__hover-opacity );
+            }
+
+            &:active {
+                position: relative;
+                top: 1px;
+            }
+
+
+        }
+
+    }
+
+    // Center align
+    &.textcenter li {
+        float: none;
+        display: inline-block;
+    }
+
+    // Right align
+    &.textright li {
+        float: right;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+}

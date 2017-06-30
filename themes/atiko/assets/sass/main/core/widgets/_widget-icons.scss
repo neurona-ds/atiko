@@ -1,0 +1,40 @@
+/* Widgets > Icons */
+.sidebar-widget-icons {
+
+    .widget_archive a:before,
+    .widget_recent_entries a:before,
+    .widget_recent_comments a:first-child:before,
+    .widget_layered_nav a:before,
+    .widget_product_categories a:before,
+    .widget_categories a:before {
+        margin-right: 10px;
+        font-family: "FontAwesome";
+        color: #999;
+        display: inline-block;
+    }
+
+    .widget_archive a:before {
+        content: "\f016";
+    }
+
+    .widget_recent_entries a:before {
+        content: "\f0f6";
+    }
+
+    .widget_recent_comments a:first-child:before {
+        content: "\f0e5";
+    }
+
+    .widget_layered_nav a:before {
+        content: "\f0da";
+    }
+
+    .widget_product_categories a:before {
+        content: "\f0da";
+    }
+
+    .widget_categories a:before {
+        content: "\f114";
+    }
+
+}

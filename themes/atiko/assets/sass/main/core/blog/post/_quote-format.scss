@@ -1,0 +1,35 @@
+/* Blog Single > Quote */
+.single {
+
+	.format-quote {
+	    position: relative;
+	    display: block;
+	    padding: 20px 30px;
+	    font-size: 1.231em;
+	    z-index: 2;
+	    background: $background__light-gray;
+
+	    p:last-child {
+		    margin: 0;
+		}
+
+		.quote-entry-author {
+		    margin-top: 15px;
+		    font-size: 0.923em;
+		    font-weight: 300;
+		    text-decoration: underline;
+		}
+
+		 .fa-quote-right {
+		    position: absolute;
+		    right: 15px;
+		    bottom: 15px;
+		    font-size: 60px;
+		    display: block;
+		    z-index: 1;
+		    @include opacity( 0.1 );
+		}
+		
+	}
+
+}

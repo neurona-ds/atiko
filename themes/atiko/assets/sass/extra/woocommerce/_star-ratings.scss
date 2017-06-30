@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------
+[Star Ratings]
+-------------------------------------------------------------------*/
+
+.woocommerce {
+
+	p.stars a,
+	.star-rating {
+	    color: #F9CA63;
+	    font-size: 1em;
+	}
+
+	.star-rating:before {
+	    color: #dedede;
+	}
+
+}
+
+.widget p.stars a,
+.widget .star-rating {
+	font-size: .857em;
+}

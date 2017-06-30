@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+[# bbPress > Forms]
+-------------------------------------------------------------------*/
+.bbp-login-form,
+.bbp-logged-in {
+	background: $background__light-gray;
+	border: 1px solid $borders__color-light;
+	padding: 20px;
+}
+
+.bbp-login-form {
+
+	label {
+		width: auto;
+		margin-bottom: 5px;
+		color: #222;
+	}
+
+	input[type="text"],
+	input[type="password"] {
+		background: #fff;
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid #eee;
+	}
+
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	}
+
+}
+
+
+
+#sidebar .bbp-login-form label[for=rememberme] {
+	width: auto;
+}
+
+#footer-widgets {
+
+	.bbp-login-form,
+	.bbp-logged-in {
+		background: #222;
+		border-color: #343434;
+	}
+
+	.bbp-login-form label {
+		color: inherit;
+	}
+
+}
+
+.bbp-login-form {
+
+	.bbp-username,
+	.bbp-email,
+	.bbp-password,
+	.bbp-remember-me,
+	.bbp-submit-wrapper {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+}
+
+body #bbpress-forums input#bbp_topic_title,
+body #bbpress-forums input#bbp_topic_tags {
+	width: 100%;
+	margin-bottom: 0;
+	background: #fff;
+	border-color: #eee; // do not use var cause it's a form
+}

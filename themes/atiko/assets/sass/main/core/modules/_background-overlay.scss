@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------
+[Background Overlay]
+-------------------------------------------------------------------*/
+.wpex-has-overlay {
+    z-index: 2;
+    position: relative;
+
+    .container,
+    .wpb_column {
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+.wpex-video-bg-overlay,
+.wpex-bg-overlay-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1 !important;
+
+    .wpex-bg-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; // Needed to fix bug.
+        background-color: #000;
+        @include opacity( 0.65 ); // Important required to prevent issues with VC parallax with Fade.
+    }
+    
+}
+
+.wpex-video-bg-overlay.dotted,
+.wpex-bg-overlay.dotted {
+    background: #000 url(assets/images/dotted-overlay.png) repeat;
+}
+
+.wpex-video-bg-overlay.dashed,
+.wpex-bg-overlay.dashed {
+    background: #000 url(assets/images/dashed-overlay.png) repeat;
+}

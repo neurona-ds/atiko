@@ -1,0 +1,21 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Tribe Events Calendar styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// SASS partials
+@import "tribe-events/subheading";
+@import "tribe-events/typography";
+@import "tribe-events/buttons";
+@import "tribe-events/notices";
+@import "tribe-events/calendar";
+@import "tribe-events/events-lists";
+@import "tribe-events/single-events";
+@import "tribe-events/widgets";
+@import "tribe-events/responsive";

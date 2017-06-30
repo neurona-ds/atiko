@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+[# bbPress > Hide Things]
+-------------------------------------------------------------------*/
+body.bbpress .social-share-title,
+body.bbpress .wpex-social-share,
+.bbp-topic-freshness,
+.bbp-forum-freshness,
+li.bbp-forum-freshness,
+.bbp-topic-started-by .avatar,
+.bbp-template-notice.info,
+.bbp-pagination-count,
+.bbp-reply-ip,
+#bbp-search-results .bbp-header {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+body.bbpress .bbp-breadcrumb {
+	display: none;
+}

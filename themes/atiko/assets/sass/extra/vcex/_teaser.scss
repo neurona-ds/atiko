@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------
+[Teaser Boxes]
+-------------------------------------------------------------------*/
+.vcex-teaser {
+    display: block !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.vcex-teaser-heading {
+    color: $headings__color;
+    font-weight: $headings__font-weight;
+    font-size: pem( 16 );
+    margin: 0;
+}
+
+.vcex-teaser-content {
+    padding-top: 20px;
+}
+
+.vcex-teaser-text {
+    padding-top: 10px;
+
+    p:last-child {
+        margin: 0
+    }
+
+}
+
+.vcex-teaser-media img {
+    vertical-align: bottom;
+}
+
+// Typography styles
+.vcex-skin-light {
+
+    .vcex-teaser-two {
+        background-color: #000;
+        background-color: rgba(0,0,0,0.25);
+        border-color: rgba(0,0,0,0.1);
+    }
+
+    .vcex-teaser-three .vcex-teaser-content {
+        background-color: #000;
+        background-color: rgba(0,0,0,0.25);
+        border-color: rgba(0,0,0,0.1);
+    }
+
+}

@@ -1,0 +1,16 @@
+/* Blog Single > Meta */
+
+/*
+.content-full-screen .meta {
+	display: none; // @deprecated since 4.0
+}
+*/
+
+.single-post .meta {
+	margin: 0 0 20px;
+}
+
+.single-post .meta.meta-with-title {
+	border: none;
+	padding: 0;
+}

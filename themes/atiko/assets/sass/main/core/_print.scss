@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+[# Print Styles]
+-------------------------------------------------------------------*/
+@media print {
+
+	#sidebar,
+	#footer-callout-wrap,
+	#footer,
+	#footer-bottom,
+	#top-bar-wrap,
+	#site-navigation-wrap,
+	.toggle-bar-btn,
+	.post-pagination,
+	.related.products,
+	.product form.cart {
+		display: none;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.wpb_accordion_content,
+	.wpb_toggle_content {
+		display: block !important;
+	}
+
+}

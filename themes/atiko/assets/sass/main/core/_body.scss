@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------
+[# Body]
+-------------------------------------------------------------------*/
+body {
+	background: $body__background;
+	font-family: $body__font-family;
+	font-size: $body__font-size;
+	line-height: $body__line-height;
+	color: $body__color;
+}
+
+body.wpex-noscroll {
+	position: absolute;
+	width: 100%;
+	overflow-y: hidden;
+	top: 0;
+	bottom: 0;
+}

@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+[# bbPress > Search]
+-------------------------------------------------------------------*/
+#bbp_search,
+#bbp_search_submit {
+	margin-bottom: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#bbpress-forums {
+
+	#bbp_search {
+		background: #fff;
+		border: 2px solid #ededed;
+		@include border-radius( 3px );
+	}
+
+	#bbp_search_submit {
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	
+	div.bbp-search-form {
+		float: none;
+	}
+	
+	// Search results
+	#bbp-search-results {
+		border-top: 0;
+
+		.bbp-forum-content {
+			margin-left: 0;
+		}
+
+		.bbp-forum-title a:hover {
+			text-decoration: underline;
+		}
+
+	}
+
+}
+
+#bbp_search {
+	width: 70% !important;
+	float: left;
+	height: 40px;
+}
+
+#bbp_search_submit {
+	float: right;
+	width: 28%;
+	height: 40px;
+	line-height: 40px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.bbp-search {
+
+	.bbp-forum-title h3 a,
+	.bbp-topic-title h3 a,
+	.bbp-reply-title h3 a {
+		color: #000;
+		text-decoration: underline;
+	}
+
+}
+
+// Search widgets
+.widget {
+
+	#bbp_search {
+		height: 34px;
+		width: 70% !important;
+		margin: 0;
+		border-right: 0;
+		@include border-radius( 0 );
+	}
+
+	#bbp_search_submit {
+		width: 30%;
+		height: 34px;
+		line-height: 34px;
+		margin: 0;
+		@include border-radius( 0 );
+	}
+
+}

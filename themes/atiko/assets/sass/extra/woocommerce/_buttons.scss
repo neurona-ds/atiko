@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------
+[Buttons]
+-------------------------------------------------------------------*/
+
+/* Button > Main */
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce ul.products li.product .added_to_cart {
+    @include button-styles;
+    -webkit-font-smoothing: inherit; // Woo fix
+}
+
+/* Button > Hover */
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce ul.products li.product .added_to_cart:hover { color: #fff; text-decoration: none; }
+
+/* Button > Loading*/
+.woocommerce #respond input#submit.loading,
+.woocommerce a.button.loading,
+.woocommerce button.button.loading,
+.woocommerce input.button.loading { opacity: 1; padding-right: 1em; }
+.woocommerce #respond input#submit.loading:after,
+.woocommerce a.button.loading:after,
+.woocommerce button.button.loading:after,
+.woocommerce input.button.loading:after {
+    font-family: "FontAwesome";
+    content: "\f021";
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    position: inherit;
+    top: auto;
+    right: auto;
+    margin-left: .53em;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    color: inherit;
+    opacity: 1;
+}
+
+
+/* Button > Added to cart */
+.woocommerce ul.products li.product .added_to_cart:after {
+    font-family: "FontAwesome";
+    content: "\f07a"; margin-left: .53em;
+    vertical-align: bottom;
+}
+
+/* Button > Alt */
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    color: #fff;
+    -webkit-font-smoothing: inherit;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    color: #fff;
+}
+
+/* Button > Disabled */
+.woocommerce button.disabled,
+.woocommerce button.alt:disabled,
+.woocommerce #respond input#submit.disabled,
+.woocommerce #respond input#submit:disabled,
+.woocommerce #respond input#submit:disabled[disabled],
+.woocommerce a.button.disabled,
+.woocommerce a.button:disabled,
+.woocommerce a.button:disabled[disabled],
+.woocommerce button.button.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce input.button.disabled,
+.woocommerce input.button:disabled,
+.woocommerce input.button:disabled[disabled] {
+    background: #777 !important;
+    color: #fff !important;
+}
+
+/* Button > Return to shop */
+.return-to-shop .button.wc-backward:before {
+    font-family: "FontAwesome";
+    content: "\f053";
+    margin-right: 8px;
+}

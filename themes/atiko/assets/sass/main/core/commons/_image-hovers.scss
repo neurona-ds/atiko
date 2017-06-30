@@ -1,0 +1,102 @@
+/*------------------------------------------------------------------
+[# Image Hovers]
+-------------------------------------------------------------------*/
+.wpex-image-hover {
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    display: block;
+    display: inline-block;
+    @include backface-hidden;
+    @include accelerate-css;
+
+    img {
+        display: block;
+        display: inline-block;
+        vertical-align: bottom;
+        width: 100%; // width is important to fix firefox bug
+        height: auto;
+        nowhitespace: afterproperty;
+        @include box-shadow-fix;
+        @include backface-hidden;
+        @include transition( all 0.25s );
+    }
+
+}
+
+/* Opacity */
+.wpex-image-hover.opacity:hover img {
+    @include opacity( 0.8 );
+}
+
+/* Grow */
+.wpex-image-hover.grow {
+    position: static;
+}
+.wpex-image-hover.grow:hover img {
+    @include transform( scale( 1.2 ) );
+}
+.wpex-image-hover.grow.overlay-parent {
+    position: relative; // Fix for overlays
+}
+
+/* Shrink */
+.wpex-image-hover.shrink:hover img {
+    @include transform( scale( 0.8 ) );
+}
+
+/* Pan */
+.wpex-image-hover.side-pan:hover img {
+    margin-left: -11%;
+    @include transform( scale( 1.2 ) );
+}
+.wpex-image-hover.vertical-pan:hover img {
+    margin-top: -10%;
+    @include transform( scale( 1.2 ) );
+}
+
+/* Tilt */
+.wpex-image-hover.tilt {
+    overflow: visible;
+
+    &:hover img {
+        @include transform( rotate( -10deg ) );
+    }
+
+}
+
+/* Blurr */
+.wpex-image-hover.blurr:hover img,
+.wpex-image-hover.blurr-invert img {
+    @include filter( blur( 3px ) );
+}
+
+.wpex-image-hover.blurr-invert:hover img {
+    @include filter( blur( 0px ) );
+}
+
+/* Sepia */
+.wpex-image-hover.sepia img {
+    @include filter( sepia( 100% ) );
+}
+
+/* FadeIn-Out */
+.wpex-image-hover.fade-in,
+.wpex-image-hover.fade-out {
+    background: #000;
+    overflow: visible;
+}
+
+.wpex-image-hover.fade-out img,
+.wpex-image-hover.fade-in img {
+    width: 100%
+}
+
+.wpex-image-hover.fade-in img,
+.wpex-image-hover.fade-out:hover img {
+    @include opacity( 0.7 );
+}
+
+.wpex-image-hover.fade-in:hover img {
+    @include opacity( 1 );
+}

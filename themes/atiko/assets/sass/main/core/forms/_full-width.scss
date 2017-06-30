@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+[Full-width Forms]
+-------------------------------------------------------------------*/
+
+.full-width-input input[type="date"],
+.full-width-input input[type="time"],
+.full-width-input input[type="datetime-local"],
+.full-width-input input[type="week"],
+.full-width-input input[type="month"],
+.full-width-input input[type="text"],
+.full-width-input input[type="email"],
+.full-width-input input[type="url"],
+.full-width-input input[type="password"],
+.full-width-input input[type="search"],
+.full-width-input input[type="tel"],
+.full-width-input input[type="number"],
+.full-width-input input[type="submit"],
+.full-width-input textarea,
+.full-width-input select {
+	width: 100% !important;
+}
+
+.full-width-input input[type="submit"] {
+	padding: 0.9em 1.2em; // Make button a little bigger when full-width
+}

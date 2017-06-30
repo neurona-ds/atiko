@@ -1,0 +1,40 @@
+.vcex-chosen,
+.vc-chosen {
+
+    &.chosen-container{
+        width: 100% !important;
+        
+        ul.chosen-results li.highlighted {
+            background: #305288;
+        }
+
+    }
+
+    /*
+    &.chosen-container-single {
+
+        .chosen-single {
+            color: #32373c;
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+            padding-left: 10px;
+            background: #fff;
+            border-color: #ddd;
+            background: #dcdcdc;
+            box-shadow: none;
+            @include border-radius( 3px );
+
+            div {
+                color: #000;
+                top: 7px;
+                right: 2px;
+            }
+
+        }
+
+    }
+
+    */
+
+}

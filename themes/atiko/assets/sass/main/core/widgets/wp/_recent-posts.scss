@@ -1,0 +1,9 @@
+/*------------------------------------------------------------------
+[Recent Posts Widget]
+-------------------------------------------------------------------*/
+.widget_recent_entries .post-date {
+	display: block;
+	font-size: 0.846em;
+	margin: 5px 0 0;
+	@include opacity( 0.85 );
+}

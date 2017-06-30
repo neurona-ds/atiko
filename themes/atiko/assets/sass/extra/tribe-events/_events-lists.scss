@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+[# Tribe Evevents > Lists]
+-------------------------------------------------------------------*/
+
+.tribe-events-list .tribe-events-event-cost span {
+	background-color: #f7f7f7;
+	color: #777;
+	border-color: #eee;
+	font-weight: normal;
+}
+
+.tribe-events-list-separator-month:after {
+	border-color: #eee;
+}
+
+.tribe-events-list-separator-month {
+	color: #777;
+	font-weight: 600;
+}
+
+.tribe-events-list .tribe-events-event-image {
+	width: 30%;
+}
+
+.tribe-events-photo-event-wrap .tribe-events-event-image {
+	width: 100%;
+}
+
+.tribe-events-list .tribe-events-content {
+	padding-right: 0;
+}
+
+.tribe-events-list .tribe-events-venue-details {
+	margin-bottom: 20px;
+}

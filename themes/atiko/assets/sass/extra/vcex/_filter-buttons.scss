@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------
+[Filter Buttons]
+-------------------------------------------------------------------*/
+ul.vcex-filter-links {
+    list-style: none;
+    margin: 0 0 20px;
+
+    li {
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    .theme-txt-link {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+}
+
+// Center links
+.vcex-filter-links.center {
+    text-align: center;
+}
+
+.vcex-filter-links.center li {
+    display: inline-block;
+    float: none;
+}

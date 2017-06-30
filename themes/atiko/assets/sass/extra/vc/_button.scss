@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# VC > Button
+--------------------------------------------------------------*/
+.vc_btn {
+	margin-bottom: 5px;
+}
+
+.vc_btn.vc_btn_3d {
+	margin-bottom: 10px;
+}
+
+.vc_btn.full-width-button {
+	width: 100%;
+	text-align: center;
+}
+
+.vc_btn_blue {
+	background-color: $accent__main;
+	&:hover {
+		background-color: $accent__main-hover;
+	}
+}
+
+.vc_btn_blue.vc_btn_3d {
+	@include box-shadow( 0 5px 0 #2e698a );
+}
+
+.vc_btn_blue.vc_btn_outlined {
+	border-color: $accent__main;
+	color: $accent__main;
+	&:hover {
+		border-color: $accent__main-hover;
+	}
+
+}

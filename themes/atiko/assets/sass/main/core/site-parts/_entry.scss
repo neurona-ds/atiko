@@ -1,0 +1,82 @@
+/*------------------------------------------------------------------
+[Entries (Global Styles)]
+-------------------------------------------------------------------*/
+.entry-media img {
+    vertical-align: bottom;
+    @include box-shadow-fix;
+}
+
+.entry-excerpt p {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+}
+
+.entry-readmore-wrap {
+    padding-top: 15px;
+}
+
+/* Entries > Left Thumbnail Style */
+.entries.left-thumbs {
+
+    .entry {
+        border: 0;
+
+        .entry-media {
+            float: left;
+            margin: 0;
+            width: 46%;
+            margin-bottom: 20px;
+        }
+
+        .entry-details {
+            background: none;
+            border: none;
+            float: right;
+            width: 50%;
+            padding: 0;
+        }
+
+        &.no-media .entry-details {
+            width: 100%
+        }
+
+    }
+
+}
+
+/* Entries > Title */
+.entry-title {
+    display: block;
+    font-size: 1.077em;
+    margin: 0 0 5px;
+    font-weight: 600;
+    color: #000;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    a {
+        color: inherit; // Needed for titles using spans or divs and not headings
+
+        &:hover {
+            text-decoration: none
+        }
+
+    }
+
+}
+
+.single-post-title,
+.single-page-title {
+    font-size: 1.846em;
+    margin: 0 0 10px;
+    font-weight: 400;
+}
+
+.single-page-title {
+    margin-bottom: 20px
+}
+

@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------
+[# bbPress > Responsive]
+-------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+	.wpex-responsive {
+
+		li.bbp-forum-topic-count,
+		li.bbp-topic-voice-count,
+		li.bbp-forum-reply-count,
+		li.bbp-topic-reply-count,
+		.bbp-replies li.bbp-header {
+			display: none;
+		}
+
+		#bbpress-forums ul.bbp-replies {
+			border-top: 0;
+		}
+
+		.bbp-body .bbp-reply-author br {
+			display: initial;
+		}
+
+		#bbpress-forums {
+	
+			div.bbp-reply-author a.bbp-author-name {
+				padding-top: 20px;
+			}
+
+			#bbp-single-user-details,
+			#bbp-user-body {
+				width: 100%;
+				float: none;
+				margin: 0;
+			}
+
+			#bbp-single-user-details {
+				margin-bottom: 30px;
+			}
+
+			#bbp-single-user-details #bbp-user-navigation a:after {
+				content: "\f078";
+			}
+
+		}
+
+		div.bbp-search-form input {
+			padding-left: 0.8em;
+			padding-right: 0.8em;
+		}
+
+	}
+}

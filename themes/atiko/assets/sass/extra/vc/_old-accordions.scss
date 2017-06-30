@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# VC > Old Accordions
+--------------------------------------------------------------*/
+.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header { display: block; color: #666; display: block; padding: 10px 12px; border: 1px solid #e4e4e4; outline: 0; text-transform: none; letter-spacing: normal; font-weight: normal; margin: 0; margin-top: 10px; cursor: pointer; background: #f7f7f7; background-repeat: no-repeat; position: relative; transition: all .15s ease-in-out; }
+.wpb_accordion .wpb_accordion_wrapper h3 a { display: block; color: #666; }
+.wpb_accordion .wpb_accordion_wrapper h3 { margin: 0; padding: 0; }
+.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a { padding-left: 0 }
+.wpb_accordion .wpb_accordion_wrapper h3 a:before { content: "\f067"; font-family: 'FontAwesome'; font-style: normal; font-weight: normal; line-height: 1; font-size: 0.846em; margin-right: 10px; color: #666; }
+.wpb_content_element .wpb_accordion_header a { padding: 0 }
+
+/* Accordions > Header > Hover */
+.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:hover { color: #000; background: #f4f4f4; text-decoration: none; border-color: #ddd; }
+.wpb_accordion .wpb_accordion_wrapper h3:hover a:before,
+.wpb_accordion .wpb_accordion_wrapper h3:hover a { color: #000 }
+
+/* Accordions > Header > Active */
+.wpb_accordion .wpb_accordion_wrapper h3.ui-state-active.wpb_accordion_header { opacity: 1; font-weight: 400; text-decoration: none; }
+.wpb_accordion .wpb_accordion_wrapper h3.ui-state-active.wpb_accordion_header a { color: #000 }
+.wpb_accordion .wpb_accordion_wrapper h3.ui-state-active.wpb_accordion_header a:before { content: "\f068"; font-family: 'FontAwesome'; font-style: normal; font-weight: normal; line-height: 1; font-size: 0.846em; margin-right: 10px; color: #666; font-style: normal; }
+
+/* Accordions > Icons */
+.wpb_accordion .wpb_accordion_wrapper .ui-state-default .ui-icon,
+.wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon { display: none }
+
+/* Accordions > Content */
+.wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content { padding: 10px 0; margin: 0; }

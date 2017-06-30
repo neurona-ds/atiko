@@ -1,0 +1,51 @@
+/* Header > Logo */
+#site-logo {
+    display: table; // Used to properly center logo on sticky headers/etc.
+	
+	// Logo link
+	a {
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+
+		// Text logo
+		&.site-logo-text {
+		    color: #222;
+		    font-size: 24px;
+		    font-weight: bold;
+		    @include transition( $transition__speed );
+		}
+
+		// Hover
+		&:hover {
+			text-decoration: none;
+		}
+
+	}
+	
+	// Image logo
+	img {
+	    display: inline;
+	    vertical-align: middle;
+	    height: auto;
+	    width: auto;
+	    max-height: 100%;
+	    max-width: 100%;
+	}
+
+}
+
+#site-logo-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#site-logo-fa-icon {
+    margin-right: 10px;
+
+    &.fa-wpex-hidden {
+	    margin-right: 0;
+	}
+
+}

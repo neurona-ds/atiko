@@ -1,0 +1,35 @@
+/* Post Edit Link */
+.post-edit {
+	padding: 40px 0 60px;
+
+	body.is_customize_preview & {
+		display: none;
+	}
+
+	body.content-full-screen & {
+		text-align: center;
+	}
+
+	a {
+		display: inline-block;
+		padding: 0.8em 1.2em;
+		line-height: normal;
+		text-transform: uppercase;
+		font-size: 10px;
+		letter-spacing: 1px;
+		background: $accent__vc-brand;
+		color: #fff !important;
+		margin-right: 3px;
+		@include transition( $buttons__transition-speed );
+		@include border-radius ( $buttons__border-radius );
+		font-family: $body__font-family;
+
+		&:hover {
+			text-decoration: none;
+			background: #0d3d63;
+			color: #fff;
+		}
+
+	}
+
+}

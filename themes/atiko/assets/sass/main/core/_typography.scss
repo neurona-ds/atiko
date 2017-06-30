@@ -1,0 +1,420 @@
+/*------------------------------------------------------------------
+[# Typography]
+-------------------------------------------------------------------*/
+body.smooth-fonts {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	margin: 0 0 $elements__bottom-margin;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+	&.wpex-strong {
+		color: $headings__color;
+	}
+}
+
+small {
+	font-size: 80%;
+}
+
+hr {
+	border: solid $borders__color;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 40px 0;
+	height: 0;
+}
+
+p.lead {
+	font-size: 1.313em;
+	line-height: 27px;
+	color: #777;
+}
+
+address {
+	line-height: 1.5;
+	margin: 0 0 $elements__bottom-margin;
+}
+
+sup, sub {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+sub {
+	top: 0.4em;
+}
+
+body .wpex-italic {
+	font-style: italic;
+}
+
+body .wpex-td-none {
+	text-decoration: none;
+}
+
+/* Font Sizes */
+.wpex-em-14px {
+	font-size: 1.077em;
+}
+
+.wpex-em-16px {
+	font-size: 1.231em;
+}
+
+.wpex-em-18px {
+	font-size: 1.385em;
+}
+
+.wpex-em-21px {
+	font-size: 1.615em;
+}
+
+.wpex-fs-13px {
+	font-size: 13px;
+}
+
+.wpex-fs-14px {
+	font-size: 14px;
+}
+
+.wpex-fs-16px {
+	font-size: 16px;
+}
+
+.wpex-fs-18px {
+	font-size: 18px;
+}
+
+.wpex-fs-21px {
+	font-size: 21px;
+}
+
+/* Links */
+a {
+	color: $link__color;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $headings__font-weight;
+	color: $headings__color;
+	line-height: $headings__line-height;
+	margin: $headings__margin;
+
+	a {
+		color: inherit; // remove link color on headings
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+}
+
+h1 {
+	font-size: 1.500em;
+	margin: 0 0 20px;
+}
+
+h2 {
+	font-size: 1.313em;
+}
+
+h3 {
+	font-size: 1.125em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.875em;
+}
+
+h6 {
+	font-size: 0.750em;
+}
+
+.heading-typography {
+	line-height: $headings__line-height;
+}
+
+.columnize-2 {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 3em;
+	-moz-column-gap: 3em;
+	column-gap: 3em;
+	-webkit-column-rule: 1px solid #e5e5e5;
+	-moz-column-rule: 1px solid #e5e5e5;
+	column-rule: 1px solid #e5e5e5;
+	margin: 0 0 1.313em;
+}
+
+.thin-font {
+	font-weight: 300 !important;
+}
+
+.white-text {
+	color: #fff !important;
+}
+
+/* Blockquote */
+$blockquote__margin: $elements__bottom-margin + 10px; // Add a little extra spacing
+blockquote {
+	background: url(assets/images/quote.png) left 4px no-repeat;
+	padding-left: 55px;
+	margin: $blockquote__margin 0;
+	font-size: 1.231em;
+	color: #ababab;
+
+	p:last-child {
+		margin: 0;
+	}
+
+	&.left {
+		float: left;
+		margin-right: 20px;
+		text-align: right;
+		margin-left: 0;
+		width: 33%;
+	}
+
+	&.right {
+		float: right;
+		margin-left: 20px;
+		text-align: left;
+		margin-right: 0;
+		width: 33%;
+	}
+
+}
+
+/* Pre-tag */
+pre {
+	position: relative;
+	background: $background__light-gray;
+	padding: 20px;
+	padding-right: 50px;
+	margin: 0 0 $elements__bottom-margin;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	font-family: 'Verdana';
+	letter-spacing: 1px;
+	z-index: 1;
+
+	&:before {
+		position: absolute;
+		width: 30px;
+		padding-top: 10px;
+		text-align: center;
+		right: 0;
+		top: 0;
+		height: 100%;
+		font-family: "FontAwesome";
+		content: "\f121";
+		background: #e7e7e7;
+		color: #333;
+		font-size: 14px;
+	}
+
+}
+
+/* Dropcaps */
+.dropcap {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 3.231em;
+	line-height: 100%;
+
+	&.boxed {
+		color: #fff;
+		background: #000;
+		padding: 5px 10px;
+	}
+
+}
+
+/* Typography Light */
+.typography-light,
+.typography-light a,
+.typography-light a:hover,
+.typography-light h1,
+.typography-light h2,
+.typography-light h3,
+.typography-light h4 {
+	color: #fff;
+	color: rgba(255,255,255,0.8);
+}
+
+.typography-light p > a {
+	text-decoration: underline;
+}
+
+/* Typography White */
+.typography-white,
+.typography-white-shadow,
+.typography-white a,
+.typography-white-shadow a,
+.typography-white a:hover,
+.typography-white-shadow a:hover,
+.typography-white h1,
+.typography-white-shadow h1,
+.typography-white h2,
+.typography-white-shadow h2,
+.typography-white h3,
+.typography-white-shadow h3,
+.typography-white-shadow h4,
+.typography-white h4 {
+	color: #fff;
+}
+
+.typography-white p > a {
+	text-decoration: underline;
+}
+
+/* Typography Black */
+.typography-black,
+.typography-black a,
+.typography-black a:hover,
+.typography-black h1,
+.typography-black h2,
+.typography-black h3,
+.typography-black h4 {
+	color: #000;
+}
+
+.typography-black p > a {
+	text-decoration: underline;
+}
+
+/* Text Shadows */
+.typography-white-shadow {
+	text-shadow: 0 0 .25em rgba( 0, 0, 0, 0.6 );
+}
+
+/* Font Weights */
+.wpex-fw-100 {
+	font-weight: 100 !important;
+}
+
+.wpex-fw-200 {
+	font-weight: 200 !important;
+}
+
+.wpex-fw-300, .wpex-fw-light {
+	font-weight: 300 !important;
+}
+
+.wpex-fw-400, .wpex-fw-normal {
+	font-weight: normal !important;
+}
+
+.wpex-fw-500 {
+	font-weight: 500 !important;
+}
+
+.wpex-fw-600, .wpex-fw-semibold {
+	font-weight: 600 !important;
+}
+
+.wpex-fw-700, .wpex-fw-bold {
+	font-weight: 700 !important;
+}
+
+.wpex-fw-800 {
+	font-weight: 800 !important;
+}
+
+.wpex-fw-900, .wpex-fw-bolder {
+	font-weight: 900 !important;
+}
+
+/* Text Colors */
+.wpex-child-inherit-color * {
+	color: inherit !important;
+}
+
+.wpex-color-black,
+.wpex-color-black a,
+.wpex-color-black a:hover {
+	color: #000 !important;
+}
+
+.wpex-color-white,
+.wpex-color-white a,
+.wpex-color-white a:hover {
+	color: #fff !important;
+}
+
+/* Lists */
+.entry ul,
+.entry ol {
+	margin: 0 0 20px 30px;
+}
+
+.entry ul {
+	list-style: disc;
+}
+
+.entry ol {
+	list-style: decimal;
+}
+
+.rev_slider ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul.check-list {
+	margin: 0 0 20px;
+	list-style: none;
+
+	li {
+		margin: 0 0 5px;
+
+		&:before {
+			font-family: "FontAwesome";
+			content: "\f00c";
+			margin-right: 10px;
+			opacity: 0.8;
+		}
+
+	}
+
+}
+
+/* Text Highlight */
+.text-highlight {
+	background-image: url(assets/images/highlight-left.png), url(assets/images/highlight-center.png), url(assets/images/highlight-right.png);
+	background-repeat: repeat-x;
+	background-repeat: no-repeat, repeat-x, no-repeat;
+	background-position: center;
+	background-position: left, center, right;
+	background-clip: padding-box, content-box, padding-box;
+	color: #a5651a;
+	padding: 0 20px;
+	margin: 0 -6px;
+}

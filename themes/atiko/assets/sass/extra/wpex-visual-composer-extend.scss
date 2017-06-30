@@ -1,0 +1,83 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Visual Composer Extension CSS
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// General
+.vcex-function-needed {
+	background: red;
+	color: #fff;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 20px;
+}
+
+.vcex-icon-wrap {
+	display: inline;
+	display: inline-block;
+	text-align: center;
+}
+
+.vcex-icon-wrap.left,
+.vcex-icon-position-left {
+	margin-right: 0.769em;
+}
+
+.vcex-icon-wrap.right,
+.vcex-icon-position-right {
+	margin-left: 0.769em;
+}
+
+.vcex-isotope-grid {
+	overflow: hidden;
+}
+
+.vcex-readmore {
+	font-size: 0.923em;
+}
+
+// Module Styles
+@import "vcex/spacing";
+@import "vcex/heading";
+@import "vcex/bullets";
+@import "vcex/leader";
+@import "vcex/divider";
+@import "vcex/divider-dots";
+@import "vcex/divider-multicolor";
+@import "vcex/button";
+@import "vcex/countdown";
+@import "vcex/list-item";
+@import "vcex/icon";
+@import "vcex/icon-box";
+@import "vcex/post-terms";
+@import "vcex/pricing";
+@import "vcex/skillbar";
+@import "vcex/login-form";
+@import "vcex/newsletter";
+@import "vcex/search-bar";
+@import "vcex/recent-news";
+@import "vcex/teaser";
+@import "vcex/milestone";
+@import "vcex/image-swap";
+@import "vcex/navbar";
+@import "vcex/feature-box";
+@import "vcex/social-links";
+@import "vcex/terms-grid";
+@import "vcex/users-grid";
+@import "vcex/animated-text";
+@import "vcex/form-shortcode";
+
+@import "vcex/post-types-slider";
+@import "vcex/testimonials-slider";
+
+@import "vcex/post-types-grid";
+@import "vcex/blog-grid";
+@import "vcex/image-grid";
+
+@import "vcex/filter-buttons";

@@ -1,0 +1,98 @@
+/*------------------------------------------------------------------
+[Footer "Bottom"]
+-------------------------------------------------------------------*/
+#footer-bottom {
+    background: $background__footer-bottom;
+    color: $text__color-footer-bottom;
+    font-size: 0.923em;
+
+    p {
+        color: $text__color-footer-bottom;
+
+        &:last-child {
+            margin: 0;
+        }
+
+    }
+
+}
+
+#footer-bottom-inner {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer-bottom a {
+    color: $link__color-footer-bottom;
+
+    &:hover {
+        color: $link__color-footer-bottom-hover;
+        text-decoration: none;
+    }
+
+}
+
+/* Footer Bottom > Copyright */
+#footer-copyright {
+    font-size: 0.923em;
+    font-weight: 400;
+
+    p:last-child {
+        margin: 0;
+    }
+
+}
+
+/* Footer Bottom > Menu */
+#footer-bottom-menu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    line-height: 40px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    li {
+        float: left;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        .fa {
+            margin-right: $icons__left-right-margin;
+        }
+
+    }
+
+    // Alignments
+    #footer-bottom.textcenter &,
+    #footer-bottom.textleft &,
+    #footer-bottom.textright & {
+        position: static;
+        right: auto;
+        top: auto;
+        margin: 0;
+        height: auto;
+        line-height: inherit;
+        padding-top: 10px;
+    }
+
+    #footer-bottom.textcenter & li {
+        float: none;
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+    #footer-bottom.textright & li {
+        float: right
+    }
+
+}

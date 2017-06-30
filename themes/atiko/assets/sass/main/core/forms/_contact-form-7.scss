@@ -1,0 +1,122 @@
+/*------------------------------------------------------------------
+[Contact Form 7]
+-------------------------------------------------------------------*/
+.wpcf7-form {
+
+	p {
+		margin-bottom: 15px;
+	}
+
+	input {
+		margin-top: 3px;
+	}
+
+}
+
+.wpcf7 {
+
+	.wpcf7-not-valid {
+		border-color: #F00;
+	}
+
+	.wpcf7-mail-sent-ok {
+		padding: 1em 1.2em;
+		background: #edfdd3;
+		border: 1px solid #c4dba0;
+		text-align: center;
+		color: #657e3c;
+		font-weight: normal;
+	}
+
+	img.ajax-loader {
+		margin-left: 10px;
+	}
+
+	.fa.wpex-wpcf7-loader {
+		font-size: 16px;
+		margin-left: 10px;
+		display: none;
+	}
+
+	.fa.wpex-wpcf7-loader.visible {
+		display: block;
+		display: inline-block;
+		@include opacity( 0.6 );
+	}
+
+	.one-half input[type="text"],
+	.one-half input[type="email"],
+	.one-half input[type="tel"],
+	.one-half input[type="password"],
+	.col input[type="text"],
+	.col input[type="email"],
+	.col input[type="tel"],
+	.col input[type="password"] {
+		width: 100%; // Set inputs to 100% when inside columns
+	}
+
+	.one-half {
+		padding-left: 20px;
+
+		&.first {
+			padding-left: 0;
+		}
+
+	}
+
+	.full-width input {
+		width: 100%;
+	}
+
+	.screen-reader-response {
+		position: absolute;
+		overflow: hidden;
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		width: 1px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+
+}
+
+.wpcf7-not-valid-tip {
+	display: none !important
+}
+
+.wpcf7-validation-errors {
+	font-size: 0.923em;
+	padding: 1em 1.2em;
+	color: #c4690e;
+	background: #fffdf3;
+	text-align: center;
+	border: 1px solid #fad7b5;
+}
+
+.wpcf7-mail-sent-ng {
+	margin: 0;
+	padding: 10px;
+	background: #ffe9e9;
+	color: #d04544;
+	border: 1px solid #e7a9a9;
+}
+
+.wpcf7-list-item {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+
+.full-width-input .wpcf7 img.ajax-loader,
+.full-width-input .fa.wpex-wpcf7-loader {
+	margin: 10px 0 0;
+}
+
+.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+.wpcf7-quiz-label {
+	display: block;
+}

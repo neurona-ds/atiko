@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------
+[Font Awesome Icons]
+-------------------------------------------------------------------*/
+.woocommerce a.button.loading:after,
+.woocommerce button.button.loading:after,
+.woocommerce input.button.loading:after,
+.woocommerce ul.products li.product .added_to_cart:after,
+.return-to-shop .button.wc-backward:before,
+.woocommerce .widget_shopping_cart_content .buttons .button:after,
+.woocommerce div.product form.cart .variations .reset_variations:before,
+.wcmenucart .fa,
+.woocommerce div.product div.images .flex-direction-nav a:before {
+	@include font_awesome__css();
+}

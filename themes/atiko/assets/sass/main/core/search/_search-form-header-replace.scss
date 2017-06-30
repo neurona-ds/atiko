@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------
+[Search Form > Header Replace]
+-------------------------------------------------------------------*/
+#searchform-header-replace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+    z-index: 999;
+    @include opacity( 0 );
+    @include transition( all 0.25s ease-in-out );
+
+    &.show {
+        visibility: visible;
+        @include opacity( 1 );
+    }
+    
+}
+
+#searchform-header-replace form {
+    height: 100%;
+    width: 100%;
+}
+
+#searchform-header-replace input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #bbb;
+    background: none;
+    @include border-radius( 0 );
+}
+
+#searchform-header-replace-close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    color: #bbb;
+    cursor: pointer;
+    @include transition( $transition__speed );
+}
+
+#searchform-header-replace-close:hover {
+    color: #000;
+}
+
+body.boxed-main-layout #searchform-header-replace input {
+    padding: 0 $boxed__layout-inner-padding;
+}
+
+body.boxed-main-layout #searchform-header-replace-close {
+    right: $boxed__layout-inner-padding;
+}
+

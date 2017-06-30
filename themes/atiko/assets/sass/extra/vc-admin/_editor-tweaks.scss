@@ -1,0 +1,70 @@
+/* Make headings less bold
+// No longer needed since VC added this
+.wpb_element_label,
+.vc_element_label {
+	font-weight: 600;
+}*/
+
+// Make x on images more visible
+body .vc_css-editor .vc_settings .vc_background-image .vc_image .added .vc_icon-remove,
+body .wpb_el_type_attach_image .vc_icon-remove,
+body .wpb_el_type_attach_images .vc_icon-remove {
+    background: red;
+    height: 15px;
+    width: 15px;
+    bottom: 0;
+    top: auto;
+    left: auto;
+    right: 0;
+    -webkit-transform: none;
+    transform: none;
+}
+
+body .vc_css-editor .vc_settings .vc_background-image .vc_image .added .vc_icon-remove .vc-composer-icon,
+body .wpb_el_type_attach_image .vc_icon-remove .vc-composer-icon,
+body .wpb_el_type_attach_images .vc_icon-remove .vc-composer-icon {
+    font-size: 14px;
+    color: #fff;
+}
+
+.vc_icon-remove:hover {
+    background: #000;
+}
+
+
+// Larger font icon selections
+.vc-icons-selector .fip-icons-container .fip-box {
+	font-size: 24px;
+}
+
+// Move backend tabs down
+.composer-switch {
+	margin-top:10px;
+}
+
+// Remove branding
+.composer-switch .logo-icon {
+	display: none !important;
+}
+
+.composer-switch .vc_spacer {
+	display: none !important; 
+}
+
+.composer-switch .wpb_switch-to-composer {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-right: 1px solid #1f5b8c;
+}
+
+// Fix button padding
+.vc_welcome .vc_add-element-button,
+.vc_welcome .vc_add-text-block-button,
+.vc_default-templates #vc_templates-more-layouts {
+	padding-right: 20px;
+}
+
+// Remove WordPress active shadow
+.composer-switch a, .vc_navbar a {
+	@include box-shadow( none );
+}

@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+[Sidebar]
+-------------------------------------------------------------------*/
+
+#sidebar {
+	margin-bottom: 10px; // sidebar box bottom margin + 10px = 40px bottom padding for sidebar
+}
+
+.sidebar-box {
+	margin-bottom: 30px;
+	
+	input {
+		max-width: 100%;
+	}
+
+	.widget-title {
+		display: block;
+		margin: 0 0 20px;
+		font-size: 1.077em;
+		line-height: $headings__line-height;
+		font-weight: $headings__font-weight;
+		color: $headings__color;
+	}
+
+	.widget-titleselect {
+		width: 100%;
+	}
+
+}

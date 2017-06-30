@@ -1,0 +1,26 @@
+/*------------------------------------------------------------------
+[Categories]
+-------------------------------------------------------------------*/
+.woocommerce .term-description {
+    margin-bottom: 40px;
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.woocommerce ul.products li.product-category a img {
+    margin-bottom: 20px;
+}
+
+.products .product-category {
+    text-align: center;
+}
+
+.products .product-category img {
+    display: block;
+    margin: 0 auto;
+}
+
+.products .product-category mark {
+    background: none;
+}

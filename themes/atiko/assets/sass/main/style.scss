@@ -1,0 +1,312 @@
+/*!
+ Theme Name: Total
+ Version: 4.2.1
+ Description: Premium WordPress theme by WPExplorer
+ Author: WPExplorer
+ Theme URI: https://themeforest.net/item/total-responsive-multipurpose-wordpress-theme/6339019
+ Author URI: https://themeforest.net/user/wpexplorer
+ License: Custom license
+ License URI: http://themeforest.net/licenses/terms/regular
+ Text Domain: total
+
+ === IMPORTANT NOTICE ==> The theme styles are coded using Sass. The Sass code is then compiled and compressed to make the theme faster and better optimized. All un-compressed Sass files can be located at /assets/sass/main/ if you want to see the original code. One should NEVER edit the style.css file of a WP theme. If you need any assistance tweaking your design please seak help from the original developer.
+
+ */
+
+// Loads mixins, functions, variables
+@import "../load-helpers";
+
+
+
+// ### CORE STYLES ###
+@import "core/browser-reset";
+@import "core/browser-fixes";
+@import "core/accessibility";
+@import "core/body";
+@import "core/layout";
+@import "core/grids";
+@import "core/typography";
+@import "core/forms/forms";
+@import "core/buttons";
+@import "core/error-404";
+
+
+
+
+// ### WORDPRESS STYLES ###
+@import "core/wordpress-styles";
+
+
+
+// ### COMMON CLASSES ###
+@import "core/commons/commons";
+@import "core/commons/displays";
+@import "core/commons/positions";
+@import "core/commons/alignments";
+@import "core/commons/max-widths";
+@import "core/commons/margins";
+@import "core/commons/paddings";
+@import "core/commons/opacity";
+@import "core/commons/fade-in";
+@import "core/commons/border-radius";
+@import "core/commons/backgrounds-borders";
+@import "core/commons/term-tag";
+@import "core/commons/responsive-media";
+@import "core/commons/image-styles";
+@import "core/commons/image-hovers";
+@import "core/commons/animation-hovers";
+
+
+
+
+// ### MODULES ###
+@import "core/modules/theme-heading";
+@import "core/modules/post-edit-link";
+@import "core/modules/social-buttons";
+@import "core/modules/background-overlay";
+@import "core/modules/parallax-backgrounds";
+@import "core/modules/video-backgrounds";
+@import "core/modules/image-overlays";
+@import "core/modules/slider";
+@import "core/modules/carousel";
+@import "core/modules/breadcrumbs";
+@import "core/modules/pagination";
+@import "core/modules/page-slider";
+@import "core/modules/post-meta";
+@import "core/modules/author-bio";
+@import "core/modules/post-series";
+@import "core/modules/social-share";
+@import "core/modules/comments";
+@import "core/modules/scroll-top";
+
+
+
+// ### TOGGLEBAR ###
+@import "core/site-parts/togglebar";
+
+
+
+// ### TOPBAR ###
+@import "core/site-parts/topbar";
+
+
+
+
+
+//
+// ### SITE HEADER ###
+//
+// # General
+// # Header styles
+// # Mobile, dropdowns, mega menu
+// # Header Overlay style
+//
+
+// HEADER => General
+@import "core/site-parts/header/header-core";
+@import "core/site-parts/header/logo";
+@import "core/site-parts/header/menu/menu";
+@import "core/site-parts/header/full-width";
+@import "core/site-parts/header/sticky";
+
+// HEADER => styles
+@import "core/site-parts/header/header-styles/header-one";
+@import "core/site-parts/header/header-styles/header-two";
+@import "core/site-parts/header/header-styles/header-three";
+@import "core/site-parts/header/header-styles/header-four";
+@import "core/site-parts/header/header-styles/header-five";
+@import "core/site-parts/header/header-styles/header-six";
+
+// HEADER => Mobile, dropdowns, mega menu
+// Note: must be added after styles
+@import "core/site-parts/header/mobile-menu/mobile-menu";
+@import "core/site-parts/header/menu/menu-dropdown-styles";
+@import "core/site-parts/header/menu/menu-mega-dropdowns";
+
+// HEADER => Overlay
+// Note: Must load after all header CSS
+@import "core/site-parts/header/header-overlay";
+
+
+
+
+
+// #### PAGE HEADER ###
+@import "core/site-parts/page-header";
+
+
+
+
+
+// ### SIDEBAR ###
+@import "core/site-parts/sidebar";
+
+
+
+
+
+// ### PAGES ###
+@import "core/site-parts/page";
+
+
+
+
+
+// ### ENTRIES ###
+@import "core/site-parts/entry";
+
+
+
+
+// ### TEMPLATES ###
+@import "core/templates/login-page";
+@import "core/templates/attachment";
+
+
+
+
+//
+// ### WIDGETS ###
+//
+// # General
+// # Core
+// # Custom
+//
+//
+
+// WIDGETS => General
+@import "core/widgets/widgets";
+@import "core/widgets/widget-icons";
+@import "core/widgets/widget-borders";
+
+// WIDGETS => Core
+@import "core/widgets/wp/tagcloud";
+@import "core/widgets/wp/calendar";
+@import "core/widgets/wp/recent-posts";
+@import "core/widgets/wp/custom-menu";
+@import "core/widgets/wp/categories";
+@import "core/widgets/wp/layered-nav";
+
+// WIGETS => Custom
+@import "core/widgets/custom/facebook";
+@import "core/widgets/custom/about";
+@import "core/widgets/custom/flickr";
+@import "core/widgets/custom/video";
+@import "core/widgets/custom/google-map";
+@import "core/widgets/custom/business-info";
+@import "core/widgets/custom/users-grid";
+@import "core/widgets/custom/modern-menu";
+@import "core/widgets/custom/social-images";
+@import "core/widgets/custom/social-font-awesome";
+@import "core/widgets/custom/newsletter";
+@import "core/widgets/custom/instagram";
+@import "core/widgets/custom/comments-with-avatars";
+@import "core/widgets/custom/posts-with-thumbnails";
+@import "core/widgets/custom/posts-with-icons";
+
+
+
+
+
+// ### BLOG ENTRIES ###
+@import "core/blog/entries/blog-entries";
+@import "core/blog/entries/blog-entry__full";
+@import "core/blog/entries/blog-entry__grid";
+@import "core/blog/entries/blog-entry__left-right";
+
+
+
+
+// ### Blog Posts ###
+@import "core/blog/post/blog-post";
+@import "core/blog/post/thumbnail";
+@import "core/blog/post/meta";
+@import "core/blog/post/tags";
+@import "core/blog/post/page-links";
+@import "core/blog/post/related";
+@import "core/blog/post/quote-format";
+
+
+
+
+// ### Blog Entries ###
+@import "core/post-types/cpt";
+@import "core/post-types/portfolio";
+@import "core/post-types/staff";
+@import "core/post-types/testimonials";
+
+
+
+
+// ### SEARCH RESULTS ###
+@import "core/search/search-form";
+@import "core/search/search-form-overlay";
+@import "core/search/search-form-dropdown";
+@import "core/search/search-form-header-replace";
+@import "core/search/search-results";
+
+
+
+
+// ### CALLOUT ###
+@import "core/site-parts/footer/footer-callout";
+
+
+
+
+
+// ### FOOTER ###
+// Note: Must load after widget styles
+@import "core/site-parts/footer/footer";
+@import "core/site-parts/footer/footer-widgets";
+@import "core/site-parts/footer/footer-bottom";
+@import "core/site-parts/footer/footer-reveal";
+
+
+
+
+// ### PRINT STYLES ###
+@import "core/print";
+
+
+
+
+
+// ### FONT AWESOME ###
+@import "core/font-awesome-elements";
+
+
+
+
+
+// ### ACCENTS ###
+@import "core/color-accents";
+
+
+
+
+
+// ### VENDOR STYLES (3rd party scripts) ###
+@import "vendor/superfish";
+@import "vendor/typed";
+@import "vendor/tipsy";
+@import "vendor/animsition";
+@import "vendor/customSelects";
+@import "vendor/leanModal";
+@import "vendor/iLightbox";
+@import "vendor/owlCarousel";
+@import "vendor/sliderPro";
+@import "vendor/fontAwesome";
+@import "vendor/revolution-slider";
+@import "vendor/polylang";
+@import "vendor/wpml";
+
+
+
+
+
+// ### RESET CLASSES ###
+@import "core/resets";
+
+
+

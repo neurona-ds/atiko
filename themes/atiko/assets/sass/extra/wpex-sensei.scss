@@ -1,0 +1,19 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Sensei Plugin Styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// Partial SASS
+@import "sensei/buttons";
+@import "sensei/courses";
+@import "sensei/lesson";
+@import "sensei/quiz";
+@import "sensei/messages";
+@import "sensei/breadcrumbs";
+@import "sensei/widgets";

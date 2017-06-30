@@ -1,0 +1,286 @@
+/*------------------------------------------------------------------
+[Theme Slider]
+-------------------------------------------------------------------*/
+.wpex-slider {
+    position: relative;
+
+
+    .sp-grab,
+    .sp-grabbing {
+        cursor: default;
+    }
+    
+    // Prevent highlight on the slider
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    // Buttons
+    .sp-buttons {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: auto;
+        padding: 15px;
+    }
+
+    .sp-button {
+        border-color: #fff;
+        border-width: 1px;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        @include transition( all 0.25s ease-in-out );
+    }
+
+    .sp-button:hover,
+    .sp-selected-button {
+        background-color: #fff;
+        border-color: transparent;
+    }
+
+    // Default arrow style
+    .sp-arrow {
+        width: 34px;
+        height: 60px;
+        line-height: 60px;
+        top: 0;
+        font-family: "FontAwesome";
+        color: #fff;
+        text-align: center;
+        font-size: 21px;
+        background: #000;
+        background: rgba(0,0,0,.3);
+        @include transition( $transition__speed );
+
+        &:hover {
+            background: rgba(0,0,0,.65);
+        }
+
+    }
+
+    &.sp-horizontal {
+
+        .sp-previous-arrow {
+            left: 0 !important;
+        }
+
+        .sp-next-arrow {
+            right: 0 !important;
+        }
+
+    }
+
+    .sp-arrow:before {
+        content: "";
+        background: none;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        @include transform( none );
+    }
+
+    .sp-arrow.sp-previous-arrow:before {
+        content: "\f104";
+        left: 0;
+    }
+
+    .sp-arrow.sp-next-arrow:before {
+        content: "\f105";
+        right: auto;
+    }
+
+    .sp-arrow:after {
+        display: none;
+    }
+
+    // Top right arrows
+    &.arrows-topright.sp-horizontal {
+    
+        .sp-arrows {
+            top: 0;
+            right: 0;
+            left: auto;
+            margin: 0;
+            width: auto;
+
+            .sp-arrow {
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                font-size: 1em;
+                float: left;
+                left: auto;
+                right: auto;
+                position: relative;
+            }
+
+        }
+
+    }
+
+    // Layers
+    .sp-layer p:last-child {
+        margin: 0;
+    }
+
+    .sp-black a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .sp-white a {
+        color: #000; 
+        text-decoration: underline;
+    }
+
+    // Hide thumbnail carousel arrows
+    .sp-thumbnail-arrows {
+        display: none !important;
+    }
+
+}
+
+.wpex-slider-preloaderimg,
+.wpex-slider-media {
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.wpex-slider.no-stretch .wpex-slider-media img,
+.wpex-slider-preloaderimg.no-stretch img {
+    width: auto;
+    margin: 0 auto;
+}
+
+.wpex-slider-slide {
+    display: none;
+    @include backface-hidden;
+}
+
+.wpex-slider-media-link {
+    display: block;
+}
+
+.wpex-slider-caption {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+}
+
+// Thumbnails
+.wpex-slider-thumbnails {
+    display: none;
+}
+
+.wpex-slider {
+
+    .sp-thumbnail-container {
+        cursor: pointer;
+    }
+
+    .sp-thumbnails-container.sp-bottom-thumbnails {
+        width: 100% !important;
+    }
+
+    .sp-thumbnails img,
+    .sp-nc-thumbnails img {
+        @include opacity( 0.75 );
+        @include box-shadow-fix;
+    }
+
+    .sp-thumbnails img:hover,
+    .sp-thumbnails .sp-selected-thumbnail img,
+    .sp-nc-thumbnails img:hover,
+    .sp-nc-thumbnails .sp-nc-selected-thumbnail img {
+        @include opacity( 1 );
+    }
+
+    .sp-bottom-thumbnails {
+
+        .sp-previous-thumbnail-arrow {
+            left: 10px;
+        }
+
+        .sp-next-thumbnail-arrow {
+            right: 10px;
+        }
+
+    }
+
+}
+
+// Thumbnails without carousel
+.wpex-slider .sp-nc-thumbnail-container {
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+}
+
+// No margins on thumbnails
+
+.wpex-slider.no-margin-thumbnails {
+
+    .sp-bottom-thumbnails {
+        margin-top: 0;
+    }
+
+    .sp-nc-thumbnail-container {
+        margin: 0 !important;
+    }
+
+    img.sp-nc-thumbnail {
+        display: block;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .wpex-slider-thumbnails.cols-6 .sp-nc-thumbnail-container {
+        width: 16.6666% !important;
+    }
+
+    .wpex-slider-thumbnails.cols-5 .sp-nc-thumbnail-container {
+        width: 20% !important;
+    }
+
+    .wpex-slider-thumbnails.cols-4 .sp-nc-thumbnail-container {
+        width: 25% !important;
+    }
+
+    .wpex-slider-thumbnails.cols-3 .sp-nc-thumbnail-container {
+        width: 33.3333% !important;
+    }
+
+    .wpex-slider-thumbnails.cols-2 .sp-nc-thumbnail-container {
+        width: 50% !important;
+    }
+
+}
+
+// Thumbnail pointer
+.wpex-slider .sp-bottom-thumbnails.sp-has-pointer {
+
+    .sp-selected-thumbnail:before,
+    .sp-selected-thumbnail:after {
+        border-bottom-color: red;
+    }
+
+}

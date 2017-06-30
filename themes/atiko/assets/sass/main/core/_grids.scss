@@ -1,0 +1,153 @@
+/*------------------------------------------------------------------
+[# Grids]
+-------------------------------------------------------------------*/
+
+/* Grid > Clear Floats */
+.col:after,
+.clr:after,
+.wpex-clr:after,
+.group:after,
+dl:after,
+.vc-empty-shortcode-element:after,
+ul.page-numbers:after,
+#comments .comment-body:after, 
+.vcex-clr:after,
+.wpex-slider .sp-nc-thumbnail-container:after {
+	@include clear-after;
+}
+
+.clear,
+.wpex-clear {
+	clear: both;
+}
+
+/* Grid > Main Classes */
+.wpex-row {
+	margin: 0 -10px;
+
+	.col {
+		float: left;
+		margin: 0 0 20px;
+		padding: 0 10px;
+	}
+
+	.span_1_of_1.col {
+		float: none;
+	}
+
+	.span_1_of_2 {
+		width: 50%;
+	}
+
+	.span_1_of_3 {
+		width: 33.33%;
+	}
+
+	.span_1_of_4 {
+		width: 25%;
+	}
+
+	.span_1_of_5 {
+		width: 20%;
+	}
+
+	.span_1_of_6 {
+		width: 16.66666667%;
+	}
+
+	.span_1_of_7 {
+		width: 14.28%;
+	}
+
+	/* Grid > Gap 0px */
+	&.gap-none {
+		margin-left: 0;
+		margin-right: 0;
+
+		.col, .nr-col {
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 0;
+		}
+
+	}
+
+	/* Grid > Gap 1px */
+	&.gap-1 {
+		margin-left: -1px;
+		margin-right: -1px;
+		
+		& > .col,
+		& > .nr-col {
+			padding-left: 0.5px;
+			padding-right: 0.5px;
+			margin-bottom: 1px;
+		}
+
+	}
+
+}
+
+/* Grid > Gaps */
+.wpex-row.gap-5 { margin-left: -2.5px; margin-right: -2.5px; }
+.wpex-row.gap-5 > .col,
+.wpex-row.gap-5 > .nr-col { padding-left: 2.5px; padding-right: 2.5px; margin-bottom: 5px; }
+.wpex-row.gap-10 { margin-left: -5px; margin-right: -5px; }
+.wpex-row.gap-10 > .col,
+.wpex-row.gap-10 > .nr-col { padding-left: 5px; padding-right: 5px; margin-bottom: 10px; }
+.wpex-row.gap-15 { margin-left: -7.5px; margin-right: -7.5px; }
+.wpex-row.gap-15 > .col,
+.wpex-row.gap-15 > .nr-col { padding-left: 7.5px; padding-right: 7.5px; margin-bottom: 15px; }
+.wpex-row.gap-20 { margin-left: -10px; margin-right: -10px; }
+.wpex-row.gap-20 > .col,
+.wpex-row.gap-20 > .nr-col { padding-left: 10px; padding-right: 10px; margin-bottom: 20px; }
+.wpex-row.gap-25 { margin-left: -12.5px; margin-right: -12.5px; }
+.wpex-row.gap-25 > .col,
+.wpex-row.gap-25 > .nr-col { padding-left: 12.5px; padding-right: 12.5px; margin-bottom: 25px; }
+.wpex-row.gap-30 { margin-left: -15px; margin-right: -15px; }
+.wpex-row.gap-30 > .col,
+.wpex-row.gap-30 > .nr-col { padding-left: 15px; padding-right: 15px; margin-bottom: 30px; }
+.wpex-row.gap-35 { margin-left: -17.5px; margin-right: -17.5px; }
+.wpex-row.gap-35 > .col,
+.wpex-row.gap-35 > .nr-col { padding-left: 17.5px; padding-right: 17.5px; margin-bottom: 35px; }
+.wpex-row.gap-40 { margin-left: -20px; margin-right: -20px; }
+.wpex-row.gap-40 > .col,
+.wpex-row.gap-40 > .nr-col { padding-left: 20px; padding-right: 20px; margin-bottom: 40px; }
+.wpex-row.gap-50 { margin-left: -25px; margin-right: -25px; }
+.wpex-row.gap-50 > .col,
+.wpex-row.gap-50 > .nr-col { padding-left: 25px; padding-right: 25px; margin-bottom: 50px; }
+.wpex-row.gap-60 { margin-left: -30px; margin-right: -30px; }
+.wpex-row.gap-60 > .col,
+.wpex-row.gap-60 > .nr-col { padding-left: 30px; padding-right: 30px; margin-bottom: 60px; }
+
+/* Grid > Non Responsive */
+.nr-col { float: left; margin: 0 0 20px; padding: 0 10px; }
+.span_1_of_2.nr-col { width: 50% }
+.span_1_of_3.nr-col { width: 33.33% }
+.span_1_of_4.nr-col { width: 25% }
+.span_1_of_5.nr-col { width: 20% }
+.span_1_of_6.nr-col { width: 16.66666667% }
+
+/* Grid > No Margins 1 */
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth { display: block; float: left; }
+.one-half { width: 50% }
+.one-third { width: 33.33% }
+.one-fourth { width: 25% }
+.one-fifth { width: 20% }
+.one-sixth { width: 16.6666% }
+
+/* Grid > No Margins 2 */
+.wpex-row.vcex-no-margin-grid { margin-left: 0; margin-right: 0px; }
+.wpex-row.vcex-no-margin-grid .col { margin: 0 !important; padding: 0 !important; }
+.wpex-row.vcex-no-margin-grid .span_1_of_3 { width: 33.3% }
+.wpex-row.vcex-no-margin-grid .span_1_of_6 { width: 16.66% }
+
+/* Grid > Clear Floats */
+.clr-margin,
+.count-1,
+.col-1,
+.products .col.first { clear: both; margin-left: 0; }
+.isotope-entry { clear: none }

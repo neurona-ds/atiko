@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------
+[# BuddyPress > Member]
+-------------------------------------------------------------------*/
+#buddypress {
+
+	// Forms
+	form#whats-new-form textarea {
+		font-size: 1em;
+		padding: 6px 12px;
+
+		&:focus {
+			border-color: $borders__color !important;
+	    	outline: 0;
+		}
+	}
+
+}

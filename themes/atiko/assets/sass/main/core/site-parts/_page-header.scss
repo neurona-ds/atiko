@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------
+[Page Title]
+-------------------------------------------------------------------*/
+.page-header {
+	margin: 0 auto 40px;
+	padding: 20px 0;
+	position: relative;
+	background-color: #f7f7f7;
+	border: 0;
+	border-top: 1px solid $borders__color-light;
+	border-bottom: 1px solid $borders__color-light;
+
+	.no-header-margin & {
+		margin-bottom: 0;
+	}
+
+	.container {
+		position: relative;
+	}
+
+}
+
+/* Page Header > Title */
+.page-header-title {
+	display: block;
+	font-size: pem( 21 );
+	line-height: 1.4em;
+	font-weight: normal;
+	font-weight: 400;
+	margin: 0px;
+	color: #000;
+}
+
+/* Page Header > Subheading */
+.page-subheading {
+	font-size: 1.077em;
+	margin: 0;
+	color: #999;
+
+	p:last-child {
+		margin: 0;
+	}
+
+}
+
+/* Page Header > Centered */
+.centered-page-header {
+	text-align: center;
+	padding: 30px 0;
+	
+	.page-header-title {
+		font-size: 32px;
+	}
+
+	.page-subheading {
+		font-size: 1.385em;
+		font-weight: 300;
+	}
+
+}
+
+/* Page Header > Minimal Centered */
+.centered-minimal-page-header {
+	text-align: center;
+	padding: 30px 0;
+	background-color: #fff;
+	border-color: $borders__color-light;
+	
+	.page-header-title {
+		font-size: 32px;
+	}
+
+	.page-subheading {
+		font-size: 1.385em;
+		font-weight: 300;
+	}
+
+}
+
+/* Page Header > Solid Color */
+.solid-color-page-header {
+
+	* {
+		color: #fff !important;
+	}
+
+}
+
+/* Page Header > Archive Description */
+.archive-description {
+	margin-bottom: 30px;
+}
+
+/* Page Header > Background Image */
+.background-image-page-header {
+	width: 100%;
+	border: none;
+	background: #000;
+	padding: 0;
+}
+
+.page-header-table {
+	display: table;
+	width: 100%;
+	height: 400px;
+	padding: 20px 0;
+}
+
+.page-header-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 30px;
+}
+
+.page-header.background-image-page-header .page-header-title {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	max-width: 100%;
+	font-size: 3.231em;
+	font-weight: 400;
+	max-width: 100% !important;
+}
+
+.page-header.background-image-page-header .page-subheading {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	font-size: 1.846em;
+	font-weight: 300;
+}
+
+.background-image-page-header-overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	z-index: 1;
+	@include opacity( 0.5 );
+}
+
+.background-image-page-header-overlay.style-dotted {
+	background: rgba(0,0,0,0.3) url(assets/images/dotted-overlay.png) repeat;
+}
+
+.background-image-page-header-overlay.style-dashed {
+	background: rgba(0,0,0,0.3) url(assets/images/dashed-overlay.png) repeat
+}

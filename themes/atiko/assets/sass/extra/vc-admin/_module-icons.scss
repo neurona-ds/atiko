@@ -1,0 +1,58 @@
+// VC tweaks to make icons a bit smaller
+.vc_add-element-container .wpb-content-layouts a {
+	font-size: 14px;
+}
+
+.vc_add-element-container .wpb-content-layouts a .vc_element-description {
+	font-size: 10px;
+}
+
+// Total Icons
+.vc_element-icon.vcex-icon {
+	display: block;
+	width: 32px !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	background: #6941b4 !important;
+	text-align: center;
+	@include border-radius( 4px );
+	@include transform( translate(0, 0) );
+	@include font_awesome__css;
+}
+
+.vcex-icon:before {
+	font-size: 14px;
+	color: #fff;
+}
+
+// VC Icons
+.icon-wpb-wp {
+	background: #093459 !important;
+	display: block;
+	width: 32px !important;
+	height: 32px !important;
+	line-height: 32px !important;
+	text-align: center;
+	text-rendering: auto;
+	font-size: 14px;
+	color: #fff;
+	display: inline-block;
+	@include border-radius( 4px );
+	@include transform( translate(0, 0) );
+	@include font_awesome__css;
+}
+
+.icon-wpb-wp:before {
+	content:"\f19a";
+}
+
+// WP icon color
+.icon-wpb-wp{
+	background: #21759b!important;
+	font-size:18px;
+}
+
+// pricing custom button height
+.wpb-textarea_raw_html.custom_button {
+	height: 60px;
+}

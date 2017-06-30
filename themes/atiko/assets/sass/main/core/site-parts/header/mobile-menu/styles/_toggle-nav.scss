@@ -1,0 +1,137 @@
+/* Mobile Menus > Toggle Nav */
+.mobile-toggle-nav {
+	display: none;
+	background: #fff;
+	z-index: 9999;
+	height: auto;
+	line-height: inherit;
+	margin-top: 0;
+	
+	// Absolutely positioned
+	&.wpex-togglep-absolute {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		max-height: 500px;
+		overflow-y: auto;
+	}
+
+	// Links
+	a {
+		position: relative;		
+		color: #555;
+		display: block;
+		padding: 10px 0;
+		border-top: 1px solid $borders__color-light;
+		
+		&:hover {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.fa {
+			margin-right: 10px;
+		}
+
+	}
+
+	// Hide dropdown arrows
+	.nav-arrow {
+		display: none;
+	}
+
+	// Dropdowns
+	.menu-item-has-children {
+
+		ul {
+			
+			a {
+				padding-left: 20px;
+
+				&:before {
+					content:"\f105";
+					margin-right: 10px;
+					@include opacity( 0.7 );
+				}
+
+			}
+
+			ul {
+				
+				a {
+					padding-left: 40px;
+				}
+
+				ul {
+				
+					a {
+						padding-left: 60px;
+					}
+
+					ul {
+				
+						a {
+							padding-left: 80px;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	// Fixed top mobile nav
+	.wpex-mobile-toggle-menu-fixed_top & {
+		 background: $background__dark;
+	
+		a {
+			border-color: #333;
+			color: #aaa;
+
+			&:hover {
+				color: #fff;
+			}
+
+		}
+
+	}
+
+	// Search
+	#mobile-menu-search {
+		display: block;
+		padding-bottom: 20px;
+		position: relative;
+	}
+
+}
+
+.mobile-toggle-nav-search {
+
+	input[type="search"] {
+		width: 100%;
+		padding: 0 50px 0 10px;
+		height: 45px;
+	}
+
+	.searchform-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0;
+		height: 45px;
+		line-height: 45px;
+		width: 45px;
+		@include border-radius( 0 );
+	}
+
+}
+
+// Hide search toggle
+.mobile-toggle-nav-ul li.search-toggle-li {
+	display: none;
+}

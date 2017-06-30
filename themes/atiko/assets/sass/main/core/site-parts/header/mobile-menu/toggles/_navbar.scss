@@ -1,0 +1,23 @@
+/* Mobile Menu Toggles > Navbar */
+#wpex-mobile-menu-navbar {
+	background: $background__dark;
+	position: relative;
+	
+	.mobile-menu-toggle {
+		display: block;
+		color: #fff;
+		height: 50px;
+		line-height: 50px;
+		font-size: pem( 14 );
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		.fa {
+			margin-right: pem( 10 );
+		}
+
+	}
+
+}

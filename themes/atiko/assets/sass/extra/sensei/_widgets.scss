@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------
+[# Sensei > Widgets]
+-------------------------------------------------------------------*/
+.widget_sensei_lesson_component,
+.widget_sensei_course_component,
+.widget_sensei_course_categories {
+	
+	li {
+		padding: 6px 0;
+		border-bottom: 1px solid $borders__color-sidebar-widgets;
+
+		&:first-child {
+			border-top: 1px solid $borders__color-sidebar-widgets;
+		}
+
+	}
+
+}

@@ -1,0 +1,40 @@
+/* Widgets > Borders */
+.wpex-widget-recent-posts-li,
+.widget_categories li,
+.widget_recent_entries li,
+.widget_archive li,
+.widget_recent_comments li,
+.widget_product_categories li,
+.widget_layered_nav li,
+.widget-recent-posts-icons li,
+.site-footer .widget_nav_menu li {
+    padding: 6px 0;
+    border-bottom: 1px solid $borders__color-light;
+}
+
+.wpex-widget-recent-posts-li:first-child,
+.widget_categories li:first-child,
+.widget_recent_entries li:first-child,
+.widget_archive li:first-child,
+.widget_recent_comments li:first-child,
+.widget_product_categories li:first-child,
+.widget_layered_nav li:first-child,
+.widget-recent-posts-icons li:first-child,
+.site-footer .widget_nav_menu li:first-child {
+    border-top: 1px solid $borders__color-light;
+}
+
+.widget_product_categories ul ul li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.widget_product_categories ul ul li {
+    padding-left: 15px;
+}
+
+// Footer colors
+#footer li {
+    border-color: $borders__color-footer;
+    border-color: $borders__color-footer-rgba;
+}

@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+# VC > Toggles
+--------------------------------------------------------------*/
+
+/* Toggles > Title */
+.vc_toggle_default .vc_toggle_title { display: block; display: block; padding: 10px 12px 10px 32px !important; border: 1px solid #e4e4e4; outline: 0; margin: 0; cursor: pointer; background-color: #f7f7f7; }
+.vc_toggle_default .vc_toggle_icon { left: 5px !important; }
+.vc_toggle_default .vc_toggle_title h4 { color: #666; font-weight: normal; text-transform: none; letter-spacing: normal; transition: all .15s ease-in-out; }
+.vc_toggle_default .vc_toggle_title:hover { background-color: #f4f4f4; text-decoration: none; border-color: #ddd; }
+.vc_toggle_default .vc_toggle_title:hover h4 { color: #000 }
+
+/* Toggles > Icon */
+.vc_toggle_default.vc_toggle_color_default .vc_toggle_title { padding: 10px 12px !important; }
+.vc_toggle_default.vc_toggle_color_default .vc_toggle_icon { display: none !important }
+.vc_toggle_default.vc_toggle_color_default .vc_toggle_title h4:before { content: "\f067"; font-family: 'FontAwesome'; font-style: normal; font-weight: normal; line-height: 1; font-size: 0.846em; margin-right: 10px; color: #888; }
+.vc_toggle_default.vc_toggle_color_default .vc_toggle_title:hover h4:before { color: #000; }
+.vc_toggle_default.vc_toggle_color_default.vc_toggle_title h4:before { content: "\f068" }
+
+/* Toggles > Active */
+.vc_toggle_default.vc_toggle_active .vc_toggle_title { opacity: 1; background-color: #f7f7f7; background-image: none; }
+.vc_toggle_default.vc_toggle_active .vc_toggle_title h4 { color: #000 }
+.vc_toggle_default.vc_toggle_active .vc_toggle_title:hover { color: #000; background-color: #f4f4f4; text-decoration: none; border-color: #ddd; }
+
+/* Toggles > Content */
+.vc_toggle_default .vc_toggle_content { display: none; overflow: hidden; padding: 15px 0; margin: 0; padding-left: 0 !important; }

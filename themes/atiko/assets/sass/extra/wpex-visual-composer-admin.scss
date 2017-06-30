@@ -1,0 +1,59 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Visual Composer admin-side styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+// Clear floats
+.wpex-clr:after {
+	@include clear-after;
+}
+
+// Fix margin issue
+body .wpb_vc_param_value p {
+	margin-top: 0;
+}
+
+// Remove visit knowledgebase link
+body .vc_ui-help-block.vc_welcome-visible-e {
+	display: none !important;
+}
+
+// Prevent images from going outside container
+.wpb_element_wrapper img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Hide hidden params
+.vc_column.vc_edit-form-hidden-field-wrapper {
+	padding-top: 0 !important;
+}
+
+/* Font Family => Deprecated in 4.0
+.vc_modal-content {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial;
+}*/
+
+// Responsive columns param
+.vcex-responsive-columns-param {
+	padding: 10px 0;
+	background: #f9f9f9;
+	border: 1px solid #eee;
+
+	.vc_col-sm-6 {
+    	padding-top: 5px;
+    	padding-bottom: 5px;
+    }
+
+}
+
+@import "vc-admin/editor-tweaks";
+@import "vc-admin/module-icons";
+@import "vc-admin/custom-params";
+@import "vc-admin/chosen-selects";

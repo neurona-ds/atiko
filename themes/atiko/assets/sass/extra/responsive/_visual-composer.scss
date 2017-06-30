@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------
+[# Responsive > Visual Composer]
+-------------------------------------------------------------------*/
+@media screen and (max-width: 860px) { 
+    .wpex-responsive {
+		
+		// Slider
+		.vcex-flexslider-wrap {
+			
+			.flex-direction-nav {
+
+				.flex-prev {
+					opacity: 1;
+					left: 10px;
+				}
+
+				.flex-next {
+					opacity: 1;
+					right: 10px;
+				}
+
+			}
+
+		}
+
+		.vcex-galleryslider-entry-title {
+			font-size: 13px;
+			padding: 10px;
+		}
+
+		// Callouts
+		.vcex-callout.with-button .vcex-callout-caption {
+			width: 100%;
+			padding-right: 0;
+		}
+
+		.vcex-callout-caption {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+
+		.vcex-callout-button {
+			float: none;
+			width: 100%;
+			display: block;
+			position: inherit;
+			right: auto;
+			top: auto;
+			margin: 15px auto 0;
+			text-align: center;
+
+			.theme-button {
+				display: inline-block;
+				float: none;
+			}
+
+		}
+
+    }
+
+}

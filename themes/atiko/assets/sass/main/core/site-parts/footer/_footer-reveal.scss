@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------
+[Footer Reveal]
+-------------------------------------------------------------------*/
+.footer-has-reveal {
+    
+    #site-header.overlay-header {
+        background: none;
+    }
+
+    #site-header.header-builder {
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    .footer-reveal {
+        display: block;
+        visibility: hidden;
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        @include opacity( 0 );
+    }
+
+    .footer-has-reveal #overlay-header-wrap,
+    .footer-has-reveal #main {
+        position: relative;
+        z-index: 2;
+        background: #fff;
+    }
+    
+}
+
+@media only screen and (max-width: 959px) {
+    body.footer-has-reveal #wrap {
+        margin-bottom: 0;
+    }
+}
+
+
+.footer-reveal.wpex-visible {
+    visibility: visible;
+    @include opacity( 1 );
+}

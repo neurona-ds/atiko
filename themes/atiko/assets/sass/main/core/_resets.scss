@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------
+[Resets ==> Must load last]
+-------------------------------------------------------------------*/
+#wrap {
+
+	.remove-dims {
+		height: auto;
+		width: auto;
+	}
+
+	.reset-styles {
+	    font-size: 1em;
+	    color: inherit;
+	    margin: 0;
+	    padding: 0;
+	    font-weight: normal;
+	    font-style: normal;
+	    border: none;
+	    background: none;
+	    letter-spacing: inherit;
+	}
+
+	 .reset-styles a {
+	    font-size: inherit;
+	    color: inherit;
+	}
+
+	.disable-box-shadow {
+	    @include box-shadow( none );
+	}
+
+}

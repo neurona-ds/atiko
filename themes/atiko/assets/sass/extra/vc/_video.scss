@@ -1,0 +1,10 @@
+/*--------------------------------------------------------------
+# VC > Video
+--------------------------------------------------------------*/
+
+// Fix responsive wrap issues
+.wpb_video_widget .responsive-video-wrap {
+	padding-top: 0;
+	margin-bottom: 0;
+	position: static;
+}

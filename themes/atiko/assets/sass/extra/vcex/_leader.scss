@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------
+[Leader]
+-------------------------------------------------------------------*/
+ul.vcex-leader { margin: 0; padding: 0; overflow: hidden; list-style: none; max-width: 100%; }
+ul.vcex-leader li:before { float: left; width: 0; white-space: nowrap; }
+ul.vcex-leader.vcex-leader-dots li:before { content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."; }
+ul.vcex-leader.vcex-leader-dashes li:before { content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"; }
+ul.vcex-leader span.vcex-first { padding-right: 0.33em; background: #fff }
+ul.vcex-leader span.vcex-last { float: right; padding-left: 0.33em; background: #fff }
+ul.vcex-leader span.vcex-inner { display: none; }
+
+@media only screen and (max-width: 500px) {
+    ul.vcex-leader.vcex-leader-dots.vcex-responsive li:before { display: none; }
+    ul.vcex-leader.vcex-leader-dots.vcex-responsive span { display: inline; float: none; width: auto; padding: 0; }
+    ul.vcex-leader.vcex-responsive span.vcex-inner { display: inline; }
+}

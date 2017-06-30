@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+[Milestones]
+-------------------------------------------------------------------*/
+.vcex-milestone,
+a.vcex-milestone {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a.vcex-milestone,
+a.vcex-milestone:hover {
+    text-decoration: none
+}
+
+.vcex-milestone-number {
+    font-weight: 600;
+    font-size: 54px;
+    color: #bcbcbc;
+    line-height: 1em;
+}
+
+.vcex-milestone-caption {
+    font-size: 1.231em;
+    font-weight: 300;
+    color: #898989;
+    margin-top: 5px;
+}

@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+# VC > Single Image
+--------------------------------------------------------------*/
+.vc_single_image-wrapper {
+	position: relative;
+	overflow: visible; // fix for shadow styles
+}
+
+.wpb_single_image {
+
+	.vc_figure {
+		position: relative;
+	}
+
+	.vc_figure-caption {
+		font-size: 1em;
+		padding-top: 1em;
+		text-align: center;
+	}
+
+	a {
+		display: block;
+		display: inline-block;
+		max-width: 100%; // required to fix firefox bug
+		position: relative; // relative position needed for caption
+	}
+
+}
+
+// Image hover fix
+.vcex-img-hover-parent.wpb_single_image a {
+	display: block;
+}
+
+// Caption
+.wpb_single_image_caption {
+	position: absolute;
+	z-index: 2;
+	bottom: 20px;
+	left: 0;
+	color: #fff;
+	padding: 4px 10px;
+	background: #000;
+	@include opacity( 0.7 );
+}

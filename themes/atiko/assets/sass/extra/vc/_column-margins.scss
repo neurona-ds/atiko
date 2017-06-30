@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# VC > Row Margins
+--------------------------------------------------------------*/
+
+// Opx row margin
+.wpex-vc-column-spacing-0px {
+	margin-left: 0;
+	margin-right: 0;
+
+	.vc_column-inner {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+
+}
+
+.no-margins,
+.row-no-spacing {
+	margin: 0; // Old deprecated styles
+
+	.vc_column-inner {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+
+}
+
+// All other margins which are coded uniformly
+$margins: 1 5 10 20 30 40 50 60;
+
+@each $margin in $margins {
+
+	.wpex-vc-column-spacing-#{$margin} {
+		margin-left: - ( $margin/2 ) + px;
+		margin-right: - ( $margin/2 ) + px;
+
+		.vc_column-inner {
+			padding-left:  ( $margin/2 ) + px;
+			padding-right:  ( $margin/2 ) + px;
+			margin-bottom: $margin + px;
+		}
+
+		&.wpex-vc-row-centered {
+			margin-left: 0;
+			margin-right: 0;
+
+			.center-row-inner {
+				margin-left: - ( $margin/2 ) + px;
+				margin-right: - ( $margin/2 ) + px;
+			}
+
+		}
+
+	}
+
+}
