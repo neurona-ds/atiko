@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------
+[# Tribe Evevents > Buttons]
+-------------------------------------------------------------------*/
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type=submit],
+.tribe-events-button,
+.tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive,
+.tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a {
+	font-weight: 600;
+	background-color: $accent__main;
+	@include transition( $transition__speed );
+	&:hover {
+		background-color: $accent__main-hover;
+	}
+}

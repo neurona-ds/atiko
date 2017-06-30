@@ -1,0 +1,91 @@
+/*------------------------------------------------------------------
+[Testimonials]
+-------------------------------------------------------------------*/
+
+/* Testimonials > Entry */
+
+// Content
+.testimonial-entry-content {
+    position: relative;
+    padding: 20px;
+    background: $background__light-gray;
+    @include border-radius( 3px );
+
+    p {
+        margin: 0 0 15px;
+
+        &:last-child {
+            margin: 0
+        }
+
+    }
+
+}
+
+// Arrow
+.testimonial-caret {
+    position: absolute;
+    display: block;
+    left: 10px;
+    bottom: -12px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f7f7f7;
+}
+
+// Thumbnail
+.testimonial-entry-thumb {
+    float: left;
+    margin-right: 20px;
+   // min-width: 45px; // removed in 4.1 not really needed?
+
+    img {
+        display: block;
+        padding: 3px;
+        width: 45px;
+        height: 45px;
+        border: 1px solid $borders__color-light;
+        @include circle;
+    }
+
+}
+
+// Meta
+.testimonial-entry-bottom {
+    margin-top: 20px
+}
+
+.testimonial-entry-meta {
+    float: left
+}
+
+.testimonial-entry-author {
+    margin: 0
+}
+
+.testimonial-entry-company {
+    margin-top: -2px;
+    display: block;
+    color: #999;
+    font-size: 13px;
+}
+
+.testimonial-entry-rating {
+    color: #ffc833
+}
+
+/* Testimonials > Singular */
+.single-testimonials {
+
+    .entry-content {
+        margin-bottom: 40px
+    }
+
+    .content-left-sidebar blockquote,
+    .content-right-sidebar blockquote {
+        margin-top: 0
+    }
+
+}

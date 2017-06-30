@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------
+[Blog Entry: Grid]
+-------------------------------------------------------------------*/
+.blog-entry.grid-entry-style {
+    float: left;
+}
+
+.blog-entry.grid-entry-style .blog-entry-inner {
+    padding: 0 20px 20px;
+    border: 1px solid $borders__color-light;
+}
+
+.blog-entry.grid-entry-style .blog-entry-media {
+    margin: 0 -20px;
+}
+
+// Title
+.blog-entry.grid-entry-style header {
+    margin-top: 20px;
+}
+
+.blog-entry.grid-entry-style .blog-entry-title {
+    font-size: 1.231em;
+}
+
+// Avatar
+.blog-entry.grid-entry-style .header-with-avatar {
+    padding-left: 80px;
+    min-height: 60px;
+}
+
+.blog-entry.grid-entry-style .blog-entry-author-avatar {
+    height: 60px;
+    width: 60px;
+}
+
+// Gallery
+.blog-entry.grid-entry-style .sp-fade-arrows {
+    @include opacity( 1 );
+}
+
+.blog-entry.grid-entry-style .sp-horizontal .sp-arrows {
+    margin-top: -20px;
+}
+
+.blog-entry.grid-entry-style .wpex-slider .sp-arrow {
+    height: 40px;
+    width: 25px;
+    line-height: 40px;
+    font-size: 1.077em;
+    background: rgba(0,0,0,.3);
+}
+
+.blog-entry.grid-entry-style .wpex-slider .sp-arrow:hover {
+    background: rgba(0,0,0,1)
+}
+
+// Excerpt
+.blog-entry.grid-entry-style .blog-entry-excerpt {
+    margin-top: 10px;
+}
+
+// Redmore
+.blog-entry.grid-entry-style .blog-entry-readmore {
+    margin-top: 20px;
+}
+

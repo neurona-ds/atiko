@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+[Search Form > Overlay]
+-------------------------------------------------------------------*/
+#searchform-overlay {
+    display: none;
+    width: 350px;
+    top: 120px;
+    @include transform ( scale( 0.5 ) );
+    @include transition ( transform 0.4s );
+}
+
+#searchform-overlay.active {
+    @include transform ( scale( 1 ) );
+}
+
+#searchform-overlay-title {
+    font-size: 2.154em;
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#searchform-overlay input {
+    font-size: 1.077em;
+    background: #fff;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    padding-right: 40px;
+    padding-left: 20px;
+    height: 45px;
+    color: #000;
+    font-weight: 400;
+    @include border-radius( 3px );
+    @include box-shadow( 0 0 4px rgba( 0, 0, 0, 0.7 ) );
+}
+
+#searchform-overlay .searchform-submit {
+    font-size: 18px;
+}
+
+#searchform-overlay .searchform-submit:hover {
+    @include opacity( 1 );
+}

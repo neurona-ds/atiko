@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# VC > Widgets
+--------------------------------------------------------------*/
+.vc_wp_custommenu ul {
+	list-style: none;
+	margin: 0 !important;
+}
+
+.wpb_row {
+
+	.widget-title {
+		margin: 0 0 20px;
+		font-size: 1.077em;
+		font-weight: 600;
+		color: #000;
+	}
+
+	.widget_recent_entries ul,
+	.widget_wpex_fontawesome_social_widget ul,
+	.widget_wpex_recent_posts_thumb ul,
+	.widget_categories ul,
+	.widget_wpex_social_widget ul,
+	.widget_archive ul,
+	.widget_wpex_simple_menu ul {
+		list-style: none;
+		margin: 0;
+	}
+
+}
+
+.entry .widget_nav_menu ul {
+	list-style: none;
+}

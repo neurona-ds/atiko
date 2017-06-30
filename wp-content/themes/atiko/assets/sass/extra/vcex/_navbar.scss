@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------
+[Navbar]
+-------------------------------------------------------------------*/
+.vcex-navbar {
+
+    // Links
+    a {
+        display: block;
+        float: left;
+
+        .fa {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        &.has-bg-hover:hover {
+            border-color: inherit;
+        }
+
+        &.theme-button {
+            margin: 0 5px 5px 0;
+        }
+
+        &.theme-txt-link {
+            display: inline-block;
+            margin-right: 7px;
+        }
+
+        &.theme-txt-link:hover {
+            text-decoration: underline;
+        }
+
+    } // End links
+
+
+    // Alignments
+    &.align-right a {
+        float: right;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    &.align-left a {
+        float: left;
+    }
+
+    &.align-center {
+        text-align: center;
+
+        a {
+            float: none;
+            display: inline-block;
+        }
+
+    }
+
+    // sticky
+    .is-sticky & {
+        z-index: 99
+    }
+
+    // Dark style
+    &.vcex-navbar-dark {
+        background: #111;
+        padding: 1.154em;
+
+        a {
+            color: #fff;
+            display: inline-block;
+            margin-right: 1.077em;
+            @include transition( all 0.1s linear );
+            @include opacity( 0.7 );
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active, &:hover {
+                text-decoration: none;
+                @include opacity( 1 );
+            }
+
+        }
+
+    }
+
+}
+
+// Sticky Wrapper
+.vcex-navbar-sticky-wrapper.is-sticky .vcex-navbar {
+    position: fixed;
+    top: 0;
+}

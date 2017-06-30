@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+[Font Awesome Elements]
+-------------------------------------------------------------------*/
+
+// Fixes some line-height issues with some fonts
+#site-scroll-top,
+.page-numbers.next,
+.page-numbers.prev,
+.author-bio-social a,
+.wpex-fa-social-widget .wpex-social-btn {
+	font-family: "FontAwesome";
+}
+
+
+// Adds needed font awesome CSS to items that have manual addition of icons via CSS pseudo classes
+.sf-menu > li.megamenu > ul.sub-menu > li > ul.sub-menu > li > ul.sub-menu a:before,
+.wpex-slider .sp-arrow,
+.wpex-slider .sp-arrow:before,
+#main .widget_nav_menu .parent > a:after,
+.modern-menu-widget a:after,
+.sidebar-widget-icons .widget_archive a:before,
+.sidebar-widget-icons .widget_recent_entries a:before,
+.sidebar-widget-icons .widget_recent_comments a:before,
+.sidebar-widget-icons .widget_layered_nav a:before,
+.sidebar-widget-icons .widget_product_categories a:before,
+.sidebar-widget-icons .widget_categories a:before,
+.theme-select:after,
+.searchform input:after,
+ul.check-list li:before,
+.animsition-loading:after,
+.mobile-toggle-nav .menu-item-has-children ul a:before,
+.sidr-class-toggle-sidr-close:before,
+.sidr-class-dropdown-toggle:before,
+.sidr-class-dropdown-menu ul a:before {
+	@include font_awesome__css;
+}

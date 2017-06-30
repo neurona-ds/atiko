@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------
+[Portfolio]
+-------------------------------------------------------------------*/
+
+/* Portfolio > Entries */
+.portfolio-entry-categories {
+    margin: -5px 0 10px
+}
+
+.portfolio-entry-categories a {
+    font-size: 0.923em;
+    color: #777;
+    list-style: none;
+}
+
+.portfolio-entry-details {
+    background: $background__light-gray;
+    border: 1px solid $borders__color-light;
+    padding: 15px;
+}
+
+.portfolio-entry-media img {
+    vertical-align: bottom;
+}
+
+.portfolio-entry-excerpt p {
+    margin-bottom: 15px;
+}
+
+.portfolio-entry-excerpt p:last-child {
+    margin: 0;
+}
+
+.portfolio-entry-readmore-wrap {
+    padding-top: 15px;
+}
+
+
+/* Portfolio > No Margin Grid */
+.portfolio-no-margins .col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vcex-no-margin-grid,
+.portfolio-no-margins {
+
+    .portfolio-entry-details {
+        background: #262626;
+        border: none;
+        color: #787878;
+    }
+
+    .portfolio-entry-title a,
+    .portfolio-entry-title a {
+        color: #fff;
+    }
+
+}
+
+/* Portfolio > 1 Column Grid */
+#portfolio-entries .portfolio-entry.span_1_of_1 {
+    margin: 0 0 30px;
+    float: none;
+    border: none;
+
+    .portfolio-entry-media {
+        width: 45%;
+        float: left;
+        margin: 0 30px 0 0;
+    }
+
+    .portfolio-entry-details {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .portfolio-entry-title {
+        margin: 0;
+    }
+
+}
+
+/* Portfolio > Singular */
+#portfolio-single-media,
+#portfolio-single-related {
+    margin-bottom: 30px;
+}
+
+#portfolio-post-comments,
+.single-portfolio .wpex-social-share-wrap.position-horizontal,
+.no-composer #portfolio-single-related {
+    margin-top: 30px;
+}

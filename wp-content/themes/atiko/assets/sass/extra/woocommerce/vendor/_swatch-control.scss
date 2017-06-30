@@ -1,0 +1,7 @@
+/*------------------------------------------------------------------
+[Swatch Control WooCommerce Plugin Fixes]
+-------------------------------------------------------------------*/
+.woocommerce .swatch-control select,
+.woocommerce .swatch-control .theme-select {
+    display: none !important;
+}

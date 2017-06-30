@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------
+[Sticky Header]
+-------------------------------------------------------------------*/
+
+// Hardware acceleration
+#site-header.fixed-scroll {
+    z-index: 99;
+    @include transform( translateZ() );
+}
+
+#site-header-sticky-wrapper.is-sticky {
+
+    #site-header {
+        position: fixed;
+        overflow: visible !important;
+        z-index: 999;
+        background: #fff;
+        @include box-shadow( 0px 2px 5px rgba(0,0,0,0.1) );
+        @include transform( translate3d(0, 0, 0) );
+    }
+    
+    #site-header-inner {
+        z-index: 999; // Make sure sticky header goes over all elements except lightbox
+    }
+
+}
+
+#site-header.shrink-sticky-header {
+    width: 100%;
+    @include transition( opacity 0.3s ); // Used for opacity setting
+}
+
+// Shrunk styles
+$shrink-header__height: 70px;
+$shrink-header__padding: 10px;
+
+#site-header.shrink-sticky-header.sticky-header-shrunk #site-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sticky-header-shrunk #site-header-inner {
+    height: $shrink-header__height;
+    padding-top: $shrink-header__padding !important;
+    padding-bottom: $shrink-header__padding !important;
+}
+
+.shrink-sticky-header.sticky-header-shrunk .navbar-style-five .dropdown-menu > li > a {
+    height: $shrink-header__height - $shrink-header__padding - $shrink-header__padding;
+}
+
+.shrink-sticky-header.sticky-header-shrunk #site-logo img {
+    max-height: $shrink-header__height - $shrink-header__padding - $shrink-header__padding;
+}
+
+// Animate shrink header
+$shrink-header__animation-speed: 0.3s linear;
+.anim-shrink-header {
+
+	#site-header-sticky-wrapper,
+	#site-header,
+	#site-header-inner,
+	.navbar-style-five,
+	.navbar-style-five #site-navigation,
+	#site-logo,
+	#site-logo-inner,
+	#site-logo a,
+	#site-logo img {
+	    transition: all $shrink-header__animation-speed; // Animate via CSS
+	}	
+	
+	// Hardware acceleration for logo shrink
+	#site-logo img {
+	    -webkit-transform: translate3d( 0, 0, 0 );
+	    transform : translate3d( 0, 0, 0 );
+	    @include backface-hidden;
+	}
+
+	// Animate menu
+	#site-navigation-wrap {
+		transition: top $shrink-header__animation-speed;
+	}
+
+}

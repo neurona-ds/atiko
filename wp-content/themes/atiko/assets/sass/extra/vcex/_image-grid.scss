@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------
+[Image Grid]
+-------------------------------------------------------------------*/
+.vcex-image-grid.grid-style-no-margins .col {
+    margin: 0
+}
+
+.vcex-image-grid-entry-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vcex-image-grid-entry img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.vcex-image-grid-entry > a {
+    display: block;
+    margin: 0 auto;
+}
+
+.vcex-image-grid-entry-title {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.vcex-image-grid-entry-title h2,
+.vcex-image-grid-entry-title h3,
+.vcex-image-grid-entry-title h4 {
+    margin: 0
+}
+
+.vcex-image-grid-entry-title p:last-child {
+    margin: 0
+}
+
+.vcex-image-grid.grid-style-no-margins .vcex-image-grid-entry-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.vcex-image-grid.grid-style-no-margins .vcex-image-grid-entry-title a {
+    color: #fff
+}

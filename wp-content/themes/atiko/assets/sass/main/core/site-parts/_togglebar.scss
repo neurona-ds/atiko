@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------
+[Togglebar]
+-------------------------------------------------------------------*/
+#toggle-bar-wrap {
+    background: #fff;
+    width: 100%;
+    visibility: hidden;
+    @include opacity( 0 );
+    @include transition( all 0.25s ease-in-out );
+    
+    // Inline Content
+    &.toggle-bar-inline {
+        display: none;
+        border-bottom: 1px solid #eee;
+        padding: 20px 0;
+        
+        &.active-bar {
+            display: block;
+            visibility: visible;
+            @include opacity( 1 );
+        }
+
+    }
+    
+    // Overlay Content
+    &.toggle-bar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        max-height: 100%;
+        overflow: auto;
+        padding: 40px 0;
+        @include box-shadow( 0 0 6px rgba( 0, 0, 0, 0.25 ) );
+
+        &.active-bar {
+            visibility: visible;
+            z-index: 10001;
+            @include opacity( 1 );
+        }
+
+        body.admin-bar & {
+            top: $wp__user-bar-height;
+        }
+
+    }
+
+    // Fade-Slide
+    &.toggle-bar-fade-slide {
+        top: -60px;
+
+        &.active-bar {
+            top: 0;
+        }
+
+    }
+
+}
+
+/* Toggle Bar > Button */
+.toggle-bar-btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #252525;
+    border-top: 20px solid #252525;
+    z-index: 10002;
+    color: #fff;
+    @include transition( all 0.3s ease-in-out );
+
+    span.fa {
+        position: absolute;
+        font-size: 0.846em;
+        top: -12px;
+        left: 4px;
+        text-shadow: none !important; // @todo Is this needed? What was this for?
+    }
+
+    .togglebar-is-inline & {
+        position: absolute;
+    }
+
+    body.admin-bar & {
+        top: $wp__user-bar-height;
+    }
+
+}

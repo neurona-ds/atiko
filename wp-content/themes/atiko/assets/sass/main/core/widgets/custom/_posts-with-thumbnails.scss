@@ -1,0 +1,68 @@
+/*------------------------------------------------------------------
+[Posts With Thumbnails Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-widget-recent-posts-li {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .details {
+	    overflow: hidden;
+	}
+
+}
+
+.wpex-widget-recent-posts-thumbnail {
+    width: 65px;
+    float: left;
+    margin-right: 15px;
+    display: block;
+
+    img {
+    	display: block;
+    	@include box-shadow-fix;
+    	@include transition( $transition__speed );
+		&:hover {
+			@include opacity( $images__hover-opacity );
+		}
+	}
+
+}
+
+.wpex-widget-recent-posts-title {
+    font-weight: $headings__font-weight;
+    color: $headings__color;
+    &:hover {
+	    text-decoration: none;
+	}
+}
+
+#sidebar .wpex-widget-recent-posts-date {
+    font-size: 0.923em;
+    @include opacity( 0.8 );
+}
+
+.wpex-widget-recent-posts-excerpt {
+    padding-top: 5px;
+}
+
+// Full image style
+.wpex-widget-recent-posts.style-fullimg {
+
+	.wpex-widget-recent-posts-li {
+	    padding-left: 0;
+	    min-height: 0;
+	}
+
+	.wpex-widget-recent-posts-thumbnail {
+	    float: none;
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	    width: 100%;
+	}
+
+	.wpex-widget-recent-posts-date {
+	    margin-top: 0;
+	}
+
+}

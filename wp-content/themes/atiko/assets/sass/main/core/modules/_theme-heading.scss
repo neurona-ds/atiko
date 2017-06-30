@@ -1,0 +1,76 @@
+/* Theme Heading */
+.theme-heading {
+	height: auto;
+	top: auto !important;
+	font-size: 1.154em;
+	font-weight: $headings__font-weight;
+	color: $headings__color;
+	margin: 0 0 $elements__bottom-margin;
+	overflow: hidden;
+	position: relative;
+	
+	// Default style
+	span.text {
+		display: inline-block;
+		max-width: 90%;
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 50%;
+			border-bottom: solid 1px $borders__color-light;
+			left: 100%;
+			width: 9999px;
+			margin-top: -1px;
+			margin-left: 15px;
+		}
+
+	}
+
+	// Plain Style
+	&.plain {
+		border: 0;
+		background: 0;
+		padding: 0;
+
+		span.text {
+			max-width: none;
+			position: static;
+
+			&:after {
+				display: none;
+			}
+
+		}
+
+		&:after {
+			display: none;
+		}
+
+	}
+
+	// Border w/ color style
+	&.border-w-color {
+		padding: 0;
+		border-bottom: 1px solid $borders__color;
+		overflow: visible;
+
+		span.text {
+			display: inline-block;
+			padding-bottom: 6px;
+			border-bottom: 2px solid transparent;
+			position: relative;
+			bottom: -1px;
+			max-width: none;
+
+			&:after {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

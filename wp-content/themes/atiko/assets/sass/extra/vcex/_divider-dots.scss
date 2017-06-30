@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------
+[Divider]
+-------------------------------------------------------------------*/
+.vcex-divider-dots {
+	margin: 0 auto;
+	text-align: center;
+
+	span {
+		display: inline-block;
+		height: 5px;
+		width: 5px;
+		margin: 0 5px;
+		background: $accent__main;
+		@include border-radius( 50% );
+	}
+
+}

@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------
+[# Sensei > Buttons]
+-------------------------------------------------------------------*/
+.course-container a.button,
+.course-container a.button:visited,
+.course-container a.comment-reply-link,
+.course-container #commentform #submit,
+.course-container .submit,
+.course-container input[type=submit],
+.course-container input.button,
+.course-container button.button,
+.course a.button,
+.course a.button:visited,
+.course a.comment-reply-link,
+.course #commentform #submit,
+.course .submit,
+.course input[type=submit],
+.course input.button,
+.course button.button,
+.lesson a.button,
+.lesson a.button:visited,
+.lesson a.comment-reply-link,
+.lesson #commentform #submit,
+.lesson .submit,
+.lesson input[type=submit],
+.lesson input.button,
+.lesson button.button,
+.quiz a.button,
+.quiz a.button:visited,
+.quiz a.comment-reply-link,
+.quiz #commentform #submit,
+.quiz .submit,
+.quiz input[type=submit],
+.quiz input.button,
+.quiz button.button {
+	@include button_styles;
+
+	&:hover {
+		@include button_styles-hover;
+	}
+
+}
+
+.quiz input.quiz-submit.reset:hover,
+.lesson input.quiz-submit.reset:hover {
+    background: #e73f3f;
+}
+
+.course .button.send-message-button {
+	background: #9a5e9a;
+}
+
+.course .button.send-message-button:hover {
+	background: #653e65;
+}
+
+.quiz input.quiz-submit.complete:hover,
+.lesson input.quiz-submit.complete:hover {
+	background: #4e8b4a;
+}

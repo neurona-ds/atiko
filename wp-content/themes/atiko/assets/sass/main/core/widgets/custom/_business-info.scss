@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------
+[Business Info Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-info-widget div {
+    padding-left: 2.308em;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.wpex-info-widget div:last-child {
+    margin-bottom: 0
+}
+
+.wpex-info-widget p {
+    margin: 0
+}
+
+.wpex-info-widget .fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.231em;
+}

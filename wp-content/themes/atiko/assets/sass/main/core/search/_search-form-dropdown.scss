@@ -1,0 +1,40 @@
+/*------------------------------------------------------------------
+[Search Form > Dropdown]
+-------------------------------------------------------------------*/
+#searchform-dropdown {
+    z-index: 10000;
+    position: absolute;
+    right: 0;
+    background: #fff;
+    top: 100%;
+    padding: 15px;
+    width: 260px;
+    border-top: 3px solid transparent;
+    visibility: hidden;
+    @include box-shadow( 0 2px 7px rgba( 0, 0, 0, 0.1 ) )
+    @include opacity( 0 );
+    @include transition( all 0.25s ease-in-out );
+
+    &.show {
+        visibility: visible;
+        @include opacity( 1 );
+    }
+
+}
+
+#searchform-dropdown input {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: #f4f4f4;
+    @include border-radius( 0 );
+}
+
+#searchform-dropdown button {
+    display: none;
+}
+
+.boxed-main-layout #searchform-dropdown {
+    right: $boxed__layout-inner-padding;
+}

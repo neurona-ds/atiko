@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------
+[Flickr Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-flickr-widget {
+    margin-right: -10px;
+}
+
+.wpex-flickr-widget .flickr_badge_image {
+    display: block;
+    width: 22%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 7px;
+    height: auto !important;
+}
+
+.wpex-flickr-widget .flickr_badge_image a,
+.wpex-flickr-widget .flickr_badge_image img {
+    display: block;
+    float: left;
+    width: auto !important;
+    height: auto !important;
+}
+
+.wpex-flickr-widget .flickr_badge_image:hover {
+    @include opacity( $images__hover-opacity );
+}

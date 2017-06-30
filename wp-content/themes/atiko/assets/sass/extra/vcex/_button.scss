@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+[Button]
+-------------------------------------------------------------------*/
+body.compose-mode .vc-element.vc-vcex_button,
+.vc_vcex_button.vc_empty-shortcode-element {
+	display: block;
+}
+
+.vc_vcex_button.vc_empty-shortcode-element:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	zoom: 1;
+}
+
+.theme-button-block-wrap {
+	clear: left;
+	display: block;
+}

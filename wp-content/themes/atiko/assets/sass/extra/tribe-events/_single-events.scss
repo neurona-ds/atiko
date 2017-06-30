@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+[# Tribe Evevents > Lists]
+-------------------------------------------------------------------*/
+
+.single-tribe_events .tribe-events-single-event-title { font-size: 1.846em; margin: 0 0 10px; font-weight: 400; }
+.tribe-events-schedule { margin-top: 0; }
+.tribe-events-schedule h2 { margin: 0 0 20px; font-weight: 400; font-size: 1.231em; }
+.single-tribe_events .tribe-events-schedule h3 { font-size: 1.077em; }
+
+.single-tribe_events #tribe-events-content { margin-bottom: 0; }
+.single-tribe_events .tribe-events-event-meta { background-color: #f7f7f7; font-size: 1em; }
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dt,
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dd.tribe-venue { color: #222; font-weight: 600; }
+.tribe-events-meta-group .tribe-events-single-section-title { margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 1px solid #ddd;font-weight: 600; font-size: 1.15em; }
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dd { margin-bottom: 15px; }
+
+.tribe-events-back { display: none; }
+
+.single-tribe_events .tribe-events-schedule .tribe-events-divider { color: #ddd; }
+
+.single-tribe_events .tribe-events-schedule h3,
+.single-tribe_events .tribe-events-schedule { color: #767676; font-weight: normal; }
+
+.single-tribe_events .tribe-events-venue-map { background: none; width: 100%; }
+
+body.tribe-page-header-details .tribe-events-schedule,
+body.tribe-page-header-details .tribe-events-single-event-title { display: none; }
+
+
+.events-list #tribe-events-footer,
+.single-tribe_events #tribe-events-footer,
+.tribe-events-day #tribe-events-footer,
+.tribe-events-map #tribe-events-footer,
+.tribe-events-photo #tribe-events-footer {
+	border-color: $borders__color-light;
+	padding-top: 20px;
+	a {
+		color: $text__color-main-light;
+	}
+
+}

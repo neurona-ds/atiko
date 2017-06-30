@@ -1,0 +1,239 @@
+/*------------------------------------------------------------------
+[Widgets]
+-------------------------------------------------------------------*/
+
+/* Widgets > Filter */
+.woocommerce .widget_price_filter {
+
+    .price_slider_wrapper .ui-widget-content {
+        background: #eee;
+    }
+
+    .ui-slider {
+        margin-left: 0;
+        margin-right: 0;
+
+        .ui-slider-range,
+        .ui-slider-handle {
+            background: $accent__main;
+        }
+
+    }
+
+    .price_slider_amount {
+        font-weight: $headings__font-weight;
+        font-size: 1em;
+
+        .price_label {
+            float: left;
+            padding: 0;
+            height: 24px;
+            line-height: 24px;
+            color: inherit;
+            text-align: left;
+        }
+
+        .from, .to {
+            color: $woo__price-color;
+        }
+
+        .button {
+            float: right;
+            font-size: 0.923em;
+            padding: 0 1.2em;
+            height: 24px;
+            line-height: 24px;
+        }
+
+    }
+
+    .price_slider_amount {
+    
+        // Hide text fields to prevent flash
+        input[type="text"] {
+            display: none;
+        }
+
+    }
+
+}
+
+/* Widgets > Cart & Products */
+.woocommerce ul.product_list_widget {
+    margin: 0 !important
+}
+
+.woocommerce ul.cart_list li,
+.woocommerce ul.product_list_widget li {
+
+    a {
+        font-weight: normal;
+    }
+
+    img {
+        margin-left: 0;
+    }
+
+}
+
+.woocommerce ul.cart_list li {
+
+    .remove {
+        display: none;
+    }
+
+}
+
+.woocommerce ul.product_list_widget li,
+.woocommerce .widget_shopping_cart .cart_list li,
+.woocommerce.widget_shopping_cart .cart_list li {
+    position: relative;
+    border-bottom: 1px solid $borders__color-light;
+    clear: both;
+    padding: 10px 0 10px 65px;
+    margin: 0;
+    min-height: 70px;
+}
+
+.woocommerce ul.product_list_widget li:first-child,
+.woocommerce .widget_shopping_cart .cart_list li:first-child,
+.woocommerce.widget_shopping_cart .cart_list li:first-child {
+    border-top: 1px solid $borders__color-light
+}
+
+.woocommerce ul.product_list_widget li.empty {
+    min-height: 0;
+    margin: 0;
+    border: none;
+    padding: 10px 0 0;
+    color: #898989;
+}
+
+.woocommerce ul.product_list_widget {
+
+    li {
+
+        img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+
+        .quantity {
+            display: block;
+            margin: 5px 0 0;
+            color: #bcbcbc;
+            line-height: 1em;
+        }
+
+        ins {
+            text-decoration: none;
+        }
+    
+        del {
+            opacity: $woo__del-opacity;
+        }
+    
+    }
+
+}
+
+.woocommerce .widget_shopping_cart_content {
+
+    .buttons {
+        margin: 0;
+        padding: 10px 0;
+
+        .button {
+            float: left;
+            width: 49%;
+            text-align: center;
+            margin: 0;
+        }
+
+    }
+
+}
+
+.woocommerce .widget_shopping_cart_content .buttons .checkout {
+    float: right;
+}
+
+.woocommerce .widget_shopping_cart_content .buttons .wc-forward:after,
+.woocommerce .widget_shopping_cart_content .buttons .checkout:after {
+    font-family: "FontAwesome";
+    margin-left: 8px;
+}
+
+.woocommerce .widget_shopping_cart_content .buttons .wc-forward:after {
+    content: "\f07a";
+}
+
+.woocommerce .widget_shopping_cart_content .buttons .checkout:after {
+    content: "\f054" !important;
+}
+
+.woocommerce .widget_shopping_cart .total,
+.woocommerce.widget_shopping_cart .total {
+    font-size: 1.077em;
+    margin: 0;
+    border-top: none;
+    padding-top: 15px;
+    color: #000;
+}
+
+.woocommerce ul.cart_list li .star-rating,
+.woocommerce ul.product_list_widget li .star-rating {
+    display: block;
+    margin: 5px 0;
+}
+
+.woocommerce ul.cart_list li dl,
+.woocommerce ul.product_list_widget li dl {
+    display: none;
+}
+
+/* Widgets > Search */
+.woocommerce-product-search label {
+    display: none;
+}
+
+.woocommerce-product-search input {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 36px;
+    line-height: 36px;
+}
+
+.woocommerce-product-search input[type="search"] {
+    width: 73%;
+    margin: 0;
+    float: left;
+}
+
+.woocommerce-product-search input[type="submit"] {
+    width: 25%;
+    text-align: center;
+    margin: 0;
+    float: right;
+    @include border-radius( 0 );
+}
+
+/* Widgets > Product Categories */
+.widget_product_categories li {
+    position: relative;
+    padding-right: 20px;
+}
+
+.widget_product_categories .count {
+    color: #999;
+    font-size: 0.846em;
+    margin-left: 5px;
+}
+
+/* Wigets > Reviews */
+.widget_recent_reviews .reviewer {
+    font-size: 0.9em;
+}

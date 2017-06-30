@@ -1,0 +1,144 @@
+/*------------------------------------------------------------------
+[Pagination]
+-------------------------------------------------------------------*/
+
+/* Pagination > Next/Prev */
+.post-pagination {
+	border-top: 1px solid $borders__color-light;
+	padding: 30px 0;
+
+	.post-prev {
+		float: left;
+		width: 48%;
+
+		span {
+			margin-right: 5px;
+		}
+
+	}
+
+	.post-next {
+		float: right;
+		width: 48%;
+		text-align: right;
+
+		span {
+			margin-left: 5px;
+		}
+
+	}
+
+	a {
+		color: $text__color-main-light;
+	}
+
+}
+
+/* Pagination > Numbered */
+ul.page-numbers,
+.page-links {
+	font-size: 0.923em;
+}
+
+ul.page-numbers {
+	list-style: none;
+	margin: 10px 0 0;
+}
+
+ul.page-numbers li,
+.page-links span {
+	display: block;
+	float: left;
+	margin: 0 4px 4px 0;
+	text-align: center;
+}
+
+ul .page-numbers a,
+a.page-numbers,
+span.page-numbers,
+.page-links span,
+.page-links a > span,
+.bbp-pagination-links span.page-numbers {
+	background: none;
+	line-height: 1;
+	display: block;
+	padding: 0.4em 0.7em;
+	text-decoration: none;
+	font-weight: normal;
+	font-weight: 400;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	color: #888;
+	@include transition( $transition__speed );
+}
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover,
+.page-links span,
+.page-links a > span:hover,
+.bbp-pagination-links span.page-numbers.current {
+	color: #000;
+	background: #background__light-gray;
+	text-decoration: none;
+}
+
+.page-numbers:hover {
+	text-decoration: none;
+}
+
+.wpex-pagination.wpex-center {
+
+	ul.page-numbers,
+	.page-links {
+		text-align: center;
+	}
+
+	ul.page-numbers li,
+	.page-links span {
+		display: inline-block;
+		float: none;
+	}
+
+}
+
+.wpex-pagination.wpex-right {
+
+	ul.page-numbers,
+	.page-links {
+		text-align: right;
+	}
+
+	ul.page-numbers li,
+	.page-links span {
+		display: inline-block;
+		float: none;
+	}
+
+}
+
+/* Pagination > Infinite Scroll */
+.infinite-scroll-wrap {
+	//position: relative; // Was breaking things when infinite scroll was enabled
+	padding-bottom: 20px;
+}
+
+.infinite-scroll-loader {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -8px;
+	height: 16px;
+	line-height: 16px;
+	width: 30px;
+	background: url(assets/images/loader.gif) center center no-repeat;
+	text-indent: -9999px;
+}
+
+#infscr-loading img {
+	display: none !important;
+}
+
+.infinite-scroll-nav {
+	display: none;
+}

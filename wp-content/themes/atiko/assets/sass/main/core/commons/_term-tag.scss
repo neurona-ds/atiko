@@ -1,0 +1,12 @@
+/* Term Tag */
+.wpex-term-tag {
+	background: #aaa;
+	padding: .4em 1em;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	display: block;
+	float: left;
+	@include border-radius( 20px );
+}

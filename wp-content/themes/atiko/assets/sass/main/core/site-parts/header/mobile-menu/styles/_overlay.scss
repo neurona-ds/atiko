@@ -1,0 +1,128 @@
+/* Mobile Menus > Full Screen Fade Overlay */
+.full-screen-overlay-nav {
+	display: block;
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	font-weight: 300;
+	font-size: 2.462em;
+	@include opacity( 0 );
+	@include transition( all 0.4s );
+	
+	// Show menu
+	&.visible {
+		z-index: 99999;
+		visibility:
+		visible;
+		@include opacity( 1 );
+	}
+
+	// Close button
+	.full-screen-overlay-nav-close {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		width: 58px;
+		height: 58px;
+		cursor: pointer;
+		@include opacity( 0.5 );
+		@include transition( all 0.3s );
+
+		&:hover {
+			@include opacity( 1 );
+		}
+
+	}
+
+	// White design
+	&.white {
+		background: #fff;
+
+		.full-screen-overlay-nav-close {
+			background: url( 'assets/images/full-screen-overlay-nav-close-black.png' ) no-repeat;
+		}
+
+	}
+
+	// Black design
+	&.black {
+		background: #000;
+
+		.full-screen-overlay-nav-close {
+			background: url( 'assets/images/full-screen-overlay-nav-close-white.png' ) no-repeat;
+		}
+
+		li a {
+			color: #fff;
+			@include opacity( 0.4 );
+
+			&:hover {
+				@include opacity( 1 );
+			}
+
+		}
+
+	}
+
+}
+
+// Menu
+.full-screen-overlay-nav-ul-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.full-screen-overlay-nav-ul {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	padding: 80px;
+	
+	ul {
+		display: block;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: block;
+
+		a {
+			display: inline-block;
+			color: #000;
+			margin-bottom: 20px;
+			@include transition( all 0.3s );
+
+			.fa {
+				margin-right: 10px;
+			}
+
+			&:hover {
+				text-decoration: none;
+				@include opacity( 0.4 );
+			}
+
+		}
+
+		// Hide extra items
+		&.wpex-menu-extra {
+			display: none !important;
+		}
+
+		// Hide dropdown arrows
+		.nav-arrow {
+			display: none;
+		}
+
+	}
+
+}

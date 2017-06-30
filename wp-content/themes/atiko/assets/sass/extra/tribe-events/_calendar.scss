@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+[# Tribe Evevents > Calendar]
+-------------------------------------------------------------------*/
+h2.tribe-events-page-title {
+	margin-top: 0;
+	font-weight: 600;
+}
+
+.tribe-events-calendar thead th {
+	font-weight: 600;
+}
+
+#tribe-events-footer .tribe-events-sub-nav a,
+#tribe-events-header .tribe-events-sub-nav a {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+#tribe-events-footer .tribe-events-sub-nav a:hover,
+#tribe-events-header .tribe-events-sub-nav a:hover {
+	text-decoration: underline;
+}
+
+#tribe-events-footer .tribe-events-sub-nav {
+	padding-top: 10px;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+	font-weight: 600;
+}
+
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-] > a {
+	background-color: $accent__main;
+}

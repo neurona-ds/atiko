@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+[Header Cart Overlay]
+-------------------------------------------------------------------*/
+#current-shop-items-overlay {
+    display: none;
+    top: 120px;
+    background: #fff;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    width: 400px;
+    z-index: 99999;
+    @include border-radius( 4px );
+    @include box-shadow( 0 0 4px rgba(0,0,0,0.7) );
+    @include transform( scale( 0.5 ) );
+    @include transition( transform 0.4s );
+}
+
+#current-shop-items-overlay.active {
+    @include transform( scale( 1 ) );
+}
+
+#current-shop-items-overlay .widgettitle {
+    display: none !important
+}
+
+#current-shop-items-overlay li:first-child {
+    border-top: 0
+}
+
+#current-shop-items-overlay li.empty {
+    padding: 0;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+}
+
+#current-shop-items-overlay .widget_shopping_cart_content .buttons {
+    padding-bottom: 0;
+}

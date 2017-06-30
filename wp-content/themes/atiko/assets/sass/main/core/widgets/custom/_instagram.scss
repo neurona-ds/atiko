@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------
+[Instagram Custom Widget]
+-------------------------------------------------------------------*/
+.wpex-instagram-grid-widget {
+
+    img {
+        vertical-align: bottom;
+        //@include transition ( $transition__speed ); // causes flickr, looks bad on most browsers
+
+        &:hover {
+            @include opacity( 0.8 );
+        }
+
+    }
+
+}

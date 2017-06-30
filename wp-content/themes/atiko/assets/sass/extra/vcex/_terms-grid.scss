@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------
+[Terms Grid]
+-------------------------------------------------------------------*/
+.vcex-terms-grid-entry-image {
+    margin-bottom: 15px;
+}
+
+.vcex-terms-grid-entry-image.vcex-has-overlay {
+    margin-bottom: 0;
+}
+
+.vcex-terms-grid-entry-image.vcex-has-overlay a {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.vcex-terms-grid-entry-image.vcex-has-overlay img {
+    display: block;
+    width: 100%;
+}
+
+.vcex-terms-grid-entry-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    @include transition ( all 0.25s ease-in-out );
+}
+
+.vcex-terms-grid-entry-overlay:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+.vcex-terms-grid-entry-overlay-table {
+    padding: 20px;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vcex-terms-grid-entry-overlay-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vcex-terms-grid-entry-overlay .entry-title {
+    color: #fff;
+    font-size: pem( 21 );
+}
+
+.vcex-terms-grid-entry-count {
+    font-size: pem( 16, 21 );
+}
+
+.vcex-terms-grid-entry-overlay .vcex-terms-grid-entry-count {
+    display: block;
+}
+

@@ -1,0 +1,91 @@
+/*------------------------------------------------------------------
+[Feature Box]
+-------------------------------------------------------------------*/
+.vcex-feature-box-media {
+    display: block;
+    width: 50%;
+}
+
+/* Feature Box > Left Image + Right content */
+.vcex-feature-box.left-image-right-content {
+
+    .vcex-feature-box-media {
+        float: left;
+    }
+
+    .vcex-feature-box-content {
+        float: right;
+        padding-left: 30px;
+    }
+
+}
+
+/* Feature Box > Right Image + Left Content */
+.vcex-feature-box.left-content-right-image {
+
+    .vcex-feature-box-media {
+        float: right;
+    }
+
+    .vcex-feature-box-content {
+        float: left;
+        padding-right: 30px;
+    }
+
+}
+
+/* Feature Box > Media */
+.vcex-feature-box-image-link {
+    overflow: hidden;
+}
+
+.vcex-feature-box-image-link,
+.vcex-feature-box-media .vcex-feature-box-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Feature Box > Heading */
+.vcex-feature-box-heading {
+    margin: 0 0 $elements__bottom-margin;
+    font-size: pem( 16 );
+    color: $headings__color;
+}
+
+/* Feature Box > Content */
+.vcex-feature-box-content {
+    display: block;
+    width: 50%;
+
+    p:last-child {
+        margin: 0;
+    }
+
+    .vcex-feature-box-heading-link {
+        text-decoration: none; // Remove underline on link heading
+    }
+
+}
+
+/* Feature Box > Equal Heights */
+.vcex-feature-box-match-height {
+
+    .vcex-feature-box-media {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .vcex-feature-box-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        img {
+            max-width: none;
+        }
+
+    }
+
+}

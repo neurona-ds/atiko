@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------
+[Pagination]
+-------------------------------------------------------------------*/
+.woocommerce nav.woocommerce-pagination {
+    padding-top: 10px;
+
+    ul {
+        display: block;
+        border: none;
+        margin: 0;
+
+        li {
+            display: block;
+            border-right: none;
+            margin: 0 4px 4px 0;
+
+            a, span {
+                padding: 0.4em 0.7em;
+                font-size: 0.923em;
+            }
+
+            a:focus,
+            a:hover,
+            span.current {
+                background: $background__light-gray;
+                color: #000;
+            }
+
+        }
+
+    }
+
+    &.wpex-center {
+        text-align: center;
+    }
+    
+    &.wpex-right {
+        text-align: right;
+    }
+
+    &.wpex-center,
+    &.wpex-right {
+        
+        ul li {
+            float: none;
+            display: inline-block;
+            margin-right: 2px;
+        }
+
+    }
+
+}

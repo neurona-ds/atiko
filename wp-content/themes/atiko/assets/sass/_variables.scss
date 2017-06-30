@@ -1,0 +1,171 @@
+$images__path: "../images";
+
+// Check if style.css should contain RTL CSS
+$support_rtl: 1;
+
+// Main
+$container__width: 980px;
+$boxed__layout-inner-padding: 30px;
+$elements__bottom-margin: 20px; // p tags, blockquotes, etc...
+$text__color-main: #666;
+$text__color-main-light: #888;
+
+
+// Grid columns
+$grid_columns: 1, 2, 3, 4, 5, 6, 7;
+
+
+// Body
+$body__font-family: 'Helvetica Neue', Arial, sans-serif;
+$body__font-size: 13px;
+$body__line-height: 1.65;
+$body__color: $text__color-main;
+$body__background: #fff;
+
+
+// Accents
+$accent__main: #4a97c2;
+$accent__main-hover: #3b86b0;
+$accent__main-text: #3b86b0;
+$accent__main-border: #3b86b0;
+
+$accent__vc-brand: #114C7F;
+
+
+
+// Backgrounds
+$background__gray: #eee;
+$background__dark: #222;
+$background__light-gray: #f7f7f7;
+$background__xtralight-gray: #fafafa;
+$background__footer: #262626;
+$background__footer-bottom: $background__dark;
+
+
+// Text colors
+$text__color: $body__color;
+$text__color-footer: #777;
+$text__color-footer-bottom: #999;
+
+
+// Link Colors
+$link__color: #0081cc;
+$link__color-footer: #999;
+$link__color-footer-hover: #fff;
+$link__color-footer-bottom: #aaa;
+$link__color-footer-bottom-hover: #fff;
+
+
+
+// Borders
+$borders__color: #e8e8e8; // Changed from e4e4e4 in Total 4.0
+$borders__color-light: #eee;
+$borders__color-sidebar-widgets: $borders__color-light;
+
+$borders__color-footer: #333;
+$borders__color-footer-rgba: rgba( 255, 255, 255, 0.06 );
+
+
+
+// Headings
+$headings__color: #000;
+$headings__color-light: #484848;
+$headings__font-weight: 600;
+$headings__line-height: 1.5;
+$headings__margin: 30px 0 20px;
+$headings__entry__font-size: 1.077em;
+
+
+// Images
+$images__hover-opacity: 0.8;
+
+
+
+// Custom selects
+$custom_selects-height: 36px;
+
+
+// Transitions
+$transition__speed: 0.15s all ease;
+
+
+
+// Buttons
+$buttons__background: $accent__main;
+$buttons__color: #fff;
+$buttons__font-size: 0.923em;
+$buttons__transition-speed: $transition__speed;
+$buttons__border-radius: 3px;
+$buttons__padding: .5em 1em;
+$buttons__padding-medium: .8em 1.2em;
+$buttons__font-weight: 400;
+
+
+// Icons
+$icons__left-right-margin: 7px; // When an Icon is added inline before a text or after a text
+
+
+// Main Menu
+$main-menu__height: 50px;
+$main-menu__link-color: #555;
+
+
+// Accent Colors
+$color__blue: $accent__main;
+$color__blue-hover: $accent__main-hover;
+
+$color__grey: #bbb;
+$color__grey-hover: #999;
+
+$color__gray: #bbb;
+$color__gray-hover: #999;
+
+$color__black: #333;
+$color__black-hover: #555;
+
+$color__orange: #ee7836;
+$color__orange-hover: #cf5511;
+
+$color__gold: #ddba00;
+$color__gold-hover: #aa8f00;
+
+$color__green: #87bf17;
+$color__green-hover: #679212;
+
+$color__purple: #9a5e9a;
+$color__purple-hover: #9a5e9a;
+
+$color__teal: #00b3b3;
+$color__teal-hover: #006f6f;
+
+$color__pink: #f261c2;
+$color__pink-hover: #bc0f83;
+
+$color__brown: #804b35;
+$color__brown-hover: #5c3626;
+
+$color__red: #f73936;
+$color__red-hover: #bf0a08;
+
+$color__rosy: #ea2487;
+$color__rosy-hover: #b81265;
+
+$color__white: #fff;
+$color__white-hover: #fff;
+
+
+// Topbar
+$topbar__padding: 15px;
+
+
+// Header
+$vertical-header__width: 280px;
+
+
+// Comments
+$comments-avatar__offset: 80px;
+
+
+// WordPress Stuff
+$wp__user-bar-height: 32px;
+$wp__user-bar-height-mobile: 46px;

@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------
+[Mailchimp Newsletter Widget]
+-------------------------------------------------------------------*/
+.wpex-newsletter-widget {
+	padding: 20px;
+	background: $background__light-gray;
+	border: 1px solid $borders__color-light;
+	text-align: center;
+
+	button {
+		font-size: 1em;
+		margin-top: 5px;
+		width: 100%;
+		padding: 0.9em 1.2em;
+		display: block;
+	}
+
+	input[type="email"],
+	input[type="text"] {
+		border-color: $borders__color-light;
+		background: #fff;
+		width: 100%;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+
+}
+
+.wpex-newsletter-widget-heading {
+	font-weight: 600;
+	font-size: 1.231em;
+	margin: 0 0 10px;
+}
+
+.wpex-newsletter-widget-description {
+	font-size: 0.923em;
+	margin-bottom: 10px;
+	color: #787878;
+
+	p:last-child {
+		margin: 0;
+	}
+
+}
+
+// Footer edits
+#footer .wpex-newsletter-widget {
+	background: #222;
+	border-color: #333;
+	background: rgba(0,0,0,0.1);
+	border-color: rgba(255,255,255,0.08);
+}
+
+#footer .wpex-newsletter-widget-heading {
+	color: #fff;
+}
+
+#footer input[type="email"].wpex-newsletter-widget-input,
+#footer input[type="text"].wpex-newsletter-widget-input {
+	border-color: transparent;
+}
+
+#footer input[type="email"].wpex-newsletter-widget-input:focus,
+#footer input[type="text"].wpex-newsletter-widget-input:focus {
+	color: #fff;
+}
+

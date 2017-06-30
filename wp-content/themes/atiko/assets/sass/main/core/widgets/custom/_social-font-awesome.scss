@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------
+[Social Profiles FontAwesome Widget]
+-------------------------------------------------------------------*/
+.wpex-fa-social-widget {
+
+    .desc {
+        margin-bottom: 20px;
+
+        p:last-child {
+            margin: 0;
+        }
+
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            border: none;
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .wpex-social-btn {
+        display: block;
+        font-size: 1.077em;
+        padding: 0;
+    }
+
+    .wpex-social-btn-no-style:hover {
+        @include opacity( 0.5 );
+    }
+    
+    // Align center
+    &.textcenter ul li {
+        float: none;
+        display: inline-block;
+    }
+
+    // Align right
+    &.textright ul li {
+        float: right;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+}

@@ -1,0 +1,133 @@
+/*------------------------------------------------------------------
+[# bbPress > Profile] @todo Finish converting to SASS
+-------------------------------------------------------------------*/
+#bbp-user-wrapper {
+	padding: 20px 0;
+}
+
+#bbpress-forums #bbp-user-wrapper h2.entry-title {
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.bbp-user-section p {
+    margin-bottom: 5px
+}
+
+.bbp-user-section p.bbp-user-description {
+    margin-bottom: 30px
+}
+
+#bbpress-forums #bbp-single-user-details {
+    width: 220px
+}
+
+#bbpress-forums #bbp-user-body {
+    margin-left: 260px
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-avatar {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-avatar img.avatar {
+    width: auto;
+    height: auto;
+    margin: 0;
+    border-radius: 50%;
+    display: inline;
+}
+
+#bbp-user-navigation {
+
+	ul {
+		border: 1px solid $borders__color-light;
+		border-radius: 3px;
+		font-weight: 600;
+		font-size: 1em;
+	}
+
+	li {
+		border-bottom: 1px solid $borders__color-light;
+
+		&:first-child a {
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+
+		&:last-child a {
+			border-bottom-left-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+
+		&:last-child {
+			border-bottom: none;
+		}
+	
+	}
+
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a {
+    position: relative;
+    display: block;
+    padding: 0.538em 30px 0.538em 0.769em;
+    color: #777;
+    transition: all 0.25s;
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a:after {
+    display: block;
+    font-family: "FontAwesome";
+    content: "\f054";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 0.923em;
+    color: #bbb;
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation a:hover {
+    color: #222;
+    background: #f7f7f7;
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a {
+    background: #4a97c2;
+    color: #fff;
+    opacity: 1;
+    margin: -1px;
+}
+
+#bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a:after {
+    color: #fff
+}
+
+#bbpress-forums #bbp-your-profile .bbp-form {
+    margin-bottom: 30px;
+    border-radius: 3px;
+    padding: 25px;
+}
+
+#bbpress-forums #bbp-your-profile fieldset label {
+    font-weight: 600;
+    color: #444;
+}
+
+#bbp-user-subscriptions .bbp-user-section {
+    margin-bottom: 30px
+}
+
+.bbp-row-actions #favorite-toggle,
+.bbp-row-actions #subscription-toggle {
+    margin-bottom: 10px
+}

@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+[Order Received]
+-------------------------------------------------------------------*/
+.woocommerce ul.order_details {
+    border: 1px solid $borders__color-light;
+    padding: 20px;
+    margin: 0 0 20px;
+}
+
+.woocommerce ul.order_details li {
+    border-color: #ddd;
+}
+
+.product-quantity {
+    font-weight: normal;
+    color: #bcbcbc;
+}
+
+.woocommerce .shop_table.order_details tfoot th,
+.woocommerce .shop_table.customer_details th {
+    border-right: 1px solid $borders__color-light;
+    background: $background__light-gray;
+    font-weight: 600;
+    color: #444;
+}

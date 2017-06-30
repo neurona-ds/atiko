@@ -1,0 +1,10 @@
+/*------------------------------------------------------------------
+[Store Notice]
+-------------------------------------------------------------------*/
+p.demo_store {
+    background-color: $accent__main;
+    position: static;
+    padding: 1em;
+    height: auto;
+   @include box-shadow( none );
+}

@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+[Social Links]
+-------------------------------------------------------------------*/
+.vcex-social-btns .wpex-social-btn {
+    margin-right: 7px;
+    margin-bottom: 7px;
+}
+
+// This is a fall-back from when you couldn't select a style
+// @todo deprecate?
+.vcex-social-links {
+    display: block;
+    font-size: pem( 16 );
+    color: #555;
+    @include border-radius( 4px );
+
+    a {
+	    display: inline-block;
+	    padding: 10px;
+	    line-height: 1;
+	    text-align: center;
+	    background: $background__gray;
+	    color: inherit;
+	    margin-right: 3px;
+	    margin-bottom: 5px;
+	    @include border-radius( inherit );
+	    @include transition( $transition__speed );
+
+	    &.no-padding {
+		    padding: 0;
+		}
+
+	}
+
+}

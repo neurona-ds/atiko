@@ -1,0 +1,97 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Gallery metabox styles
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ */
+
+@import "../load-helpers";
+
+.wpex_gallery_images {
+
+	.details.attachment {
+		@include box-shadow( none );
+	}
+
+	.image > div {
+		width: 80px;
+		height: 80px;
+		@include box-shadow( none );
+	}
+
+	.attachment-preview {
+		position: relative;
+		padding: 4px;
+	}
+
+	.attachment-preview .thumbnail {
+		cursor: move;
+	}
+
+	.wc-metabox-sortable-placeholder{
+		width: 80px;
+		height: 80px;
+		border: 4px dashed #ddd;
+		background: #f7f7f7 url(#{$images__path}/watermark.png) no-repeat center;
+		@include box-sizing( border-box );
+	}
+
+	.wpex-gmb-remove {
+		background: #eee url(#{$images__path}/delete.png) center center no-repeat;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		padding: 2px;
+		width: 10px;
+		height: 10px;
+		margin: 0;
+		overflow: hidden;
+		visibility: hidden;
+		@include transition( all 0.3s ease );
+		@include opacity( 0 );
+		@include border-radius( 2px );
+
+		body.rtl & {
+			right: auto;
+			left: 2px;
+		}
+
+	}
+
+	.image div:hover .wpex-gmb-remove {
+		visibility: visible;
+		display: block;
+		@include opacity( 1 );
+	}
+
+	> li {
+		float: left;
+		cursor: move;
+		margin: 9px 9px 0 0;
+
+		body.rtl & {
+			float: right;
+			margin: 9px 0 0 9px;
+		}
+
+	}
+
+	li.image img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.attachment-preview:before {
+		display: none !important;
+	}
+
+}
+
+.wpex_gallery_images:after,
+#wpex_gallery_images_container:after {
+	@include clear-after;
+}
+
+#wpex_gallery_images_container ul {
+	margin: 0 !important;
+}

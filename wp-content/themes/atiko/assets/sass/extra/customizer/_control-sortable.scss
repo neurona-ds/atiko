@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------
+[# Sortable Control]
+-------------------------------------------------------------------*/
+.wpex-sortable ul {
+    margin-top: 10px;
+}
+
+.wpex-sortable li.wpex-sortable-li {
+    cursor: move;
+    background: #fff;
+    padding: 0;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    border: 1px solid #dfdfdf;
+    text-overflow: ellipsis;
+    color: #222;
+    margin-bottom: 5px;
+    margin-top: 0;
+    overflow: hidden;
+    position: relative;
+    @include disable-user-select();
+
+    body.rtl & {
+        padding-right: 15px;
+    }
+}
+
+.wpex-sortable li.wpex-sortable-li:hover {
+    border-color: #999;
+    z-index: 10;
+}
+
+.wpex-sortable li.wpex-sortable-li .fa {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    color: #5cb85c;
+    text-align: center;
+    font-size: 18px;
+
+    body.rtl & {
+        right: auto;
+        left: 0;
+    }
+
+}
+
+.wpex-sortable li.wpex-sortable-li .wpex-hide-sortee {
+    cursor: pointer;
+}
+
+.wpex-sortable ul li:last-child {
+    margin-bottom: 0;
+}
+
+.wpex-sortable li.wpex-hide .fa {
+    color: #d9534f;
+}
+
+.wpex-sortable li.wpex-hide {
+    @include opacity( 0.65 );
+}

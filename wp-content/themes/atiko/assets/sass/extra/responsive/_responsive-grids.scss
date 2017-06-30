@@ -1,0 +1,73 @@
+/*------------------------------------------------------------------
+[# Responsive > Custom Grid Columns]
+-------------------------------------------------------------------*/
+
+// Tablet Landscape
+@media screen and (max-width: 1024px) {
+
+	@each $column in $grid_columns {
+
+		.wpex-row .col.span_1_of_#{$column}_tl {
+			width: decimal-round( 100% / $column, 3 );
+			&.col-1 {
+				clear: none;
+			}
+			&:nth-child( #{$column}n + 1 ) {
+				clear: both;
+			} 
+		}
+
+	}
+
+}
+
+// Table Portrait
+@media screen and (max-width: 959px) {
+
+	@each $column in $grid_columns {
+
+		#wrap .wpex-row .col.span_1_of_#{$column}_tp {
+			width: decimal-round( 100% / $column, 3 );
+			clear: none;
+			&:nth-child( #{$column}n + 1 ) {
+				clear: both;
+			} 
+		}
+
+	}
+
+}
+
+// Phone Landscape
+@media screen and (max-width: 767px) {
+
+	@each $column in $grid_columns {
+
+		#outer-wrap #wrap .wpex-row .col.span_1_of_#{$column}_pl {
+			width: decimal-round( 100% / $column, 3 );
+			clear: none;
+			&:nth-child( #{$column}n + 1 ) {
+				clear: both;
+			} 
+		}
+
+	}
+
+}
+
+// Phone Portrait
+@media screen and (max-width: 479px) {
+
+	@each $column in $grid_columns {
+
+		#outer-wrap #wrap .wpex-row .col.span_1_of_#{$column}_pp {
+			width: decimal-round( 100% / $column, 3 ) !important;
+			clear: none !important;
+			&:nth-child( #{$column}n + 1 ) {
+				clear: both !important;
+			} 
+		}
+
+	}
+
+}

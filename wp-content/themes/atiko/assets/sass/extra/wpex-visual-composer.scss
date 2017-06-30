@@ -1,0 +1,126 @@
+/*!
+ Project   : Total WordPress Theme
+ Purpose   : Visual Composer tweaks & fixes
+ Author    : WPExplorer
+ Theme URI : http://www.wpexplorer.com
+ Notes     : Un-compressed SASS files available
+ */
+
+// Helpers
+@import "../load-helpers";
+
+/*------------------------------------------------------------------
+[# Fixed & Main tweaks]
+-------------------------------------------------------------------*/
+
+// Fixes float issue
+.compose-mode .vc_element.vc_empty .vc_empty-element:after {
+	visibility: visible !important;
+}
+
+// Add relative position to vc_row for parallax, bg overlay and video backgrounds
+.vc_row {
+	position: relative;
+}
+
+// Accordion line height fix
+.ui-helper-reset {
+	line-height: 1.65;
+}
+
+// Parallax fix to prevent issues with Overlays
+.vc_parallax > * {
+	z-index: 2;
+}
+
+// Right float columns
+.wpex-cols-right {
+
+	.wpb_column, .vc_vc_column {
+		float: right;
+	}
+
+	.vc_vc_column > .wpb_column {
+		width: 100%; // front-end editor fix
+	}
+
+	&.vc_row-flex {
+		width: auto;
+		float: none;
+		-webkit-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+	}
+
+}
+
+// Front-end editor fix
+.vc_empty .wpb_column {
+	float: none;
+}
+
+// Display stuff in the VC front-end editor
+.compose-mode .visible-in-composer {
+	display: block !important;
+}
+
+// Remove default bottom margins => ! important
+.wpb_row,
+.wpb_content_element,
+ul.wpb_thumbnails-fluid > li,
+.last_toggle_el_margin,
+.wpb_button {
+	margin-bottom: 0;
+}
+
+// Callout 2 fixes
+.vc_button-2-wrapper {
+	display: block;
+}
+.vc_cta3-container .vc_button-2-wrapper {
+	display: inline-block;
+}
+
+// Hide menu dropdowns in the VC editor to prevent issues
+body.compose-mode .sf-menu ul {
+	display: none !important;
+}
+
+// Default borders
+.vc_row,
+.wpb_row,
+.wpb_column,
+.vc_column-inner,
+.wpb_content_element,
+.vcex-module {
+	border-color: transparent;
+	border-style: solid;
+}
+
+/*------------------------------------------------------------------
+[# Includes]
+-------------------------------------------------------------------*/
+@import "vc/column-margins";
+@import "vc/max-widths";
+@import "vc/negative-offsets";
+@import "vc/stretched-sections";
+@import "vc/center-row"; // somewhat deprecated in 4.0
+
+@import "vc/video";
+@import "vc/button";
+@import "vc/custom-heading";
+@import "vc/column-styles";
+@import "vc/call-to-action";
+@import "vc/widgets";
+@import "vc/toggles";
+@import "vc/single-image";
+@import "vc/separator";
+@import "vc/google-map";
+@import "vc/pie-chart";
+@import "vc/text-block";
+
+@import "vc/old-tabs";
+@import "vc/old-tours";
+@import "vc/old-accordions";
+
+@import "vc/old-text-separator";

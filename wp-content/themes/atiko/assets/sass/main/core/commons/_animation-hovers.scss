@@ -1,0 +1,27 @@
+/* Transition Hovers */
+.transition-all {
+	@include transition( $transition__speed ); // Old value was all .2s ease-in-out
+}
+
+.animate-bg-hover {
+	@include transition( background .2s ease-in-out );
+}
+
+/* White text hover */
+.wpex-hover-white-text:hover,
+.wpex-hover-white-text:hover * {
+	color: #fff !important;
+}
+
+/* Inherit colors on hover */
+body .wpex-hover-inherit-color {
+
+	&, a {
+
+		&:hover {
+			color: inherit;
+		}
+
+	}
+
+}

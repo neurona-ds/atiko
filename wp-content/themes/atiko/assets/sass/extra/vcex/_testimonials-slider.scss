@@ -1,0 +1,152 @@
+/*------------------------------------------------------------------
+[Testimonials Slider]
+-------------------------------------------------------------------*/
+.vcex-testimonials-fullslider {
+    padding: 40px 0;
+}
+
+.vcex-testimonials-fullslider-author {
+    margin: 20px 0 5px;
+}
+
+.container.full-screen .container .entry.container {
+    width: 100% !important
+}
+
+/* Testimoanials Slider > Entry */
+.vcex-testimonials-fullslider .entry {
+    font-weight: 300;
+	
+	p:last-child {
+        margin: 0;
+    }
+
+}
+
+/* Testimonials Slider > Avatar */
+.vcex-testimonials-fullslider-avatar {
+    margin-bottom: 20px;
+}
+
+.vcex-testimonials-fullslider-avatar img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+    @include border-radius( 50% );
+    box-shadow: none !important;
+}
+
+/* Testimonials Slider > Rating */
+.vcex-testimonials-fullslider-rating {
+    padding-top: 5px;
+    color: #ffc833;
+}
+
+/* Testimonials Slider > Dots */
+.vcex-testimonials-fullslider .sp-buttons {
+    display: none;
+}
+
+.vcex-testimonials-fullslider.has-controlnav .sp-buttons {
+    display: block;
+}
+
+.vcex-testimonials-fullslider .sp-buttons {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.vcex-testimonials-fullslider .sp-button {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+    margin-right: 0;
+    cursor: pointer;
+    background: #ddd;
+    border: 0;
+    @include border-radius( 50% );
+	
+	&.sp-selected-button, &:hover {
+		background-color: $accent__main;
+    }
+
+}
+
+.vcex-testimonials-fullslider .sp-button:first-child {
+    margin-left: 0;
+}
+
+/* Testimonials Slider > Arrows */
+.vcex-testimonials-fullslider .sp-arrows {
+    display: none;
+}
+
+.vcex-testimonials-fullslider.has-arrows .sp-arrows {
+    display: block;
+}
+
+.vcex-testimonials-fullslider.has-arrows .entry {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.vcex-testimonials-fullslider.has-arrows .sp-arrow {
+    font-size: 34px;
+    color: #ccc;
+    background: none;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+}
+
+.vcex-testimonials-fullslider.has-arrows .sp-arrow:hover {
+    color: #000;
+}
+
+/* Testimonials Slider > Thumbnails */
+.vcex-testimonials-fullslider.has-thumbs .sp-nc-thumbnails {
+    text-align: center;
+    padding-top: 20px;
+    width: 100% !important;
+}
+
+.vcex-testimonials-fullslider.has-thumbs .sp-nc-thumbnail-container {
+    display: inline-block;
+    float: none;
+}
+
+/* Testimonials Slider > Light Skin */
+.vcex-testimonials-fullslider.light-skin * {
+    color: #fff;
+}
+
+.vcex-testimonials-fullslider.light-skin .sp-button {
+    background: #fff;
+    @include opacity( 0.6 );
+}
+
+.vcex-testimonials-fullslider.light-skin .sp-button:hover,
+.vcex-testimonials-fullslider.light-skin .sp-selected-button {
+    background: #fff;
+    @include opacity( 1 );
+}
+
+.vcex-testimonials-fullslider.light-skin .sp-arrow {
+    color: #fff;
+   @include opacity( 0.8 );
+}
+
+.vcex-testimonials-fullslider.light-skin .sp-arrow:hover {
+    color: #fff;
+    @include opacity( 1 );
+}
+
+.vcex-testimonials-fullslider.light-skin .vcex-testimonials-fullslider-rating * {
+    color: #ffc833;
+}

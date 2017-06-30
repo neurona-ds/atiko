@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+[# Sensei > Lesson]
+-------------------------------------------------------------------*/
+.lesson  {
+	
+	header h1 {
+		border-bottom: 1px solid $borders__color-light;
+		padding: 0 0 10px;
+		margin: 0 0 30px;
+		font-size: 1.846em;
+		font-weight: 400;
+	}
+
+	.entry .video {
+		margin-bottom: 20px;
+	}
+
+}
+
+#private_message {
+	margin: 0 0 10px;
+	font-weight: 600;
+	color: #555;
+}
+
+.contact-teacher {
+	margin-bottom: 30px;
+}

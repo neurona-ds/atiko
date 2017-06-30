@@ -1,0 +1,64 @@
+/*------------------------------------------------------------------
+[Header Style Five]
+-------------------------------------------------------------------*/
+
+// Logo
+#site-logo.header-five-logo {
+    display: none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    @include transition( all 0.3s ease );
+}
+
+#site-logo.header-five-logo.display {
+    display: table; // Set as table once it's visible
+}
+
+.menu-item-logo {
+    padding: 0 40px;
+}
+
+#site-navigation-wrap.navbar-style-five,
+.navbar-style-five #site-navigation {
+    height: 100%;
+}
+
+.navbar-style-five .dropdown-menu {
+    text-align: center;
+    float: none;
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+
+    ul {
+        text-align: left;
+    }
+
+    > li {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        float: none;
+
+        > a {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            color: #555;
+            font-weight: normal;
+            padding: 0 4px;
+
+            > span.link-inner {
+                display: inline-block;
+                line-height: 1;
+                padding: 0.5em 0.8em;
+                @include border-radius( 3px );
+            }
+
+        }
+
+    }
+
+}
+

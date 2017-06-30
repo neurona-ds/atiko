@@ -1,0 +1,109 @@
+/*------------------------------------------------------------------
+[# bbPress > Widgets]
+-------------------------------------------------------------------*/
+
+// Logged in widget
+.bbp-logged-in {
+	text-align: center;
+
+	.user-submit {
+		display: block;
+		margin: 0 auto;
+		width: 80px;
+		margin-bottom: 10px;
+	}
+
+	.user-submit img {
+		display: block;
+		height: 80px;
+		width: 80px;
+		float: none;
+		margin: 0;
+		@include circle;
+	}
+
+	.user-submit img:hover {
+		@include opacity( $images__hover-opacity );
+	}
+
+	h4 {
+		font-weight: 600;
+		color: #444;
+		font-size: 1.077em;
+		margin: 0 0 2px;
+		a {
+			color: inherit;
+		}
+	}
+
+	a.button {
+		font-size: $buttons__font-size;
+	}
+
+}
+
+
+// Stats Widget 
+.widget_display_stats {
+
+	 dt {
+		float: left;
+		width: 80%;
+		padding: 0 12px;
+		text-align: left;
+		height: 38px;
+		line-height: 38px;
+		margin-bottom: 6px;
+		border: 1px solid $borders__color-light;
+		border-right: none;
+		font-weight: 600;
+		color: #777;
+	}
+
+	dd {
+		float: left;
+		width: 20%;
+		background: $background__light-gray;
+		border: 1px solid $borders__color-light;
+		color: #777;
+		text-align: center;
+		padding: 0 12px;
+		height: 38px;
+		line-height: 38px;
+		margin-bottom: 6px;
+		font-size: pem( 12 );
+	}
+
+}
+
+// Forum info
+.wpex-bbpress-forum-info {
+
+	li {
+		margin-bottom: 2px;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		.fa {
+			margin-right: 10px;
+		}
+
+	}
+
+}
+
+// Widget borders
+.widget_display_views li,
+.widget_display_forums li,
+.widget_display_topics li {
+	padding: 6px 0;
+	border-bottom: 1px solid $borders__color-light;
+}
+
+.widget_display_forums li:first-child,
+.widget_display_views li:first-child,
+.widget_display_topics li:first-child {
+	border-top: 1px solid $borders__color-light;
+}

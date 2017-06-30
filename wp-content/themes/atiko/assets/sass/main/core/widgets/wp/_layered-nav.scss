@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+[Layered Nav Widget]
+-------------------------------------------------------------------*/
+.widget_layered_nav {
+
+	li {
+		position: relative;
+	}
+
+	.count {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -6px;
+		height: 12px;
+		line-height: 12px;
+		color: #999;
+		font-size: 0.846em;
+	}
+
+}
